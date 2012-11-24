@@ -1,0 +1,55 @@
+items enclosed in "{}" indicate references I am planning to add.
+BASeParser XP Core:
+
+References:
+
+Typelib Information (TLBINF32.DLL)
+Microsoft Script Control 1.0 (msscript.ocx)
+Microsoft XML, v3.0(MSXML2.dll)
+Microsoft Scripting Runtime (MSSCRRUN.DLL)
+Microsoft VBScript Regular Expressions(vbscript.dll)
+
+TLB: (no need to redistribute, but required for code)
+Edanmo's OLE interfaces & functions v1.81
+Edanmo's OLE interfaces for implements v1.51
+
+
+BPControls:
+
+References:
+
+	BASeParser XP (and all it's dependencies) (BASeParser.dll)
+	{BASeMetry} 
+	DirectX 8 for Visual Basic Type Library DXVBLIB.TLB
+
+Components:
+	Edanmo's Color Picker & Palette Controls v 1.05 (axcolctl.ocx)
+	Microsoft Windows Common Controls 6.0 (SP6)(MSCOMCTL32.ocx) (planning to replace with VBAccelerators respective controls)
+	VBAccelerator VB6 SGrid Control 2.0 (vbalsgrid.ocx)
+	VBAccelerator VB6 VS Tab Control (vbaldTab6.ocx)
+
+BPCoreFunc
+References:
+BASeParser XP (and it's dependencies)BASeParser.dll
+Microsoft ActiveX Data Objects 2.7 Library (MSADO27.tlb)
+Microsoft ADO ext 2.8 for DDL and Security (MSADOX.dll)
+Microsoft Script COntrols 1.0 (MSScript.ocx)
+Typelib Information (TLBINF32.dll)
+Microsoft Add-In Designer (designer not required at run-time)
+
+
+
+
+
+
+
+
+BPXPGUI
+References:
+
+BASeParserXP
+BASeCamp Extended File Access Objects - PRERELEASE
+Typelib Information
+components:
+VbAccelerator VB6 Multi-Column TreeView Control
+vbAccelerator VB6 VS Tab Control

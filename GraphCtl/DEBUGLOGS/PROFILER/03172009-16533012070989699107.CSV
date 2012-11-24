@@ -1,0 +1,5 @@
+BASeCamp CDebug Class Profiler Output.
+log at 03/17/2009 on GIGATRON as mburgwin at 16:53.30
+
+Profile data is in CSV format. Import into Excel! :P
+Procedure Name,Times Called,Total Time (Sec),Average Time(Sec)

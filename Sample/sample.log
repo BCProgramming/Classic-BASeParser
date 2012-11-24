@@ -1,0 +1,6 @@
+Line 31: Class RichTextLib.RichTextBox of control RTBMessage was not a loaded control class.
+Line 37: The property name _ExtentX in RTBMessage is invalid.
+Line 38: The property name _ExtentY in RTBMessage is invalid.
+Line 39: The property name _Version in RTBMessage is invalid.
+Line 40: The property name RightMargin in RTBMessage is invalid.
+Line 41: The property name TextRTF in RTBMessage is invalid.

@@ -1,0 +1,85 @@
+;LinkSpoof information file for BASeParser XP
+;Don't worry if you don't have LinkSpoof- I am only going to
+;define obj replacements that perform optimizations in important areas.
+;also, since I suck with C/C++, don't expect me to rewrite, say- RipFormula.
+
+
+
+
+
+
+
+
+[Options]
+; ShowCmd will pop up a message box with the original VB linker
+; command line before processing. This allows you to
+; a) Check the commands and decide what to do with them
+; b) Work with the object files while the message box is open,
+;    e.g. to use DUMPBIN on them.
+ShowCmd=0
+; This allows you to verify which inf file was used and which linker path
+Verbose=1
+; This allows you to specify the path and name of the linker executable.
+; default is LINK0.EXE in the same directory as the LinkSpoof executable
+; (which you named LINK.EXE). Specification of a path is required, the
+; Path environment is not searched nor is System32, System or the AppPaths
+; Registry key. IF you omit the path, the executable must reside in the
+; current directory. However, environment expansion IS performed for this
+; string, so you can use e.g. %COMSPEC% or %SystemRoot%.
+Linker=C:\program files (x86)\Microsoft Visual Studio\VB98\LINK0.EXE
+; Redirection of the Linker's stdout and stderr is default. You can turn
+; it off:
+Redirect=0
+; The default redirection output file is Link.log in the inf directory.
+;OutFile=ExampleLinkOutput.txt
+; Time allowed for the linker process to run, in ms. Default 1 Minute.
+LinkerTimeout=120000
+
+[ReplaceObj]
+; This Section allows you to replace object modules or libraries.
+; Specify the file name only or the complete path as sent by VB on
+; the left side of the equals sign. If and only if a matching file is 
+; found on the command line, the file will be replaced by the right side.
+; If you use a path on the left side, use one on the right, too. Without
+; paths, the replacement will be passed with the path of the original.
+;Helpers.obj=HelpersC.obj
+
+[ReplaceOpt]
+; This section allows you to replace the arguments of existing Options 
+; if and only if they were sent by the caller.
+;JUNK=junk
+;BASE=0x12345678
+
+[Remove]
+; Using the same syntax as the [Append] section, this allows you to remove
+; entries. In the case of file names specified here without a path, the
+; comparison with existing entries compares only the file name portion, that
+; is, a complete path passed in by the caller is removed if only the base name
+; matches.
+;1=VBAEXE6.LIB
+
+[Append]
+; This section alows you to add modules or options to the linker command 
+; line. Use consecutive integers starting with 1 on the left side of the
+; equals sign, and complete options or file names on the right. Everything
+; beginning in a "/" will be treated as option, everything else as a file.
+; Files specified without path will be passed withthe path of this INF file.
+; Options will we replaced instead of appended if already existing, but
+; no corresponding check is made for files. Options will be appended to the
+; end of the command line (unless an existing one is replaced), files will
+; be inserted just before the first existing Option.
+;1=/MAP
+;2=/MAPINFO:EXPORTS
+;3=APP.OBJ
+1=/SWAPRUN:NET
+;2=/PROFILE
+;also, change the stub to my QuickBasic Program.
+;This is included in the "QBSTUB" subdirectory of the BASeParser Source Tree.
+3=/STUB:D:\VBPROJ\VB\BASeParser\W32STUB.EXE
+[Insert]
+; Works just like the [Append] section, except that files are inserted into
+; the beginning of the command line, and new options are inserted just
+; before the first existing option.
+;1=XYZ.OBJ
+;2=/NODEFAULTLIB:LIBC.LIB
+

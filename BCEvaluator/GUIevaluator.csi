@@ -1,0 +1,9 @@
+[History]
+1=#P0#=mb	#P1#=Command2_Click	#P2#=BCEvaluator/GUIEvaluator/Command2_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100422214319	#P7#=0	#P8#=1	.
+2=#P0#=mb	#P1#=Command1_Click	#P2#=BCEvaluator/GUIEvaluator/Command1_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100422214254	#P7#=0	#P8#=2	.
+3=#P0#=mb	#P1#=Picgradient_Click	#P2#=BCEvaluator/GUIEvaluator/Picgradient_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316223713	#P7#=0	#P8#=32	.
+4=#P0#=mb	#P1#=mParser_ExecuteComplete	#P2#=BCEvaluator/GUIEvaluator/mParser_ExecuteComplete	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316223104	#P7#=0	#P8#=5	.
+5=#P0#=mb	#P1#=mParser_Error	#P2#=BCEvaluator/GUIEvaluator/mParser_Error	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316223026	#P7#=0	#P8#=3	.
+6=#P0#=mb	#P1#=Form_Load	#P2#=BCEvaluator/GUIEvaluator/Form_Load	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316122640	#P7#=0	#P8#=6	.
+7=#P0#=mb	#P1#=IParserOutput_Message	#P2#=BCEvaluator/GUIEvaluator/IParserOutput_Message	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100312112354	#P7#=0	#P8#=3	.
+8=#P0#=mb	#P1#=Form_Click	#P2#=BCEvaluator/GUIEvaluator/Form_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100312082018	#P7#=0	#P8#=-1	.

@@ -1,0 +1,2 @@
+BCSH@WriteLn("Hello World");
+BCSH@WriteLn(RANDOM(1,5));

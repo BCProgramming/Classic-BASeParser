@@ -1,0 +1,4 @@
+Line 3: Could not create reference: '{AA770EE7-F7BB-4B85-B3F8-178A21D5CF3F}#2.0#0'.
+Line 18: Class BPControls.VarView of control VarView1 was not a loaded control class.
+Line 24: The property name _ExtentX in VarView1 is invalid.
+Line 25: The property name _ExtentY in VarView1 is invalid.

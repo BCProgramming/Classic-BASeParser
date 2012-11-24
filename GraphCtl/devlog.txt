@@ -1,0 +1,7 @@
+DEVLOG for GraphCtl
+-------------------
+
+3/21/2008 8:02PM
+
+This is the first entry- decided to break separate the data I log about the GraphCtl project into a separate file. Up until now, all the development information about GraphCtl has been mingled in with the core developments. I don't plan to separate out stuff I already wrote within the core devlop into this one, but I decided that a split would be beneficial.
+

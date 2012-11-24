@@ -1,0 +1,8 @@
+STORE(X,{1,2,3,4,5});
+STORE(Y,{5,6,2,4,1});
+STORE(Z,(X+Y)*(X-Y));
+BCSH@WriteLn("Z=");
+BCSH@WriteLn(X);
+BCSH@WriteLn(Z);
+BCSH@WriteLn("Now, how about I cause an error?");
+BCSH@WriteLa(1/1);

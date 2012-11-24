@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--It's been ages since I used my XML to commandbar library....-->
+<MENUSET NAME="popupmenu">
+<MENU NAME="popup" CAPTION="ANOTHER TEST">
+	<MENU NAME="POPUP::TEST" OPERATION="EVALUATE" CAPTION="TEST1">
+		
+	</MENU>
+  
+
+</MENU>
+</MENUSET>

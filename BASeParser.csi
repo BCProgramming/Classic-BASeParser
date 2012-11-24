@@ -1,0 +1,101 @@
+[History]
+1=#P0#=mb	#P1#=InvokeArrayMethod	#P2#=BASeParserXP/ModParser/InvokeArrayMethod	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20120216135922	#P7#=0	#P8#=0	.
+2=#P0#=mb	#P1#=IEvalEvents_HandleFunction	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_HandleFunction	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20120216124741	#P7#=0	#P8#=450	.
+3=#P0#=mb	#P1#=Seq	#P2#=BASeParserXP/ModParser/Seq	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20120216124713	#P7#=0	#P8#=0	.
+4=#P0#=mb	#P1#=RipFormula	#P2#=BASeParserXP/CParser/RipFormula	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20120216200053	#P7#=0	#P8#=1	.
+5=#P0#=mb	#P1#=UpdatePolar	#P2#=BASeParserXP/CComplex/UpdatePolar	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100819020318	#P7#=0	#P8#=0	.
+6=#P0#=mb	#P1#=MakeParsable	#P2#=BASeParserXP/CParser/MakeParsable	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100623203129	#P7#=0	#P8#=93	.
+7=#P0#=mb	#P1#=IEvalEvents_OnInvokeObject	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_OnInvokeObject	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100623185543	#P7#=0	#P8#=45	.
+8=#P0#=mb	#P1#=BuildStack_Infix	#P2#=BASeParserXP/CParser/BuildStack_Infix	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100623005440	#P7#=0	#P8#=127	.
+9=#P0#=mb	#P1#=ParseInfix	#P2#=BASeParserXP/CParser/ParseInfix	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100622182153	#P7#=0	#P8#=93	.
+10=#P0#=mb	#P1#=ParseArguments	#P2#=BASeParserXP/CParser/ParseArguments	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100622162818	#P7#=0	#P8#=1	.
+11=#P0#=mb	#P1#=ParseLocation	#P2#=BASeParserXP/ICorePlugin/ParseLocation	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100621194050	#P7#=0	#P8#=1	.
+12=#P0#=mb	#P1#=CoreOwner	#P2#=BASeParserXP/CFormItem/CoreOwner [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100422223103	#P7#=0	#P8#=14	.
+13=#P0#=mb	#P1#=EvalListener	#P2#=BASeParserXP/CParser/EvalListener [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100422214329	#P7#=0	#P8#=-1	.
+14=#P0#=mb	#P1#=Firstitem	#P2#=BASeParserXP/CParser/Firstitem [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100422214234	#P7#=0	#P8#=1	.
+15=#P0#=mb	#P1#=ImpliedObject	#P2#=BASeParserXP/CParser/ImpliedObject [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100422214231	#P7#=0	#P8#=-1	.
+16=#P0#=mb	#P1#=FirstItem	#P2#=BASeParserXP/CParser/FirstItem [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100422214223	#P7#=0	#P8#=4211	.
+17=#P0#=mb	#P1#=IOperable_PerformFunc	#P2#=BASeParserXP/CParser/IOperable_PerformFunc	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100422214009	#P7#=0	#P8#=-1	.
+18=#P0#=mb	#P1#=ReadPropertyEx	#P2#=BASeParserXP/ModParser/ReadPropertyEx	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100421201128	#P7#=0	#P8#=1	.
+19=#P0#=mb	#P1#=WritePropertyEx	#P2#=BASeParserXP/ModParser/WritePropertyEx	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100421201127	#P7#=0	#P8#=-1	.
+20=#P0#=mb	#P1#=testit	#P2#=BASeParserXP/ModParser/testit	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100421183244	#P7#=0	#P8#=33	.
+21=#P0#=mb	#P1#=IEvalEvents_HandleSubScript	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_HandleSubScript	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100420235058	#P7#=0	#P8#=38	.
+22=#P0#=mb	#P1#=HasMember	#P2#=BASeParserXP/ModParser/HasMember	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100420234220	#P7#=0	#P8#=12	.
+23=#P0#=mb	#P1#=IOperable_ToString	#P2#=BASeParserXP/CDictionary/IOperable_ToString	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100418235302	#P7#=0	#P8#=3	.
+24=#P0#=mb	#P1#=Item	#P2#=BASeParserXP/CDictionary/Item [Let]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100418235129	#P7#=0	#P8#=2	.
+25=#P0#=mb	#P1#=Item	#P2#=BASeParserXP/CDictionary/Item [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100416012214	#P7#=0	#P8#=1	.
+26=#P0#=mb	#P1#=ItemExists	#P2#=BASeParserXP/CDictionary/ItemExists	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100416012051	#P7#=0	#P8#=3	.
+27=#P0#=mb	#P1#=Remove	#P2#=BASeParserXP/CDictionary/Remove	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100416012018	#P7#=0	#P8#=2	.
+28=#P0#=mb	#P1#=Add	#P2#=BASeParserXP/CDictionary/Add	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100416012005	#P7#=0	#P8#=3	.
+29=#P0#=mb	#P1#=IEvalEvents_GetOperation	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_GetOperation	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100416010954	#P7#=0	#P8#=205	.
+30=#P0#=mb	#P1#=Class_Terminate	#P2#=BASeParserXP/CFormItem/Class_Terminate	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100415224650	#P7#=0	#P8#=3	.
+31=#P0#=mb	#P1#=IEvalEvents_GetFunctionFlags	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_GetFunctionFlags	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100415223511	#P7#=0	#P8#=2	.
+32=#P0#=mb	#P1#=CompleteParsedFunctions	#P2#=BASeParserXP/BPCoreOpFunc/CompleteParsedFunctions	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100415222204	#P7#=0	#P8#=8	.
+33=#P0#=mb	#P1#=FilterArray	#P2#=BASeParserXP/ModParser/FilterArray	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100415222022	#P7#=0	#P8#=0	.
+34=#P0#=mb	#P1#=SeqEx	#P2#=BASeParserXP/ModParser/SeqEx	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100415221039	#P7#=0	#P8#=-3	.
+35=#P0#=mb	#P1#=GetOperator	#P2#=BASeParserXP/CParser/GetOperator	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100409093631	#P7#=0	#P8#=21	.
+36=#P0#=mb	#P1#=InvokeDynamic	#P2#=BASeParserXP/ModParser/InvokeDynamic	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100409093440	#P7#=0	#P8#=31	.
+37=#P0#=mb	#P1#=Value	#P2#=BASeParserXP/CVariable/Value [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100325161718	#P7#=0	#P8#=24	.
+38=#P0#=mb	#P1#=GetArrayElementVar	#P2#=BASeParserXP/ModParser/GetArrayElementVar	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325152400	#P7#=0	#P8#=14	.
+39=#P0#=mb	#P1#=GetItem	#P2#=BASeParserXP/CVariables/GetItem	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325150712	#P7#=0	#P8#=11	.
+40=#P0#=mb	#P1#=SetElementArray	#P2#=BASeParserXP/CVariable/SetElementArray	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325150528	#P7#=0	#P8#=1	.
+41=#P0#=mb	#P1#=SetElementEx	#P2#=BASeParserXP/CVariable/SetElementEx	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325150515	#P7#=0	#P8#=-1	.
+42=#P0#=mb	#P1#=Value	#P2#=BASeParserXP/CVariable/Value [Let]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100325150116	#P7#=0	#P8#=27	.
+43=#P0#=mb	#P1#=GetArrayElement	#P2#=BASeParserXP/ModParser/GetArrayElement	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325145814	#P7#=0	#P8#=2	.
+44=#P0#=mb	#P1#=Constant	#P2#=BASeParserXP/CVariable/Constant [Let]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100325145530	#P7#=0	#P8#=-3	.
+45=#P0#=mb	#P1#=mVariables_GetOwner	#P2#=BASeParserXP/CParser/mVariables_GetOwner	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100325145224	#P7#=0	#P8#=2	.
+46=#P0#=mb	#P1#=SetElement	#P2#=BASeParserXP/CVariable/SetElement	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325040718	#P7#=0	#P8#=3	.
+47=#P0#=mb	#P1#=Value	#P2#=BASeParserXP/CVariable/Value [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100325040038	#P7#=0	#P8#=4	.
+48=#P0#=mb	#P1#=CreateVariable	#P2#=BASeParserXP/CVariables/CreateVariable	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325035113	#P7#=0	#P8#=0	.
+49=#P0#=mb	#P1#=Create	#P2#=BASeParserXP/CVariables/Create	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325033649	#P7#=0	#P8#=2	.
+50=#P0#=mb	#P1#=Add	#P2#=BASeParserXP/CVariables/Add	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325033539	#P7#=0	#P8#=13	.
+51=#P0#=mb	#P1#=ICorePlugin_HandleItem	#P2#=BASeParserXP/BPCoreOpFunc/ICorePlugin_HandleItem	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100325033356	#P7#=0	#P8#=32	.
+52=#P0#=mb	#P1#=Exec	#P2#=BASeParserXP/CMExec/Exec	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325033041	#P7#=0	#P8#=5	.
+53=#P0#=mb	#P1#=GetObjectFunctionInformation	#P2#=BASeParserXP/ModParser/GetObjectFunctionInformation	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100325024307	#P7#=0	#P8#=32	.
+54=#P0#=mb	#P1#=PopupMenuEx	#P2#=BASeParserXP/ModParser/PopupMenuEx	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316195942	#P7#=0	#P8#=38	.
+55=#P0#=mb	#P1#=Add	#P2#=BASeParserXP/ExtenderCollection/Add	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316142717	#P7#=0	#P8#=3	.
+56=#P0#=mb	#P1#=DelegateEvent	#P2#=BASeParserXP/ExtenderCollection/DelegateEvent	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316142706	#P7#=0	#P8#=-3	.
+57=#P0#=mb	#P1#=Evt	#P2#=BASeParserXP/BCControlExtender/Evt	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316142637	#P7#=0	#P8#=23	.
+58=#P0#=mb	#P1#=Owner	#P2#=BASeParserXP/BCControlExtender/Owner [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100316142515	#P7#=0	#P8#=1	.
+59=#P0#=mb	#P1#=Init	#P2#=BASeParserXP/BCControlExtender/Init	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316142504	#P7#=0	#P8#=40	.
+60=#P0#=mb	#P1#=IEvalEvents_Name	#P2#=BASeParserXP/FunctionHandler/IEvalEvents_Name [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100316140548	#P7#=0	#P8#=0	.
+61=#P0#=mb	#P1#=IEvalEvents_Init	#P2#=BASeParserXP/FunctionHandler/IEvalEvents_Init	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316140359	#P7#=0	#P8#=6	.
+62=#P0#=mb	#P1#=raiseevt	#P2#=BASeParserXP/CTemp/raiseevt	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316135855	#P7#=0	#P8#=3	.
+63=#P0#=mb	#P1#=DoSinkEvent	#P2#=BASeParserXP/FunctionHandler/DoSinkEvent	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316135528	#P7#=0	#P8#=15	.
+64=#P0#=mb	#P1#=mForm_Load	#P2#=BASeParserXP/BCControlExtender/mForm_Load	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316134730	#P7#=0	#P8#=1	.
+65=#P0#=mb	#P1#=mCheckBox_Click	#P2#=BASeParserXP/BCControlExtender/mCheckBox_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316134633	#P7#=0	#P8#=-1	.
+66=#P0#=mb	#P1#=mCheckBox_KeyDown	#P2#=BASeParserXP/BCControlExtender/mCheckBox_KeyDown	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316133849	#P7#=0	#P8#=4	.
+67=#P0#=mb	#P1#=mCheckBox_GotFocus	#P2#=BASeParserXP/BCControlExtender/mCheckBox_GotFocus	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316133821	#P7#=0	#P8#=2	.
+68=#P0#=mb	#P1#=mCheckBox_DragOver	#P2#=BASeParserXP/BCControlExtender/mCheckBox_DragOver	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316133810	#P7#=0	#P8#=2	.
+69=#P0#=mb	#P1#=mCheckBox_DragDrop	#P2#=BASeParserXP/BCControlExtender/mCheckBox_DragDrop	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316133745	#P7#=0	#P8#=2	.
+70=#P0#=mb	#P1#=IEvalEvents_GetUnaryOperation	#P2#=BASeParserXP/FunctionHandler/IEvalEvents_GetUnaryOperation	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316132327	#P7#=0	#P8#=2	.
+71=#P0#=mb	#P1#=IEvalEvents_HandleFunction	#P2#=BASeParserXP/FunctionHandler/IEvalEvents_HandleFunction	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316130545	#P7#=0	#P8#=6	.
+72=#P0#=mb	#P1#=IEvalEvents_CanHandleFunction	#P2#=BASeParserXP/FunctionHandler/IEvalEvents_CanHandleFunction	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316130509	#P7#=0	#P8#=5	.
+73=#P0#=mb	#P1#=IEvalEvents_AssignSubScript	#P2#=BASeParserXP/FunctionHandler/IEvalEvents_AssignSubScript	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316124902	#P7#=0	#P8#=-3	.
+74=#P0#=mb	#P1#=createObject	#P2#=BASeParserXP/ModParser/createObject	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316122345	#P7#=0	#P8#=10	.
+75=#P0#=mb	#P1#=Create	#P2#=BASeParserXP/CParser/Create	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316121453	#P7#=0	#P8#=25	.
+76=#P0#=mb	#P1#=InitializeParser	#P2#=BASeParserXP/ParserSettings/InitializeParser	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316101549	#P7#=0	#P8#=11	.
+77=#P0#=mb	#P1#=GetPluginProgIDs	#P2#=BASeParserXP/ParserSettings/GetPluginProgIDs	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100316100829	#P7#=0	#P8#=28	.
+78=#P0#=mb	#P1#=Class_Initialize	#P2#=BASeParserXP/CParser/Class_Initialize	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316100522	#P7#=0	#P8#=1	.
+79=#P0#=mb	#P1#=ICorePlugin_ParseLocation	#P2#=BASeParserXP/BPCoreOpFunc/ICorePlugin_ParseLocation	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100316095841	#P7#=0	#P8#=3	.
+80=#P0#=mb	#P1#=IEvalEvents_GetUnaryOperation	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_GetUnaryOperation	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100312121158	#P7#=0	#P8#=17	.
+81=#P0#=mb	#P1#=SortArray	#P2#=BASeParserXP/ModSort/SortArray	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100312112809	#P7#=0	#P8#=6	.
+82=#P0#=mb	#P1#=Array_Frequency	#P2#=BASeParserXP/ModParser/Array_Frequency	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100312112646	#P7#=0	#P8#=21	.
+83=#P0#=mb	#P1#=Array_GetElement	#P2#=BASeParserXP/ModParser/Array_GetElement	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100312112518	#P7#=0	#P8#=5	.
+84=#P0#=mb	#P1#=AddTypelibConstants	#P2#=BASeParserXP/CParser/AddTypelibConstants	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100312111220	#P7#=0	#P8#=35	.
+85=#P0#=mb	#P1#=IDynamicDispatch_InvokeMember	#P2#=BASeParserXP/CObject/IDynamicDispatch_InvokeMember	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20100312111157	#P7#=0	#P8#=20	.
+86=#P0#=mb	#P1#=Variables	#P2#=BASeParserXP/CObject/Variables [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100312110428	#P7#=0	#P8#=-6	.
+87=#P0#=mb	#P1#=ParserObj	#P2#=BASeParserXP/CObject/ParserObj [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100312110417	#P7#=0	#P8#=1	.
+88=#P0#=mb	#P1#=ParserObj	#P2#=BASeParserXP/CObject/ParserObj [Set]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100312110402	#P7#=0	#P8#=2	.
+89=#P0#=mb	#P1#=GetItemIndex	#P2#=BASeParserXP/CVariables/GetItemIndex	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100312083425	#P7#=0	#P8#=9	.
+90=#P0#=mb	#P1#=GetExisting	#P2#=BASeParserXP/CVariables/GetExisting	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100312083333	#P7#=0	#P8#=-1	.
+91=#P0#=mb	#P1#=workaround	#P2#=BASeParserXP/ModParser/workaround	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100216000002	#P7#=0	#P8#=2	.
+92=#P0#=mb	#P1#=CountAfter	#P2#=BASeParserXP/CFormItem/CountAfter	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100204162616	#P7#=0	#P8#=16	.
+93=#P0#=mb	#P1#=ListMembers	#P2#=BASeParserXP/BPCoreOpFunc/ListMembers	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100129081356	#P7#=0	#P8#=21	.
+94=#P0#=mb	#P1#=RegisterComponent	#P2#=BASeParserXP/ModParser/RegisterComponent	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100106130234	#P7#=0	#P8#=5	.
+95=#P0#=mb	#P1#=ExecuteLine	#P2#=BASeParserXP/ModParser/ExecuteLine	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100106124823	#P7#=0	#P8#=-7	.
+96=#P0#=mb	#P1#=GetVersionInformation	#P2#=BASeParserXP/CParser/GetVersionInformation	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100106082705	#P7#=0	#P8#=6	.
+97=#P0#=mb	#P1#=PopP	#P2#=BASeParserXP/CDebug/PopP	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100106081147	#P7#=0	#P8#=15	.
+98=#P0#=mb	#P1#=Post	#P2#=BASeParserXP/CDebug/Post	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100106081007	#P7#=0	#P8#=0	.
+99=#P0#=mb	#P1#=FilterEx	#P2#=BASeParserXP/BPCoreOpFunc/FilterEx	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20100105131534	#P7#=0	#P8#=0	.
+100=#P0#=mb	#P1#=IEvalEvents_Name	#P2#=BASeParserXP/BPCoreOpFunc/IEvalEvents_Name [Get]	#P3#=	#P4#=	#P5#=MembPropertyPrivate	#P6#=20100105131001	#P7#=0	#P8#=-1	.

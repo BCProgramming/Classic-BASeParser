@@ -1,0 +1,1964 @@
+BASeCamp CDebug Class Debug Log output.
+log at 03/17/2009 on GIGATRON as mburgwin at 16:53.30
+################################################################################
+System Info for this session:
+Environment variables:
+
+ALLUSERSPROFILE=C:\Documents and Settings\All Users
+APPDATA=C:\Documents and Settings\mburgwin\Application Data
+CLIENTNAME=Console
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=GIGATRON
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DEVMGR_SHOW_NONPRESENT_DEVICES=1
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Documents and Settings\mburgwin
+include=D:\Programs\Microsoft Visual Studio\VC98\atl\include;D:\Programs\Microsoft Visual Studio\VC98\mfc\include;D:\Programs\Microsoft Visual Studio\VC98\include
+lib=D:\Programs\Microsoft Visual Studio\VC98\mfc\lib;D:\Programs\Microsoft Visual Studio\VC98\lib
+LOGONSERVER=\\GIGATRON
+MSDevDir=D:\programs\Microsoft Visual Studio\Common\MSDev98
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files\backburner 2;D:\programs\Rational\common;C:\windows;C:\windows\system32;C:\windows\system32\wbem;D:\Programs\Microsoft Visual Studio\Common\Tools\WinNT;D:\Programs\Microsoft Visual Studio\Common\MSDev98\Bin;D:\Programs\Microsoft Visual Studio\Common\Tools;D:\Programs\Microsoft Visual Studio\VC98\bin;D:\Programs\IDM Computer Solutions\UltraEdit\;D:\Programs\IDM Computer Solutions\UltraCompare
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 1 Stepping 2, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0102
+ProgramFiles=C:\Program Files
+SESSIONNAME=Console
+STACKS=0,0
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\DOCUME~1\mburgwin\LOCALS~1\Temp
+TMP=C:\DOCUME~1\mburgwin\LOCALS~1\Temp
+USERDOMAIN=GIGATRON
+USERNAME=mburgwin
+USERPROFILE=C:\Documents and Settings\mburgwin
+VS80COMNTOOLS=D:\Programs\Microsoft Visual Studio 8\Common7\Tools\
+windir=C:\WINDOWS
+
+
+################################################################################
+***************BEGIN LOG*******************
+ENTRY #1----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (3.11249995231628,100.5)
+ENTRY #2----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (3.11249995231628,90.4499969482422)
+ENTRY #3----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (3.11249995231628,100.5)
+ENTRY #4----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (6.22499990463257,100.5)
+ENTRY #5----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (6.22499990463257,90.4499969482422)
+ENTRY #6----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (6.22499990463257,100.5)
+ENTRY #7----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (9.33749961853027,100.5)
+ENTRY #8----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (9.33749961853027,90.4499969482422)
+ENTRY #9----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (9.33749961853027,100.5)
+ENTRY #10----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (12.4499998092651,100.5)
+ENTRY #11----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (12.4499998092651,90.4499969482422)
+ENTRY #12----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (12.4499998092651,100.5)
+ENTRY #13----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (15.5625,100.5)
+ENTRY #14----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (15.5625,90.4499969482422)
+ENTRY #15----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (15.5625,100.5)
+ENTRY #16----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (18.6749992370605,100.5)
+ENTRY #17----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (18.6749992370605,90.4499969482422)
+ENTRY #18----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (18.6749992370605,100.5)
+ENTRY #19----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (21.7875003814697,100.5)
+ENTRY #20----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (21.7875003814697,90.4499969482422)
+ENTRY #21----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (21.7875003814697,100.5)
+ENTRY #22----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (24.8999996185303,100.5)
+ENTRY #23----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (24.8999996185303,90.4499969482422)
+ENTRY #24----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (24.8999996185303,100.5)
+ENTRY #25----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (28.0125007629395,100.5)
+ENTRY #26----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (28.0125007629395,90.4499969482422)
+ENTRY #27----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (28.0125007629395,100.5)
+ENTRY #28----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (31.125,100.5)
+ENTRY #29----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (31.125,90.4499969482422)
+ENTRY #30----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (31.125,100.5)
+ENTRY #31----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (34.2374992370605,100.5)
+ENTRY #32----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (34.2374992370605,90.4499969482422)
+ENTRY #33----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (34.2374992370605,100.5)
+ENTRY #34----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (37.3499984741211,100.5)
+ENTRY #35----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (37.3499984741211,90.4499969482422)
+ENTRY #36----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (37.3499984741211,100.5)
+ENTRY #37----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (40.4625015258789,100.5)
+ENTRY #38----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (40.4625015258789,90.4499969482422)
+ENTRY #39----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (40.4625015258789,100.5)
+ENTRY #40----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (43.5750007629395,100.5)
+ENTRY #41----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (43.5750007629395,90.4499969482422)
+ENTRY #42----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (43.5750007629395,100.5)
+ENTRY #43----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (46.6875,100.5)
+ENTRY #44----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (46.6875,90.4499969482422)
+ENTRY #45----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (46.6875,100.5)
+ENTRY #46----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (49.7999992370605,100.5)
+ENTRY #47----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (49.7999992370605,90.4499969482422)
+ENTRY #48----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (49.7999992370605,100.5)
+ENTRY #49----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (52.9124984741211,100.5)
+ENTRY #50----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (52.9124984741211,90.4499969482422)
+ENTRY #51----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (52.9124984741211,100.5)
+ENTRY #52----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (56.0250015258789,100.5)
+ENTRY #53----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (56.0250015258789,90.4499969482422)
+ENTRY #54----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (56.0250015258789,100.5)
+ENTRY #55----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (59.1375007629395,100.5)
+ENTRY #56----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (59.1375007629395,90.4499969482422)
+ENTRY #57----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (59.1375007629395,100.5)
+ENTRY #58----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (62.25,100.5)
+ENTRY #59----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (62.25,90.4499969482422)
+ENTRY #60----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (62.25,100.5)
+ENTRY #61----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (65.3625030517578,100.5)
+ENTRY #62----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (65.3625030517578,90.4499969482422)
+ENTRY #63----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (65.3625030517578,100.5)
+ENTRY #64----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (68.4749984741211,100.5)
+ENTRY #65----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (68.4749984741211,90.4499969482422)
+ENTRY #66----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (68.4749984741211,100.5)
+ENTRY #67----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (71.5875015258789,100.5)
+ENTRY #68----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (71.5875015258789,90.4499969482422)
+ENTRY #69----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (71.5875015258789,100.5)
+ENTRY #70----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (74.6999969482422,100.5)
+ENTRY #71----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (74.6999969482422,90.4499969482422)
+ENTRY #72----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (74.6999969482422,100.5)
+ENTRY #73----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (77.8125,100.5)
+ENTRY #74----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (77.8125,90.4499969482422)
+ENTRY #75----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (77.8125,100.5)
+ENTRY #76----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (80.9250030517578,100.5)
+ENTRY #77----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (80.9250030517578,90.4499969482422)
+ENTRY #78----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (80.9250030517578,100.5)
+ENTRY #79----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (84.0374984741211,100.5)
+ENTRY #80----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (84.0374984741211,90.4499969482422)
+ENTRY #81----------------------------------------
+TimeStamp:03/17/2009 4:53.30 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (84.0374984741211,100.5)
+ENTRY #82----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (87.1500015258789,100.5)
+ENTRY #83----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (87.1500015258789,90.4499969482422)
+ENTRY #84----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (87.1500015258789,100.5)
+ENTRY #85----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (90.2624969482422,100.5)
+ENTRY #86----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (90.2624969482422,90.4499969482422)
+ENTRY #87----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (90.2624969482422,100.5)
+ENTRY #88----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (93.375,100.5)
+ENTRY #89----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (93.375,90.4499969482422)
+ENTRY #90----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (93.375,100.5)
+ENTRY #91----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (96.4875030517578,100.5)
+ENTRY #92----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (96.4875030517578,90.4499969482422)
+ENTRY #93----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (96.4875030517578,100.5)
+ENTRY #94----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (99.5999984741211,100.5)
+ENTRY #95----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (99.5999984741211,90.4499969482422)
+ENTRY #96----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (99.5999984741211,100.5)
+ENTRY #97----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (102.712501525879,100.5)
+ENTRY #98----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (102.712501525879,90.4499969482422)
+ENTRY #99----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (102.712501525879,100.5)
+ENTRY #100----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (105.824996948242,100.5)
+ENTRY #101----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (105.824996948242,90.4499969482422)
+ENTRY #102----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (105.824996948242,100.5)
+ENTRY #103----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (108.9375,100.5)
+ENTRY #104----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (108.9375,90.4499969482422)
+ENTRY #105----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (108.9375,100.5)
+ENTRY #106----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (112.050003051758,100.5)
+ENTRY #107----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (112.050003051758,90.4499969482422)
+ENTRY #108----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (112.050003051758,100.5)
+ENTRY #109----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (115.162498474121,100.5)
+ENTRY #110----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (115.162498474121,90.4499969482422)
+ENTRY #111----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (115.162498474121,100.5)
+ENTRY #112----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (118.275001525879,100.5)
+ENTRY #113----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (118.275001525879,90.4499969482422)
+ENTRY #114----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (118.275001525879,100.5)
+ENTRY #115----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (121.387496948242,100.5)
+ENTRY #116----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (121.387496948242,90.4499969482422)
+ENTRY #117----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (121.387496948242,100.5)
+ENTRY #118----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (124.5,100.5)
+ENTRY #119----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (124.5,90.4499969482422)
+ENTRY #120----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (124.5,100.5)
+ENTRY #121----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (127.612503051758,100.5)
+ENTRY #122----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (127.612503051758,90.4499969482422)
+ENTRY #123----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (127.612503051758,100.5)
+ENTRY #124----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (130.725006103516,100.5)
+ENTRY #125----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (130.725006103516,90.4499969482422)
+ENTRY #126----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (130.725006103516,100.5)
+ENTRY #127----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (133.837493896484,100.5)
+ENTRY #128----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (133.837493896484,90.4499969482422)
+ENTRY #129----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (133.837493896484,100.5)
+ENTRY #130----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (136.949996948242,100.5)
+ENTRY #131----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (136.949996948242,90.4499969482422)
+ENTRY #132----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (136.949996948242,100.5)
+ENTRY #133----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (140.0625,100.5)
+ENTRY #134----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (140.0625,90.4499969482422)
+ENTRY #135----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (140.0625,100.5)
+ENTRY #136----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (143.175003051758,100.5)
+ENTRY #137----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (143.175003051758,90.4499969482422)
+ENTRY #138----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (143.175003051758,100.5)
+ENTRY #139----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (146.287506103516,100.5)
+ENTRY #140----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (146.287506103516,90.4499969482422)
+ENTRY #141----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (146.287506103516,100.5)
+ENTRY #142----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (149.399993896484,100.5)
+ENTRY #143----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (149.399993896484,90.4499969482422)
+ENTRY #144----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (149.399993896484,100.5)
+ENTRY #145----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (152.512496948242,100.5)
+ENTRY #146----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (152.512496948242,90.4499969482422)
+ENTRY #147----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (152.512496948242,100.5)
+ENTRY #148----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (155.625,100.5)
+ENTRY #149----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (155.625,90.4499969482422)
+ENTRY #150----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (155.625,100.5)
+ENTRY #151----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (158.737503051758,100.5)
+ENTRY #152----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (158.737503051758,90.4499969482422)
+ENTRY #153----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (158.737503051758,100.5)
+ENTRY #154----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (161.850006103516,100.5)
+ENTRY #155----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (161.850006103516,90.4499969482422)
+ENTRY #156----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (161.850006103516,100.5)
+ENTRY #157----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (164.962493896484,100.5)
+ENTRY #158----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (164.962493896484,90.4499969482422)
+ENTRY #159----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (164.962493896484,100.5)
+ENTRY #160----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (168.074996948242,100.5)
+ENTRY #161----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (168.074996948242,90.4499969482422)
+ENTRY #162----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (168.074996948242,100.5)
+ENTRY #163----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (171.1875,100.5)
+ENTRY #164----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (171.1875,90.4499969482422)
+ENTRY #165----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (171.1875,100.5)
+ENTRY #166----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (174.300003051758,100.5)
+ENTRY #167----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (174.300003051758,90.4499969482422)
+ENTRY #168----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (174.300003051758,100.5)
+ENTRY #169----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (177.412506103516,100.5)
+ENTRY #170----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (177.412506103516,90.4499969482422)
+ENTRY #171----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (177.412506103516,100.5)
+ENTRY #172----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (180.524993896484,100.5)
+ENTRY #173----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (180.524993896484,90.4499969482422)
+ENTRY #174----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (180.524993896484,100.5)
+ENTRY #175----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (183.637496948242,100.5)
+ENTRY #176----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (183.637496948242,90.4499969482422)
+ENTRY #177----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (183.637496948242,100.5)
+ENTRY #178----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (186.75,100.5)
+ENTRY #179----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (186.75,90.4499969482422)
+ENTRY #180----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (186.75,100.5)
+ENTRY #181----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (189.862503051758,100.5)
+ENTRY #182----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (189.862503051758,90.4499969482422)
+ENTRY #183----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (189.862503051758,100.5)
+ENTRY #184----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (192.975006103516,100.5)
+ENTRY #185----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (192.975006103516,90.4499969482422)
+ENTRY #186----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (192.975006103516,100.5)
+ENTRY #187----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (196.087493896484,100.5)
+ENTRY #188----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (196.087493896484,90.4499969482422)
+ENTRY #189----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (196.087493896484,100.5)
+ENTRY #190----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (199.199996948242,100.5)
+ENTRY #191----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (199.199996948242,90.4499969482422)
+ENTRY #192----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (199.199996948242,100.5)
+ENTRY #193----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (202.3125,100.5)
+ENTRY #194----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (202.3125,90.4499969482422)
+ENTRY #195----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (202.3125,100.5)
+ENTRY #196----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (205.425003051758,100.5)
+ENTRY #197----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (205.425003051758,90.4499969482422)
+ENTRY #198----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (205.425003051758,100.5)
+ENTRY #199----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (208.537506103516,100.5)
+ENTRY #200----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (208.537506103516,90.4499969482422)
+ENTRY #201----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (208.537506103516,100.5)
+ENTRY #202----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (211.649993896484,100.5)
+ENTRY #203----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (211.649993896484,90.4499969482422)
+ENTRY #204----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (211.649993896484,100.5)
+ENTRY #205----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (214.762496948242,100.5)
+ENTRY #206----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (214.762496948242,90.4499969482422)
+ENTRY #207----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (214.762496948242,100.5)
+ENTRY #208----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (217.875,100.5)
+ENTRY #209----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (217.875,90.4499969482422)
+ENTRY #210----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (217.875,100.5)
+ENTRY #211----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (220.987503051758,100.5)
+ENTRY #212----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (220.987503051758,90.4499969482422)
+ENTRY #213----------------------------------------
+TimeStamp:03/17/2009 4:53.31 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (220.987503051758,100.5)
+ENTRY #214----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (224.100006103516,100.5)
+ENTRY #215----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (224.100006103516,90.4499969482422)
+ENTRY #216----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (224.100006103516,100.5)
+ENTRY #217----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (227.212493896484,100.5)
+ENTRY #218----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (227.212493896484,90.4499969482422)
+ENTRY #219----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (227.212493896484,100.5)
+ENTRY #220----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (230.324996948242,100.5)
+ENTRY #221----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (230.324996948242,90.4499969482422)
+ENTRY #222----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (230.324996948242,100.5)
+ENTRY #223----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (233.4375,100.5)
+ENTRY #224----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (233.4375,90.4499969482422)
+ENTRY #225----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (233.4375,100.5)
+ENTRY #226----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (236.550003051758,100.5)
+ENTRY #227----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (236.550003051758,90.4499969482422)
+ENTRY #228----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (236.550003051758,100.5)
+ENTRY #229----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (239.662506103516,100.5)
+ENTRY #230----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (239.662506103516,90.4499969482422)
+ENTRY #231----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (239.662506103516,100.5)
+ENTRY #232----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (242.774993896484,100.5)
+ENTRY #233----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (242.774993896484,90.4499969482422)
+ENTRY #234----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (242.774993896484,100.5)
+ENTRY #235----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (245.887496948242,100.5)
+ENTRY #236----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (245.887496948242,90.4499969482422)
+ENTRY #237----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (245.887496948242,100.5)
+ENTRY #238----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (249,100.5)
+ENTRY #239----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (249,90.4499969482422)
+ENTRY #240----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (249,100.5)
+ENTRY #241----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (3.11249995231628,100.5)
+ENTRY #242----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (3.11249995231628,90.4499969482422)
+ENTRY #243----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (3.11249995231628,100.5)
+ENTRY #244----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (6.22499990463257,100.5)
+ENTRY #245----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (6.22499990463257,90.4499969482422)
+ENTRY #246----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (6.22499990463257,100.5)
+ENTRY #247----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (9.33749961853027,100.5)
+ENTRY #248----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (9.33749961853027,90.4499969482422)
+ENTRY #249----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (9.33749961853027,100.5)
+ENTRY #250----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (12.4499998092651,100.5)
+ENTRY #251----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (12.4499998092651,90.4499969482422)
+ENTRY #252----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (12.4499998092651,100.5)
+ENTRY #253----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (15.5625,100.5)
+ENTRY #254----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (15.5625,90.4499969482422)
+ENTRY #255----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (15.5625,100.5)
+ENTRY #256----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (18.6749992370605,100.5)
+ENTRY #257----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (18.6749992370605,90.4499969482422)
+ENTRY #258----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (18.6749992370605,100.5)
+ENTRY #259----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (21.7875003814697,100.5)
+ENTRY #260----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (21.7875003814697,90.4499969482422)
+ENTRY #261----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (21.7875003814697,100.5)
+ENTRY #262----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (24.8999996185303,100.5)
+ENTRY #263----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (24.8999996185303,90.4499969482422)
+ENTRY #264----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (24.8999996185303,100.5)
+ENTRY #265----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (28.0125007629395,100.5)
+ENTRY #266----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (28.0125007629395,90.4499969482422)
+ENTRY #267----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (28.0125007629395,100.5)
+ENTRY #268----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (31.125,100.5)
+ENTRY #269----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (31.125,90.4499969482422)
+ENTRY #270----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (31.125,100.5)
+ENTRY #271----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (34.2374992370605,100.5)
+ENTRY #272----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (34.2374992370605,90.4499969482422)
+ENTRY #273----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (34.2374992370605,100.5)
+ENTRY #274----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (37.3499984741211,100.5)
+ENTRY #275----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (37.3499984741211,90.4499969482422)
+ENTRY #276----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (37.3499984741211,100.5)
+ENTRY #277----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (40.4625015258789,100.5)
+ENTRY #278----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (40.4625015258789,90.4499969482422)
+ENTRY #279----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (40.4625015258789,100.5)
+ENTRY #280----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (43.5750007629395,100.5)
+ENTRY #281----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (43.5750007629395,90.4499969482422)
+ENTRY #282----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (43.5750007629395,100.5)
+ENTRY #283----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (46.6875,100.5)
+ENTRY #284----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (46.6875,90.4499969482422)
+ENTRY #285----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (46.6875,100.5)
+ENTRY #286----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (49.7999992370605,100.5)
+ENTRY #287----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (49.7999992370605,90.4499969482422)
+ENTRY #288----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (49.7999992370605,100.5)
+ENTRY #289----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (52.9124984741211,100.5)
+ENTRY #290----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (52.9124984741211,90.4499969482422)
+ENTRY #291----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (52.9124984741211,100.5)
+ENTRY #292----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (56.0250015258789,100.5)
+ENTRY #293----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (56.0250015258789,90.4499969482422)
+ENTRY #294----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (56.0250015258789,100.5)
+ENTRY #295----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (59.1375007629395,100.5)
+ENTRY #296----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (59.1375007629395,90.4499969482422)
+ENTRY #297----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (59.1375007629395,100.5)
+ENTRY #298----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (62.25,100.5)
+ENTRY #299----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (62.25,90.4499969482422)
+ENTRY #300----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (62.25,100.5)
+ENTRY #301----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (65.3625030517578,100.5)
+ENTRY #302----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (65.3625030517578,90.4499969482422)
+ENTRY #303----------------------------------------
+TimeStamp:03/17/2009 4:53.32 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (65.3625030517578,100.5)
+ENTRY #304----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (68.4749984741211,100.5)
+ENTRY #305----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (68.4749984741211,90.4499969482422)
+ENTRY #306----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (68.4749984741211,100.5)
+ENTRY #307----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (71.5875015258789,100.5)
+ENTRY #308----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (71.5875015258789,90.4499969482422)
+ENTRY #309----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (71.5875015258789,100.5)
+ENTRY #310----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (74.6999969482422,100.5)
+ENTRY #311----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (74.6999969482422,90.4499969482422)
+ENTRY #312----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (74.6999969482422,100.5)
+ENTRY #313----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (77.8125,100.5)
+ENTRY #314----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (77.8125,90.4499969482422)
+ENTRY #315----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (77.8125,100.5)
+ENTRY #316----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (80.9250030517578,100.5)
+ENTRY #317----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (80.9250030517578,90.4499969482422)
+ENTRY #318----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (80.9250030517578,100.5)
+ENTRY #319----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (84.0374984741211,100.5)
+ENTRY #320----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (84.0374984741211,90.4499969482422)
+ENTRY #321----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (84.0374984741211,100.5)
+ENTRY #322----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (87.1500015258789,100.5)
+ENTRY #323----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (87.1500015258789,90.4499969482422)
+ENTRY #324----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (87.1500015258789,100.5)
+ENTRY #325----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (90.2624969482422,100.5)
+ENTRY #326----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (90.2624969482422,90.4499969482422)
+ENTRY #327----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (90.2624969482422,100.5)
+ENTRY #328----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (93.375,100.5)
+ENTRY #329----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (93.375,90.4499969482422)
+ENTRY #330----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (93.375,100.5)
+ENTRY #331----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (96.4875030517578,100.5)
+ENTRY #332----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (96.4875030517578,90.4499969482422)
+ENTRY #333----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (96.4875030517578,100.5)
+ENTRY #334----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (99.5999984741211,100.5)
+ENTRY #335----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (99.5999984741211,90.4499969482422)
+ENTRY #336----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (99.5999984741211,100.5)
+ENTRY #337----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (102.712501525879,100.5)
+ENTRY #338----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (102.712501525879,90.4499969482422)
+ENTRY #339----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (102.712501525879,100.5)
+ENTRY #340----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (105.824996948242,100.5)
+ENTRY #341----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (105.824996948242,90.4499969482422)
+ENTRY #342----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (105.824996948242,100.5)
+ENTRY #343----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (108.9375,100.5)
+ENTRY #344----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (108.9375,90.4499969482422)
+ENTRY #345----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (108.9375,100.5)
+ENTRY #346----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (112.050003051758,100.5)
+ENTRY #347----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (112.050003051758,90.4499969482422)
+ENTRY #348----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (112.050003051758,100.5)
+ENTRY #349----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (115.162498474121,100.5)
+ENTRY #350----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (115.162498474121,90.4499969482422)
+ENTRY #351----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (115.162498474121,100.5)
+ENTRY #352----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (118.275001525879,100.5)
+ENTRY #353----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (118.275001525879,90.4499969482422)
+ENTRY #354----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (118.275001525879,100.5)
+ENTRY #355----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (121.387496948242,100.5)
+ENTRY #356----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (121.387496948242,90.4499969482422)
+ENTRY #357----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (121.387496948242,100.5)
+ENTRY #358----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (124.5,100.5)
+ENTRY #359----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (124.5,90.4499969482422)
+ENTRY #360----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (124.5,100.5)
+ENTRY #361----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (127.612503051758,100.5)
+ENTRY #362----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (127.612503051758,90.4499969482422)
+ENTRY #363----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (127.612503051758,100.5)
+ENTRY #364----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (130.725006103516,100.5)
+ENTRY #365----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (130.725006103516,90.4499969482422)
+ENTRY #366----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (130.725006103516,100.5)
+ENTRY #367----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (133.837493896484,100.5)
+ENTRY #368----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (133.837493896484,90.4499969482422)
+ENTRY #369----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (133.837493896484,100.5)
+ENTRY #370----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (136.949996948242,100.5)
+ENTRY #371----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (136.949996948242,90.4499969482422)
+ENTRY #372----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (136.949996948242,100.5)
+ENTRY #373----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (140.0625,100.5)
+ENTRY #374----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (140.0625,90.4499969482422)
+ENTRY #375----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (140.0625,100.5)
+ENTRY #376----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (143.175003051758,100.5)
+ENTRY #377----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (143.175003051758,90.4499969482422)
+ENTRY #378----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (143.175003051758,100.5)
+ENTRY #379----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (146.287506103516,100.5)
+ENTRY #380----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (146.287506103516,90.4499969482422)
+ENTRY #381----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (146.287506103516,100.5)
+ENTRY #382----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (149.399993896484,100.5)
+ENTRY #383----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (149.399993896484,90.4499969482422)
+ENTRY #384----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (149.399993896484,100.5)
+ENTRY #385----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (152.512496948242,100.5)
+ENTRY #386----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (152.512496948242,90.4499969482422)
+ENTRY #387----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (152.512496948242,100.5)
+ENTRY #388----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (155.625,100.5)
+ENTRY #389----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (155.625,90.4499969482422)
+ENTRY #390----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (155.625,100.5)
+ENTRY #391----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (158.737503051758,100.5)
+ENTRY #392----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (158.737503051758,90.4499969482422)
+ENTRY #393----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (158.737503051758,100.5)
+ENTRY #394----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (161.850006103516,100.5)
+ENTRY #395----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (161.850006103516,90.4499969482422)
+ENTRY #396----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (161.850006103516,100.5)
+ENTRY #397----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (164.962493896484,100.5)
+ENTRY #398----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (164.962493896484,90.4499969482422)
+ENTRY #399----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (164.962493896484,100.5)
+ENTRY #400----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (168.074996948242,100.5)
+ENTRY #401----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (168.074996948242,90.4499969482422)
+ENTRY #402----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (168.074996948242,100.5)
+ENTRY #403----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (171.1875,100.5)
+ENTRY #404----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (171.1875,90.4499969482422)
+ENTRY #405----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (171.1875,100.5)
+ENTRY #406----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (174.300003051758,100.5)
+ENTRY #407----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (174.300003051758,90.4499969482422)
+ENTRY #408----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (174.300003051758,100.5)
+ENTRY #409----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (177.412506103516,100.5)
+ENTRY #410----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (177.412506103516,90.4499969482422)
+ENTRY #411----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (177.412506103516,100.5)
+ENTRY #412----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (180.524993896484,100.5)
+ENTRY #413----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (180.524993896484,90.4499969482422)
+ENTRY #414----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (180.524993896484,100.5)
+ENTRY #415----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (183.637496948242,100.5)
+ENTRY #416----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (183.637496948242,90.4499969482422)
+ENTRY #417----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (183.637496948242,100.5)
+ENTRY #418----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (186.75,100.5)
+ENTRY #419----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (186.75,90.4499969482422)
+ENTRY #420----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (186.75,100.5)
+ENTRY #421----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (189.862503051758,100.5)
+ENTRY #422----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (189.862503051758,90.4499969482422)
+ENTRY #423----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (189.862503051758,100.5)
+ENTRY #424----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (192.975006103516,100.5)
+ENTRY #425----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (192.975006103516,90.4499969482422)
+ENTRY #426----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (192.975006103516,100.5)
+ENTRY #427----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (196.087493896484,100.5)
+ENTRY #428----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (196.087493896484,90.4499969482422)
+ENTRY #429----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (196.087493896484,100.5)
+ENTRY #430----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (199.199996948242,100.5)
+ENTRY #431----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (199.199996948242,90.4499969482422)
+ENTRY #432----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (199.199996948242,100.5)
+ENTRY #433----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (202.3125,100.5)
+ENTRY #434----------------------------------------
+TimeStamp:03/17/2009 4:53.33 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (202.3125,90.4499969482422)
+ENTRY #435----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (202.3125,100.5)
+ENTRY #436----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (205.425003051758,100.5)
+ENTRY #437----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (205.425003051758,90.4499969482422)
+ENTRY #438----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (205.425003051758,100.5)
+ENTRY #439----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (208.537506103516,100.5)
+ENTRY #440----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (208.537506103516,90.4499969482422)
+ENTRY #441----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (208.537506103516,100.5)
+ENTRY #442----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (211.649993896484,100.5)
+ENTRY #443----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (211.649993896484,90.4499969482422)
+ENTRY #444----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (211.649993896484,100.5)
+ENTRY #445----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (214.762496948242,100.5)
+ENTRY #446----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (214.762496948242,90.4499969482422)
+ENTRY #447----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (214.762496948242,100.5)
+ENTRY #448----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (217.875,100.5)
+ENTRY #449----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (217.875,90.4499969482422)
+ENTRY #450----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (217.875,100.5)
+ENTRY #451----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (220.987503051758,100.5)
+ENTRY #452----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (220.987503051758,90.4499969482422)
+ENTRY #453----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (220.987503051758,100.5)
+ENTRY #454----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (224.100006103516,100.5)
+ENTRY #455----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (224.100006103516,90.4499969482422)
+ENTRY #456----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (224.100006103516,100.5)
+ENTRY #457----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (227.212493896484,100.5)
+ENTRY #458----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (227.212493896484,90.4499969482422)
+ENTRY #459----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (227.212493896484,100.5)
+ENTRY #460----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (230.324996948242,100.5)
+ENTRY #461----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (230.324996948242,90.4499969482422)
+ENTRY #462----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (230.324996948242,100.5)
+ENTRY #463----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (233.4375,100.5)
+ENTRY #464----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (233.4375,90.4499969482422)
+ENTRY #465----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (233.4375,100.5)
+ENTRY #466----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (236.550003051758,100.5)
+ENTRY #467----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (236.550003051758,90.4499969482422)
+ENTRY #468----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (236.550003051758,100.5)
+ENTRY #469----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (239.662506103516,100.5)
+ENTRY #470----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (239.662506103516,90.4499969482422)
+ENTRY #471----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (239.662506103516,100.5)
+ENTRY #472----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (242.774993896484,100.5)
+ENTRY #473----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (242.774993896484,90.4499969482422)
+ENTRY #474----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (242.774993896484,100.5)
+ENTRY #475----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (245.887496948242,100.5)
+ENTRY #476----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (245.887496948242,90.4499969482422)
+ENTRY #477----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (245.887496948242,100.5)
+ENTRY #478----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (249,100.5)
+ENTRY #479----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,90.4499969482422) To (249,90.4499969482422)
+ENTRY #480----------------------------------------
+TimeStamp:03/17/2009 4:53.34 PM
+Severity Class #0():
+Drew a Line from (0,100.5) To (249,100.5)

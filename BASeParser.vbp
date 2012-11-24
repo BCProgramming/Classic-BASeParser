@@ -1,0 +1,220 @@
+Type=OleDll
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{B96BCBE1-F886-11D0-9C63-A06801C10627}#1.2#0#..\..\..\ActiveX\ISHF_Ex.tlb#IShellFolder Extended Type Library 1.2
+Reference=*\G{8B217740-717D-11CE-AB5B-D41203C10000}#1.0#0#C:\Windows\SysWow64\TLBINF32.dll#TypeLib Information
+Reference=*\G{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}#1.0#0#C:\Windows\SysWOW64\msscript.ocx#Microsoft Script Control 1.0
+Reference=*\G{420B2830-E718-11CF-893D-00A0C9054228}#1.0#0#C:\Windows\SysWOW64\scrrun.dll#Microsoft Scripting Runtime
+Reference=*\G{3F4DACA7-160D-11D2-A8E9-00104B365C9F}#5.5#0#C:\Windows\system32\vbscript.dll\3#Microsoft VBScript Regular Expressions 5.5
+Reference=*\G{3181A65A-CC39-4CDE-A4DF-2E889E6F1AF1}#1.51#0#..\..\..\ActiveX\Collected\olelib.tlb#Edanmo's OLE interfaces & functions v1.81
+Reference=*\G{C88FCAC2-DE90-11D3-9876-8517F6B99C68}#1.6#0#..\..\..\ActiveX\Collected\olelib2.tlb#Edanmo's OLE interfaces for Implements v1.51
+Reference=*\G{F5078F18-C551-11D3-89B9-0000F81FE221}#3.0#0#C:\Windows\System32\msxml3.dll#Microsoft XML, v3.0
+Reference=*\G{3AB66159-9752-4726-ACE8-8F9463D05E72}#1.0#0#C:\Program Files (x86)\BASeCamp\BCScript\BCDynaCall.dll#BCFunc Dynamic Function Call Library
+Reference=*\G{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}#1.0#0#C:\Windows\SysWOW64\wshom.ocx#Windows Script Host Object Model
+Reference=*\G{0D452EE1-E08F-101A-852E-02608C4D0BB4}#2.0#0#C:\Windows\SysWOW64\FM20.DLL#Microsoft Forms 2.0 Object Library
+Class=COpStack; COpStack.cls
+Class=CFormItem; CFormItem.cls
+Module=ModParser; ModParser.bas
+Class=CVariables; CVariables.cls
+Class=IEvalEvents; IParseEvents.cls
+Class=IEvalEventSinks; IEvalEventSinks.cls
+RelatedDoc=Devlog.txt
+Class=BPCoreOpFunc; BPCoreOpFunc.cls
+Class=CVariable; CVariable.cls
+Class=ParserGlobals; ParserGlobals.cls
+Class=IOpFuncInfo; IOpFuncInfo.cls
+Class=CFunction; CFunction.cls
+Class=CDebug; ..\MODULES\Class Modules\CDebug.cls
+Class=PointF; ..\MODULES\Class Modules\PointF.cls
+Class=Colour; ..\MODULES\Class Modules\ClsColourp.cls
+Class=Points; ..\MODULES\Class Modules\Points.cls
+Class=CFunctions; Functions.cls
+Module=ModTiming; ..\MODULES\ModTiming.bas
+Class=ISortHelper; ..\MODULES\Code Modules\ISortHelper.cls
+Module=ModSort; ..\MODULES\Code Modules\ModSort.bas
+Class=CSortHelper; ..\MODULES\Code Modules\CSortHelper.cls
+Class=FunctionHandler; FunctionHandler.cls
+Class=CPrimeSieve; ..\MODULES\Class Modules\CPrimeSieve.cls
+RelatedDoc=Readme.txt
+Module=ModDebug; ..\MODULES\Code Modules\ModDebug.bas
+Class=IReturnFormatter; IReturnFormatter.cls
+Class=CComplex; Operables\CComplex.cls
+Module=ModCipher; ..\MODULES\ModCipher.bas
+Class=cStringBuilder; cStringBuilder.cls
+Class=CMatrix; Operables\CMatrix.cls
+Class=IOperable; IOperable.cls
+Class=IDynamicDispatch; IDynamicDispatch.cls
+Class=CObject; CObject.cls
+Module=ModImprove; ..\MODULES\Code Modules\ModImprove.bas
+Class=iSuperClass; ..\MODULES\Class Modules\iSuperClass.cls
+Class=cSuperClass; ..\MODULES\Class Modules\cSuperClass.cls
+Class=ExToolTip; ..\MODULES\Class Modules\ExToolTip.cls
+Class=CParserError; CParserError.cls
+RelatedDoc=LinkSpoof.inf
+Module=ModResData; ..\MODULES\Code Modules\ModResData.bas
+Class=IPluginUIData; IPluginUIData.cls
+Class=ISettingsPage; ISettingsPage.cls
+RelatedDoc=TheSource.txt
+Class=CFraction; Operables\CFraction.cls
+Class=CSet; Operables\CSet.cls
+Class=ICorePlugin; ICorePlugin.cls
+Class=CPlugEnvString; Core Plugins\TestCorePlugin.cls
+Class=ICorePlugins; Core Plugins\ICorePlugins.cls
+Class=CMemState; ..\MODULES\Class Modules\CMemState.cls
+Class=COSVersion; ..\MODULES\Class Modules\COSVersion.cls
+Class=IParserOutput; IParserOutput.cls
+Class=CParser; CParser.cls
+Class=IConfigProvider; IConfigProvider.cls
+Class=OutputHooks; OutputHooks.cls
+Class=cRegistry; clsregistry.cls
+Module=DynaCall; ModDynaCall.bas
+Class=DataStack; ..\MODULES\Class Modules\BStack.cls
+Class=CPlugBackTicks; CPlugBackTicks.cls
+Class=CNaturalSortHelper; ..\MODULES\Class Modules\CNaturalSortHelper.cls
+Module=CmdOutput; CmdOutput.bas
+Class=clsConsole; clsConsole.cls
+Class=CMExec; CMExec.cls
+Class=CINIData; ..\MODULES\Class Modules\CINIData.cls
+Class=ParserSettings; ParserSettings.cls
+Class=BCControlExtender; Core Plugins\BCControlExtender.cls
+Class=CTemp; C:\Program Files (x86)\Microsoft Visual Studio\VB98\CTemp.cls
+Class=ExtenderCollection; ExtenderCollection.cls
+Class=CDictionary; ..\MODULES\Class Modules\CDictionary.cls
+ResFile32="new BASeParser.res"
+Startup="Sub Main"
+HelpFile=""
+NoControlUpgrade=1
+Title="BASeParser"
+ExeName32="BASeParser.dll"
+Command32=""
+Name="BASeParserXP"
+HelpContextID="0"
+Description="BASeParser XP Expression Parsing Library"
+CompatibleMode="1"
+CompatibleEXE32="compat\BASeParser.dll"
+MajorVer=1
+MinorVer=7
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionComments="BASeCamp BASeParserXP Expression parsing Library. Supports Variables, Functions, Operators, addition of functions and operators, etc.."
+VersionCompanyName="BASeCamp Corporation"
+VersionFileDescription="BASeParserXP Expression Parser Library COM component."
+VersionLegalCopyright="BASeParserXP Copyright (C) by Michael Burgwin and BASeCamp Corporation"
+VersionLegalTrademarks=""BASeParserXP" is a Trademark of "BASeCamp", and the unique capitalization of both are (TM) BASeCamp corporation."
+VersionProductName="BASeParserXP Professional"
+CondComp="BASEPARSER = 1 : ENABLESUBSTROPTIMIZATION = 0 : NODEBUGLOG = 1"
+CompilationType=-1
+OptimizationType=1
+FavorPentiumPro(tm)=-1
+CodeViewDebugInfo=-1
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=-1
+UnroundedFP=0
+StartMode=1
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+ThreadingModel=1
+DebugStartupOption=0
+
+[TaskList]
+Num=4
+
+[TASK1]
+Description=DLL functions
+Status=1
+Priority=1
+AssignedTo=Me
+Comment=Add ability to define/Call functions in external DLL's- IE, the API.
+
+[TASK2]
+Description=Event Sinking Direct to CFunction Objects
+Status=0
+Priority=1
+Comment=Allow the handling of COM Object events with CFunction objects.
+AssignedTo=Me
+
+[TASK3]
+Description=Object Access method Addition
+Status=2
+Priority=1
+Comment=Integrate more error handling for when an object access is attempted on methods or properties that don't exist on the given object. Right now it just seems to get on with it...
+
+[TASK4]
+Description=Change settings code
+Status=0
+Priority=1
+Comment=Allow (perhaps via BCSettings library) use of either Registry or INI files, to allow for portable use of the library.
+AssignedTo=
+
+[TASK5]
+Description=
+Status=
+Priority=
+Comment=
+AssignedTo=
+
+[TASK6]
+Description=
+Status=
+Priority=
+Comment=
+AssignedTo=
+
+[TASK7]
+Description=
+Status=
+Priority=
+Comment=
+AssignedTo=
+
+[TASK8]
+Description=
+Status=
+Priority=
+Comment=
+AssignedTo=
+
+[TASK9]
+Description=
+Status=
+Priority=
+Comment=
+AssignedTo=
+
+[TASK10]
+Description=
+Status=
+Priority=
+Comment=
+AssignedTo=
+
+[TASK11]
+Description=
+Status=
+Priority=
+AssignedTo=
+Comment=
+
+[vbAdvance]
+IsConsole=0
+HasStubFile=0
+GenerateMap=0
+TSAware=0
+XPManifest=0
+ResBuildName=.\BASeParser.dll
+ReplaceIcon=0
+SendCommandArgs=0
+SymbDbgPref=0
+RevisionVersion=0
+Exports=ExecExpr=ExecExpr=True;
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[CodeSMART]
+Task_UID=12_03_10_08_16_04

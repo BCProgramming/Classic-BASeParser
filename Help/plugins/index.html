@@ -1,0 +1,59 @@
+<HTML>
+	<HEAD>
+<!--Change relative paths as appropriate-->
+	<LINK REL="STYLESHEET" HREF="..\CSS\topic.css">
+	<SCRIPT LANGUAGE="javascript" SRC="..\SCRIPTS\footer.js"></SCRIPT>
+		<TITLE>BASeParser Help:Plugin Creation</TITLE>
+	</HEAD>
+<BODY OnLoad="showfooter(document.all('bottomdiv'))">
+<H1>Creating BASeParser Plugins</H1>
+<P>
+	One of BASeParser's Strongest advantages over any other Parser I have seen is it's ability to allow you, the application client, to create new, application-specific functions, all implemented in your native programming language. This is how BASeParser implements all the functionality currently defined.<P>
+
+The key to becoming a friend of BASeParser involves several steps, one of which involves editing the Registry (don't worry, I'll make a tool for this when I get tired of doing it myself). The first step is to create your implementation class. I will assist you in creating this implementor. First, I want to point out one thing- you can implement the interface in any class module, or even a form, in any type of project. For this example, I will use the "ActiveX DLL" project type. This way, you can tell BASeParser to load your new extension, even in other programs. Of course- this can cause problems. Which is why we will add this new extension to a "Configuration Set" other then the Default.
+<P>
+To begin, we will need to start Visual Basic. Unfortunately, you will need either the Professional or Enterprise editions of Visual Basic to create And Compile your DLL. Thankfully, however, you can at least test your DLL in the Learning Edition, which is free, if Microsoft hasn't removed it from their site. (If they have, there is probably a way to access "legacy" COM from .NET, and I know they have a free download of Visual Basic .NET Express edition.<P>
+
+<OL>
+<LI> First, you will need to start Visual Basic. Unlike some people seem to do, I will assume that if you have Visual Basic you're smart enough to know how to start it. The second step is to create a new project. If the following dialog doesn't appear when you start VB, select the File->New Menu to display it.<P>
+<CENTER>
+	<IMG SRC="startproj.gif" CAPTION="Start an ActiveX DLL project.">
+</CENTER>
+
+<P>
+for this exercise, I recommend you pick the same project type as I do, the ActiveX DLL. However, you can create any kind you want. Just remember, only the ActiveX EXE and ActiveX DLL component types can be used to add a global set of functions and operators that are added regardless of the application that is using BASeParser.
+<P>
+<LI>
+<P>
+Once you start  this new project, I recommend you save it. I won't be so bold as to tell you what to call it. Let your imagination soar! I advise against calling it names containing expletives. Once you've done that (or not done that) you will need to open the Code Window for the Class1 class Visual basic to helpfully created. And Look! It has the PERFECT name! Class1 makes perfect sense for any purpose. (if you didn't catch that, I was (somewhat unsubtly) asking you to rename the class to something less phorastic. In my example, I will call it "CSampleOpFunc". Oh, and don't forget to name the project. Project1 isn't exactly the perfect project name.<P>
+
+Now that I got that out of the way, you should have the code window for the class open. If you have never used classes before- I hate to say this - Go away. Learn about classes. Polymorphism. Then come back. No room for babies here. Of course, you can always open up my sample project and fiddle with the operators and such to try to create/change those that are there. Open up the References dialog. You'll need to Find a component called "BASeParser XP Expression Parsing Library", as shown in the following picture.<P>
+<CENTER><IMG SRC="references.gif"></CENTER><BR>
+<small>never mind those other references above it in the screenshot. They are awesome. Or, where awesome. <Sniff>. Until the hard drive crashed. &lt;SOB&gt; &lt;SOB&gt;<P>
+
+If you haven't figured it out yet (and I have my work cut out for me if you haven't) you need to put a check in the box next to the BASeParser... Item. How do you do that? Well, it is very complicated, bu I will try my best:
+<OL>
+	<LI>First, you need to find your mouse. This can take a long time, involving trips to the pet store. I'll make it easy for you. Are you right or left-handed? It'll be under that hand. 
+	<LI>Good, you found the mouse. Now, <i>carefully</I> move it. EEEK! that thingy on the screen moved! Ok, calm down, it's OK- thats the <i>mouse pointer</I>. 
+<LI>now, move that pointer, using the mouse right over the checkbox beside the item in question. now- and this is the hard part- take your <i>Index finger</i> (if you have no index finger- never mind.) and carefully depress the <b>left</b> mouse button. It should make a audible click. If not, you probably missed the mouse and hit the mouse pad. Try again. 
+<LI><i>carefully</I> release the pressure you are still applying, and another audible click should occur. Do not raise your finger to fast, or you might punch the ceiling by accident. The small box beside the "BASeParser Expression Parsing library" should have a small check inside. If it does not, you might have accidentally pushed the wrong mouse button during the critical third step. Try again.
+</OL>
+
+OK, back to reality.
+Once you have the reference, you can add the Implements statement to the declarations section:<P>
+
+Implements IEvalEvents
+
+Once you have the implements statement inserted, a new object should appear under the "objects" combobox (upper left combobox). Select it. What we want to do now is create a <i>stub</i> for all the interface methods of IEvalevents. To do so, simply select each 
+method in turn (the <i>right</i> combobox) and enter a single quote comment, this will prevent Visual Basic from removing the procedure believing it to be useless on account of being empty.
+
+
+
+
+<!--Information goes here-->
+
+
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+</BODY>
+</HTML>

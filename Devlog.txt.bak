@@ -1,0 +1,682 @@
+BASeParser Development Log, Started 30/Dec/2006 13:25
+-----------------------------------------------------
+*I'd like to take this opportunity to mention that this development log seems to double as a upgrade log for my computer.
+oh well...
+
+Also, it is a DEVELOPMENT log, not a Changelog. I'll peruse this text later on and make a changelog.
+
+PREFACE:
+
+This is NOT my first Expression Parser/Evaluator. My first one, also named "BASeParser" was actually almost as good as 
+this one (albiet it took about a year to get that way). However, after a series of computer mishaps, I no longer have it's 
+code. In fact, I lost the code to all 4 of my large projects during this time. I will explain this, because, looking back, 
+It is funny. Annoying, but funny. Ok, not funny. Freaky, maybe.
+
+Anyway, I usually kept ALL my Visual Basic files on a small USB thumb drive. Now, I know the importance of back-ups, so I 
+backed up the important stuff off of this key once a week. One day, I decided to open up one of my programs, BCFile. I was 
+greeted, from VB, with a nice "path not found: I:\vbproj\vb\BCFile\BCfile.vbg". I immediately thought that, as usual, the 
+key had for some reason assigned itself the drive letter "G" or "H" as it sometimes does. However, it appeared as I: in 
+windows explorer. I immediately became concerned. Looking in I:\vbproj\vb\, and- I found no BCFile directory! I knew what 
+to do, so, as quick as I could, I copied all the data from the key to a NEW backup folder, on my third hard drive, 
+E:[DAMNDISK] (the reason for the name involves another long-winded explanation about data-loss as well as a CD-RW drive 
+getting fried.). OK, so I had all the data I could grab. or did I? I ran Chkdsk /f (NOT scandisk) on the drive. It found 
+23 megs of lost clusters. I converted them to files, moved the files to E:\CHK, and re-formatted the usbkey. I then 
+assessed the damage I had received. A major blow. what happened was, for some reason, the FAT on the drive thought a 
+crapload of files where only occupying one cluster (4K) of space. thus the lost space. Now I just needed to examine all 
+the files on the backup. My prize program, BASeEdit XP, was completely ruined, with it's main Class gone and the resource 
+file truncated, it seemed obvious that re-writing this over would be easier then fixing this one (although I did put a lot 
+of work into it). another, BASeMetry, suffered fairly heavy damage, with a class representing Polygons was truncated. 
+BCFile, well, I assume the files were there, but the directory was munged up, so I couldn't access them.
+
+With all this extensive damage to a random assortment of files on the disk, I got smart- I used the windows find utility 
+to search for all files that were EXACTLY 4K (4096 bytes) in size. The list was very long. I was very sad. Then began a 
+excruciatingly long process that I would not wish on my worst enemy...
+
+So, had I lost the files? I had no file-recovery tools to speak of. But I did have the chk files. All the data that was 
+truncated from ALL the files was inside those CHK files. But every single CHK file was only one cluster, 4K, in size. So I used the COPY command to append all the CHK files into a big file, which I named, "BIGCHK".(as if the name I chose is relevant here) I then opened this file in editpad. And so began a night-long struggle to recover data.
+
+My first step in each case was to drag one of the 4K files from the search into the editpad window. Then, I would look for 
+something within that file that would be unique. Using that, I would search the BIGCHK file for that string. When it was 
+found, I would grab all the data that belonged to the file and paste it back into the truncated one, save it, close it, 
+and repeat. It worked better then it should have, I got several of my modules and classes back.
+
+This was a monotonous task, but I was determined. If I was to lose my projects, I wasn't going down without a fight. I 
+actually managed to recover two projects completely- BASeParser, my expression parser (Not the one for which I wrote this 
+devlog, as you will see) and BCFile, my File Access component. BCFile, was completely recovered, except for one of the 
+Type libraries it used was truncated. Until I got that type library, I could not use it.
+
+So I managed to recover from that bout OK- all I had left that was usable from BASeEdit XP was it's Logo (how very 
+helpful),as well as a few classes from it. I kept all these old, mostly corrupted files on my E:, third hard disk, becuase 
+I figured since it had NTFS and was freshly formatted, it should be far more reliable then my D: drive, which consistently 
+freezes randomly (Actually, I fixed that since then --Bad sectors--). I decided I would work only from my desktop 
+computer, as the USB key kept failing, and I kept having to pick up the pieces.
+
+So I was working with E: as my code drive. Everything evened out- I accepted the loss of my code. I then decided to see if 
+I could fix the usbkey- it seemed to believe it had bad sectors. I decided to repartition it. I right-clicked the I: drive 
+in disk manager, as one would expect to do. I got the basic warning, "all data blah blah deleted blah". The moment I had 
+clicked OK, I realized what would happen next. It dismounted Drive I:, as it would for any other drive- however, 
+dismounting the key made it disconnect as a drive. I watched the drive dissapear from the Disk management window,the 
+selection move up to my E: drive, and disk management began deleting it's partition. I will not repeat the expletive I 
+uttered at this point. I tried to recover the data by somehow re-constructing the partition information alone. I of 
+course, failed miserably to do so. I re-create the partition, formatted it, and once again, found myself assessing damage.
+All my code was gone, with no hope of recovery, at least, not without an expensive software package. ***looking back now, I didn't try chkdsk /MBR .... but that's from win98- besides, that's tries to fix the Master Boot Record.
+
+
+
+
+
+#1 30/Dec/2006 13:25
+--------------------
+As a result of either a bug in the disk management program or a misclick by me, my entire E: drive got wiped out.
+This means that I have only the code that was in my D:\vbproj directory. As a result, two of my prize libraries, 
+BASeParser and BCFile, have been lost forever. On the bright side, I immediately set to work writing a new BASeParser 
+library. After 9 hours of straight coding (with a short break for food) I have done it. I made a complete replacement for 
+BASeParser. This version however, is purely my code (The old one was based on a Parser by Konrad Rudolph- that is, I took 
+his code and made it good (ha- just kidding.)) although I based the algorithms on those found in the previous version. In 
+addition, I have abstracted both operator and function recognization and execution into a separate interface. This cleans 
+the BASeParser code up considerably, whereas in the old version the Operation and Function Resolution where both in the 
+Parse Stack, which made it difficult to implement custom operator and function resolution. Not to mention the ExecFunct routine 
+was completely irrelevant as far as the Stack itself was concerned.
+
+In short, I think I should be proud of myself. I re-wrote an application that originally took almost a year to build. of 
+course, I didn't work on it every day, but still, this much code in so short of a time, and it works. (Well, as far as I 
+know).
+
+In fact, I'm surprised I set right back to writing it, since I lost EVERYTHING. BASeEdit XP was already a write-off, but 
+at least I could have salvaged code from the parts that were left. Now I no longer have that luxury. So when I finally to 
+start that (that will be AFTER I re-create BCFile.dll), I'll need to rewrite a lot. Thankfully, I still have the awesome 
+VBAccelerator Components that I downloaded, as well as a module, modCmdBarXML, that populates VBAccelerator CommandBars 
+From XML files/Strings, using the MS XML parser. I also lost my CommandLine Parser, but I should be able to toss that out 
+in no time. ***EDIT: I did during a few spare momentson my laptop :)*** I can't seem to escape string parsing, and I have become extremely proficient with the string handling of 
+Visual Basic (not that I wasn't before).
+
+
+#2 31/Dec/2006 3:28 PM
+
+OK, so the BASeParser ENGINE is pretty well completed. All that I need to do now is decide on one thing- do I
+implement all the different core operators/functions in a single internal implementation of the IEvalEvents Interface, or 
+separate them into different modules, like PPCoreArray,PPCoreOpFunc, PPCoreEnviron, etc for (Array,Operator, and 
+Environment variable evaluation respectively). Now, I think that segregating it will make the files themselves harder to 
+manage, but tracking down bugs will be a lot easier. Besides, I get to see if this "plugin" architecture works the way I 
+designed.
+
+Oh, I found a pretty old version of the original BASeParser on my Thinkpad laptop, from a time I tried to document it.
+It is almost a year old, which is sort of satisfying (if it was newer I would suddenly have TWO really good evaluators).
+the good thing is I can borrow the code therin that implements the CallByName function. I totally forgot how to do that. 
+(Read, I'm to lazy to do it AGAIN!). (EDIT:(2/Jun/2007 5:00) Actually, I didn't want to include too many references)
+
+3/Jan/2007 1:00 AM
+
+Working on the BPCoreOpFunc's class. Fixed bugs relating to multi-argument functions (namely, the parsearguments function 
+would return arguments after the first with the comma included). Fixed that. Now I have a new dilemma- Unary operator 
+support. Obviously I'm going to need to delve back into the operator parsing and execution code. I also changed all
+the function return values into ByRef values from subs, so as to allow for Objects to be returned (otherwise, I'd need to 
+make two calls, one on an IsObject, and another to actually retrieve it)- the isobject would be used to determine if Set is necessary.
+
+UPDATE: during the same day I THINK I got unary operators working. Don't be too surprised if you see a new bug arise. I 
+don't really want to call the way I implemented it a hack. What happens is, during the resolution of an operator, it 
+decides that the operator is unary if either it is the first item in the expression or the previous item was a operator. 
+This takes care of functions and brackets, which implement their interior as sub-parser objects, and operators working, 
+such as 5*-1, and 4+-5 and such. I am sure I missed something. I just thought I might have problems with an expression 
+like -(5) and such, but, it turns out, I don't. What the Unary operator does is NOT move itself around on the stack, like 
+the other operators. Since the unary operators precedence is essentially the same as the value with which it is paired, it 
+stays put, so you get a stack like this, before the BuildStack_InFix Procedure runs through:
+(this is for "5+-70")
+
+(IT_VALUE,5) (IT_OPERATOR,+) (IT_OPUNARY,-) (IT_VALUE,70)
+
+the BuildStack_Infix rearranges the operators according to their precedence. Their precedence is derived via calls
+from the plugins. Higher precedence plugins will always have their operators listed first, and they will be called first, 
+as well. In this case, the only operator is the +, which, upon encountering, the Stack fixer pushes onto a temporary, 
+operator stack. after looping through the remaining elements, it pushes all the values from the operator stack back onto 
+the parse stack, ending up with:
+
+(IT_VALUE,5) (IT_OPUNARY,-) (IT_VALUE,70) (IT_OPERATOR,+)
+
+This may look impossible to collapse (evaluate), because the unary operator has no idea about what it is supposed to act 
+on (since when the loop iteration is at the unary op it still has not reached the IT_VALUE for which it is paired)
+however, due to a clever scheme, the IT_OPUNARY does not handle it right away- instead, it sets a module level variable, 
+which is a event sinker for the ParseStack, as well as another variable that holds the current parse item (which is the 
+unary operator's CFormItem). Then, when something happens which Pushes something onto the stack (say, a function is 
+evaluated, a variable is pushed, a value is pushed, whatever- the DataStack raises this event, we catch it, and already 
+know the context of execution- and simply call the EvalListeners Unary evaluation, and return that in the ByRef DataStack 
+Event parameter. (Of course, being able to change the code in the DataStack enabled this event to appear. (I can change it 
+because it's mine).
+
+-after getting the basic "-" operator to work, I discovered that it wouldn't work with the Unary NOT operator. The fix? 
+well, I traced the bug into the ParseValue function. the string it returned was NOT4 (my expression was NOT 4). I 
+concluded that for some reason the MakeParsable Function was not re-adding spaces to the NOT operator. Turns out the 
+entire problem was within my BCoreOpFunc class. the Constant that had all the operators ended with NOT, but there was no 
+space at the end, so the class was returning that it didn't recognize the operator (it searches for " " & Operator & " "), 
+or, " NOT " which it can't find. fixed it by adding a single space to the end of the constant. lo and behold, Not 5 is -4!
+
+
+Wednesday January 03, 2007
+
+Work for today on BASeParser- implement more functions. This Parser seems much better then my previous one- the previous 
+one included all sorts of hacks, because I was working with what was not originally my own code. Not to mention the Sinks 
+for operator and function implementation where completely messy hacks. They worked great, but that didn't change the fact 
+that the engine was not originally designed for it. It was like putting a Jet engine in a Volvo (No pun to the Jet 
+Database engine intended). I designed this one from the ground up to NOT have a single implementation detail inside the 
+parser- it simply knew how to parse the syntax of an expression. It would then pass on how
+to execute the Stack it thus created to external classes. Of course, core stuff, like +,- and a bunch of VB functions, are 
+implemented internally in a Implementor that is automagically added to the CParser class upon create().
+
+BUG FIX:
+found a bug in ParseArguments. A REALLY stupid one. seems that it only looked for the VERY next "," - so if a argument to 
+a function contained another function call with multiple arguments- it wouldn't work right. I fixed it by moving a If 
+block that for some reason tested for an impossible condition (it was checking if Char="(" right AFTER the case that 
+confirms it ISN'T a ")". Now it seems that Array values can contain even MORE arrays.
+
+BUG FIX:
+found ANOTHER stupid bug. this time, inside RemoveExtraneousSpaces. it is supposed to add stuff to a buffer- but at one 
+point instead of appending I simply replaced what was there.(I smart) It also added one too many to the value being used to
+pass through the string.
+
+BUG FIX:
+
+not really a bug fix- just a feature not working as intended. the Unary operators, upon being executed, where setting a 
+module level variable and a event sink. However, if two unary operators were encountered in a row, only the most recent one
+would be present when the next value was pushed on the stack (thus triggering the event). I fixed this by adding each 
+unary operator to a module level stack. when the event occurs, the stack is emptied, with each operator on it being 
+executed on the value being pushed. It worked on a expression like "not -sizeof ""TEST"", which returned 3, or (NOT -4)
+good.
+
+BUG FIX:
+
+Geez! A lot of bugs are surfacing. This one had to do with MakeParsable and RemoveExtraneousSpaces, in Cparser.cls. the 
+functions were not properly handling strings and ended up placing spaces within the string literals themselves. This 
+occured when I first tested the GetFileDateTime function, which had problems getting the path of a file named "C: \ 
+Autoexec.bat" (not surprisingly) I fixed it by adding the very pervasive inquote variable.(If you looked through my code, 
+you'd know what I mean)
+
+
+NEW IDEA:- implementation in progress.
+add new exposed interface- IOpFuncInfo. this can be requested via a call to the getinfoobject method of the IEvalEvents 
+interface.
+
+**(EDIT:30/Jun/2007 20:59)**
+**That IOpFuncInfo interface is really old now. :))
+
+
+6/Jan/2007 23:56
+
+UPDATE: finished the previously mentioned idea a few days ago. Now I have a fully functional parser. All that is left to 
+do now is touch it up. I think the sample app will be a re-write of my old standby, Grapher. Grapher used my REALLY old 
+BASeParser, which didn't support either arrays or strings. It hacked in it's own support for lists, which was REALLY 
+kludgy. It ran alright, but it suffered from really bad design. Even I had trouble navigating the dialogs.
+
+
+FINALLY- I removed those god forsaken GoSub references. I had no idea they were slowing my code down as much as they were!
+I initially tested a really long expression, 5+5+5+.... etc for about 600 5's, and it took almost 3 seconds to execute. 
+Now, it occurs in less then one one hundredth of a second.
+
+9/Jan/2007 22:18
+
+Just when I think I packed too many features into BASeParser, I think of another one to add! (Good thing I don't need to
+re-version it after release, given the Plugin stuff)- for example, I was reading HardCore Visual Basic, and read his 
+reference to Pascal's In operator and his creation of an analogous function in VB, which lacks such a operator. Now 
+BASeParser has an IN operator.
+
+10/Jan/2007 2:49
+
+I've decided to implement some more direct debugging techniques. It'll be annoying, but I'll add a MODULE_NAME const to 
+every module, PROCEDURE_NAME const to every procedure, and a global var CurrModule and CurrProc, that have the current 
+module and procedure names. to further enhance such an effort, I will manually keep track of the Stack. Of course, 
+multiple exits in my procedures will make this less then easy. Here goes...
+
+10/Jan/2007 8:08
+
+I just thought of a better way to implement implicit multiplication. I decided before that I couldn't do it without 
+severely screwing up my current Object method/property access- for example, my idea was to simply insert a new IT_OPERATOR 
+multiplication operand when I encounter a IT_OPENBRACKET immediately after another. (well, it wouldn't be (( since the 
+parser creates child parsers for those- so it would be like this:
+
+
+(2+3)(7-2)
+
+would have a * inserted...
+
+(2+3)*(7-2)
+
+I began implementing this while thinking about how it would regress- then I realized- what if the previous subexpression
+ended up evaluating as a Object? Since you cannot multiply objects (unless it is a class Called CRabbit :)) they must want 
+this next set of parentheses to denote a parameter list to the default method of that object.
+
+After giving up on that idea, I eventually realized that I could implement it.
+
+The trick is to give the client the ability to choose between "Default Object Methods" and "Implicit Multiplication".
+
+11/Jan/2007 3:27
+
+I was going to go to sleep about two-three hours ago. I finished a OK Console App in FreeBasic that uses my library, and 
+found a bug in my library. a VERY shameful bug. the IN operator was being parsed out of the SIN function, so a innocent 
+expression:
+Sin(8+2)
+Would become:
+S in (8 + 2)
+**EDIT:30/Jun/2007 21:02- notice the single apostrophe right below? I wonder why I put that there?**
+**Anyway- if a bug like this Sin() bug arose today, I would probably cry. Mostly because I hate when the same problems **resurface. I want to SQUISH the bugs, not let them multiply. Geez.**
+
+'which- well, is NOT what they wanted, I imagine. I surmounted this obstacle with a new interface function, 
+GetHandledFunctionString, which I parse and compare. If I find a function during the iterations (a function name followed 
+by a "(", I plop it on the buffer (along with a "(") and zero out the char value).
+
+11/Jan/2007 19:19
+
+I just realized what regression testing is for, after this two hour debug session.
+quite some time ago, I added the ability to define operators that are any string.
+I added the IN operator some time ago. What I forgot to test was what happens when I use the SIN function,
+the function that removes and adds spaces didn't skip function names. So I added that- when it encounters
+ a function name(by checking the functions defined in a new method for the interface, (getHandledFunctionString))
+it will skip it. this is important, because if it is allowed to iterate through the consituent characters, it might find a 
+string within the function name that is also a operator (IE, the SIN function has IN, the STORE has OR, and other stuff)
+
+That was the bug I fixed yesterday. What I forgot to include yesterday was a similiar mechanism for variables. I did it- 
+but it will only work if that variable has been added already- IE: IEvalEvents implementors need to
+add the appropriate variables (regardless of value) to the parsers array of variables.
+
+You know those debugging days that simply don't go your way? Well, today was one of them for me.
+of course, I did find & fix a bunch of problems. I use the word "fix" pretty warily here, because I often end up causing
+all sorts of problems on the other side of my program when I kludge out some other bug.
+
+12/Jan/2007 16:50
+
+My next task will be a pretty neat one, I think- it will require another IEvalEvents implementor- FunctionHandler. This 
+will be responsible for managing the custom Cfunction objects that will exposed via the CParser class. These functions are 
+simple one-line expressions, with the Alphabet being used to denote the parameters. The basic idea here is actually for my 
+own benefit- the first program I intend to write that uses the Parser is a Graphing application. It will of course allow 
+you to name functions and graph them, and as such one function should be allowed to reference any other function.
+
+
+13/Jan/2007 17:00
+
+Wow. I just squashed another bug in the parser. It was somewhat odd, to be honest, and confused me a heck of a lot.
+I forget the exact function location of the bug (regardless of the fact I just fixed it) but it was in one of the many 
+Select Case Statements that determine the type of a CFormItem. the IT_FUNCTION types were not being placed onto strBuffer 
+(oh wait- it was ParseValue). Also, I found that my recent change to ParseArguments didn't allow for single,one character 
+arguments due to a incorrect Len test of "If Len(arguments(0)) <=1" where that 1 should be a zero, to test for empty 
+parentheses, which are a required part of the syntax. I tested it with a varied expression just to be sure:
+
+{1,2,3,4,5}@MEAN()*Sin(2)
+
+This was the expression I initially found the problem with, and so was a perfect candidate to see it I fixed it. (No, I 
+didn't find the error via a incorrect single value- This should have returned a single value, but (this is very strange) 
+it returned an array- (2,2.5,3,3.5,4,4.5) from 2 incrementing 1/2 each time. This left me bewildered, it couldn't have 
+been more wrong. I might have understood if it returned the Sine of the values 1,2,3,4,5 in an array, which would have 
+indicated a problem with the Object Access @ operator calling Mean to reduce the array into a single value- but no, it was 
+a completely different value that made absolutely no sense whatsoever. I only wanted to fix the problem- perhaps I should 
+have looked into the cause of that mysterious Array return? Oh well. It seems to work fine now- rest assured, the next log 
+entry will quite possibly contain ANOTHER major bug, I'm going to do some more testing right now, and I feel quite 
+confident that I am not confident in the program just yet.
+
+13/Jan/2007 17:25
+
+Surprise. No less then ten seconds later, I found a terrible, fatal, horrible, awful, crappy problem. I want object access 
+operators to work- the way it DID work was it would set a flag, and then the method/function after the @ would be found as 
+either a function or variable. I changed a bunch of code to support other things, so now it only supports methods that 
+also happened to be intrinsic functions. I fixed this.
+
+15/Jan/2007 0:56
+
+I have made a decision as to BASeParser- No third party controls as long as I can help it. (This doesn't count the common 
+controls or other components that CAME with Visual Basic- just the VBAccelerator CommandBar, which I wanted to use for pop-
+up menus. (Say, a POPMENU() function or something) But, I think that if I DO add that it would be best added as a separate 
+as BPXP) knows is the syntax of an expression, how literals and values are separated by operators and used in functions. All of these operators and functions are contained in external "plugins". For convenience, the Core Function and operator implementations are included in Internal plugins that are automatically loaded when the Parser Object is initialized. In addition to this supreme form of extensibility, BPXP supports what I could only think to call "Core Plugins" These Core plugins are called upon during the very Core Parsing routines, and deal with the same data structures I do within the innermost guts of the library. The purpose? To provide the ability to create new token TYPES. For example currently this is how the Core list support (using the squiggle brackets) {} is implemented.
+
+
+
+
+1/Jul/2007 19:15
+
+Sigh. The last few days I haven't really even been able to OPEN BASeParser's project. Not because Visual Basic is busted or anything, but because my video card was (is?) having problems. It all started when I installed MotoCross madness. Then all of a sudden all of my DirectX based games were having problems. AOE2 gets a garbled screen every 30 to 40 seconds. Sure, I can fix it with a Alt-Tab, but that is far from quick to do. Another instance with Need for Speed:High Stakes with Windows apparently detecting and recovering from a device failure, sticking me into 16 colours. Great. So I tried a few things:
+
+Uninstalled MotoCross madness (Duh) 
+	(no effect)
+Reinstalled Video Drivers from the CD that came with it.
+
+interesting thing is I can't use the actual XP drivers for the card, because if I do that it get's stuck in an infinite loop when drawing the windows desktop after about 30 to 45 minutes of working perfect. Don't know why. Quite annoying. So (I did this when I first installed the video card too, and it worked for the last year...), was copy the Windows 2000 version of the file ati2dvag.dll over the XP version that was installed on my hard drive (of course, in safe mode). 
+This just made it worse. Doom Legacy (a kickass OpenGL port of Doom) worked for a while and then froze. surprise- Device failure. Hmmm. I tried various convolutions of XP and 2000 drivers (even using all Windows 2000 versions). Then I had a idea. The cause of the problem was Motocross madness (OK, I had to think back, I couldn't remember the first instance of the problem, but I remembered it was motocross madness). But that was back in the bad old days of DirectX, when half of the worlds problems were caused by having a corrupt installation (since a crapload of programs would assume that the version they use is the newest one available). The solution was to reinstall 9.0c from my Command And Conquer DVD (thank goodness it was there!) Not sure if it works. Also not sure why I put this completely unrelated information in the develop ment log for BaseParser.
+
+7/Jul/2007 18:01
+
+Fixed an IPF yesterday. THe solution involved adding a err.clear to the end of a procedure. The problem was that even though no error occured err was not zero, and so the calling proc got confused and ended up using TLI to invoke the member improperly. Thus causing an IPF.
+
+31/Jul/2007 19:30
+
+	I haven't really managed to get a lot of coding done in the last month. The main reason is computer hardware problems. I've been trying to decipher the problems for a long time, and it's getting annoying to say the least.
+  Although I did learn that my motherboard is high-end for it's age. The problem? Well, first, I suddenly couldn't play DVD's for more than, say 20 Minutes. I attributed this to my Video card- since I installed MotoCross madness I had been having all sorts of problems with DirectX. All My OpenGL games worked fine though. Well, Mostly. Then, suddenly, Every once in a while, my third Hard drive would make some, well, Scary noises, then Drive E: would vanish without being prepared for removal, same with the DVD drive. For some reason, I attributed this entirely to the hard drive, Even though it is likely the IDE controller.
+My solution? Well, I've found that the problems seem to occur only when I access both devices on the second channel simultaneously, so I have two possible solutions:
+
+	1: get an PCI-IDE controller card, plug the drive and DVD into it, and disable the secondary IDE controller on the motherboard. See if that fixes the problem, if not, the drive and DVD drive simply don't like each other.
+
+	2: Buy another Hard drive, the exact same one- a WD Caviar SE (80GB). Remove the other one, and install the Data Lifeguard tools to D:. Then, to a Partition copy from my crappy C: drive (2GB- Woop!). This will become my primary Boot drive. This will solve another problem I have, since my current WD Caviar has been subverted from 80GB to 36.2GB due to limitations on my BIOS. I'd update it, but with my luck the upgrade would freeze halfway, there would be a power failure, brownout, or something to cause my BIOS to be corrupt. In addition, I'd also solve my extremely low disk space problem on C:, which, as I write this, has around 80 megabytes free.
+
+Current		New
+C: 2GB		C: 80GB
+D: 8GB		D: 40GB
+E:36.2GB	E: 40GB		(D and E: partitions of old E:, with drive overlay program installed)
+F: DVD		F: DVD
+G: CD-RW	G: CD-RW
+
+This won't be a simple upgrade, and the possibility of losing a crapload of data is just so great I almost HAVE to back up my Work files, since whenever I act on something like this, I always lose all my VB code (a copious amount, BTW)
+I'll update this devlog as appropriate with an entry when I do this, as well as after. First I back up all my stuff.
+What worries me is the Drive Overlay program I need to use to access the drives as 80GB. I need one to be accessed with the DTD, but the other natively (IE, with 36GB) so I can copy the contents of the other one to the 80GB. The question is, will the DDO (from WD's Data Lifeguard tools) let me do this? In fact, will the DDO even WORK?
+
+
+20/Aug/2007 17:52
+
+	Added Oops- read "Adding" ability to address functions and specifying the plugin name. For example, BPCoreOpFunc.Sin() should be valid.
+
+22/Aug/2007 2:24
+
+Ha! It seems to work now. I stress seems. The problem I was having before was not that RipFormula couldn't parse it properly, but that MakeParsable was ironically making it so RipFormula() COULDN'T parse it. too funny. Anyway, it  seems to work now. Not sure about any regressional effects.
+
+23/Aug/2007 2:29
+
+Ah! I finally thought of a feature worth implementing- Events fired from the Plugins, and handled via set BASeParser "Event Expressions". For example, a keyboard watcher Plugin could install events named "KeyPush" and "KeyRelease". subsequently a Core routine, InstallEventHandler() could install an event handler for an event.
+
+
+most of the new code will deal with the new data structures involved. For example, a CEvent and CEvents Class and collection, as well as code therein. In addition to, of course, the code that runs the CEvent's CFunction.
+
+ROADBLOCK: realized I already HAVE this ability- the appropriate code can be installed as a CFunction object into FunctionHandler, and called THAT way.
+
+26/Aug/2007 20:58
+
+Darn. Now I have nothing to add. Looks like I might actually have to try to get existing code to work for once. darn :).
+
+
+4/Sep/2007 1:10
+
+Sigh. Another entry that has very little to do with BASeParser, and much to do with my Video card/Driver. Haven't been able to play DVD's reliably for a while now, and DirectX started having the same problem. Now my OpenGL games are displaying corrupted video after a while. Sigh. I know! I'll get a new Video Card. probably won't help though...
+
+-realized a quirk with the manipulation of Arrays. The parser converts the List delimiter tokens, { and }, into a call to the Array Function. I purposely don't qualify this with BPCoreOpFunc. Why? Well, now if for some retarded reason you want to override the Default operation (which is to make an array out of the elements) you can. Why you would want to do this I don't know, but the ability is there.
+
+
+10/Sep/2007 8:58
+	ANOTHER redundant entry. replaced my RADEON 7000 64MB AGP (which replaced my ATI Rage Pro Turbo AGP2x 8MB) with a new Radeon 9250. Cool. In a interesting quirk, I have JUST realized that the drivers on it's CD might have entries for my All-in-Wonder 9000 AGP. which is good, because this 9250 is a PCI card, and, well, I just can't stand to leave my AGP slot empty. (not to mention the freeing of a PCI slot that I don't have to insert a TV tuner into, since I eould have one built right into the card :)
+
+17/Sep/2007 23:08
+
+	reverted InvokeDynamic code to it's previous form- code was err-ing in situations where it shouldn't. Will work
+on this problem tomorrow, right now I am just too darn sleepy.
+
+18/Sep/2007 9:11
+
+	I'm BACK! and refreshed. Not only did I sleep for a full- um- 5 hours... (not sure WHY I couldn't sleep any further). anyway, I Was browsing through my extensive library of code (not all mine), and discovered FileSystemLib, a library from KillerVB that used to be slightly worse then my Library (Mine could also do pop-up menus for files, although it lacked in about a million other departments. Anyway, I browsed through the code for useful tidbits, and came upon some code dealing with SafeArray's. long story short, I can now retrieve the dimensions of a Variant into a SafeArray. retrieving them and setting them is all I need to discover.
+
+I also fixed a few syntactic errors in the different projects in the group that were preventing a Shift+F5.
+
+
+2/Oct/2007 5:27
+
+new stuff on the way:
+
+	Ability to load plugins dynamically via a Function (InstallPlugin and LoadPlugin functions- both as CParser Methods for clients as well as part of the Core Operators/Functions.
+
+a big one: Macros. Some may think, yeah- a macro is just a variable. But, I must disagree. a Macro will NOT even be visible within the resulting Parse Stack. Rather, the Core Plugin (yes, a core plugin will be used to implement Macros) will simply use the ParseLocation Function override. If it finds a macro definition, it will insert the macro's expression into that location (replacing, of course, the existing reference to the macro) and return False to indicate it didn't do anything, and move the current parse location back one character (so the Parser re-examines the location that had the macro) The Parser will then re-parse the macro. exemplary. Of course, this means there needs to be a way to define macros. Damn.
+
+10/Oct/2007 5:15
+
+wow, I actually thought of an idea! ByRef parameters. Currently the Parser simply discards the changed array from it's call to the handlers.
+
+UPDATE: Cool, another single-day feature addition. Now I simply need a way for functions to specify that a parameter is ByVal.... oddly enough, too, ByVal is FASTER then ByRef- weird? no- because I'm forced to manually copy the new values back into the original variable. Oh, and assignment doesn't work for array elements yet. I lied just now. Well, not when I wrote it. It works now. One problem though- I used the assignment operator := and it didn't work! I had to use store.
+
+
+
+11/Oct/2007 18:36
+
+Managed to trace the assignment operator problem to some kind of priority problem. For example, this expression doesn't work:
+
+X:=4/2*Sin(y)
+
+However, simply adding parentheses fixes this:
+
+X:=(4/2*Sin(y))
+
+that's weird- because I've set the assignment operator to the lowest priority!
+
+
+
+11/Oct/2007 20:28
+
+I swear, this one feature has been on the list of TODO:\\ since the start, and only once have I even come close: DLL function calls. I mean, it can't be difficult- After all, Every single DLL declaration in VB is invoked this way (IE, an error is raised when you Call a non-existent function, not when you compile) and The Virtual machine DLL exposes DLLFunctionCall. I just don't know the parameters. this is so very annoying. Anyway, Now that I have By Reference parameters, I need a way to prevent the logic from running. The solution? the FunctionInformation! Simply define a new field for Parameters- "PARAMTYPE" or something.
+
+
+16/Oct/2007 4:54
+
+	mostly cleaned up a bit of the code. Noticed some conditional compilation in ModImprove (which contains my improvements on VB functions) that really wasn't necessary, since I could move the functions used within the block into the ModImprove module (none of them depended on BASeParser functionality). These two functions were Flatten and Assign. I have moved them. yet to see any regressional bad behaviour.
+
+finally fixed up the code. IT_STATEMENT was so simple and yet I gave up so easily before- It is now implemented in Ripformula, with each statement simply being stored in a fashion similiar to IT_SUBEXPRESSION. in fact, in all fairness, I could probably make RipFormula change the Itemtype to IT_SUBEXPRESSION instead of IT_STATEMENT and it would still work. In any case, IT_STATEMENT's are always executed in order, but only when they appear on the same level of the expression. the last expression's result is used as the return value. (NOTE: perhaps it should return an Array consisting of the return value of each IT_STATEMENT? I don't know....
+
+18/Oct/2007 20:21
+
+Sigh. Everything is in order, except for the issue of DLL calls, but in general that isn't exactly high on the priority list. sure, if I develop a dll or find a way to do it, of course I'll add it. In the meantime, I'll stick to more attainable feature sets.
+
+Had an interesting debug session- I tried to give it garble, but it still parsed it- I had an expression consisting of some random stuff, and it parsed out VARIABLE names and operators! makes sense too!
+
+
+23/Oct/2007 4:04
+
+Thank god for small favours- I finally got the internet, but not exactly through the proper channels. It was as easy as purchasing a wireless network adapter. Seems at this point none of my neighbours know what a "password" is. On the up side for them, I don't exactly plan on hogging it or sabotaging it at all, right now I just want to activate the programs I bought that won't work until I do so, and use MSN to tell the story to my cousins, whom I haven't had contact with in over a year. THANK GOD. although the card wasn't cheap- almost 70 bucks. compare that to the meagre 14 dollars I paid for the network card in my other computer (so I can play network games with this one- or, could, until I removed my standard NIC.)
+
+28/Oct/2007 20:44
+
+ANYWAYS: thanks to Internet access, I managed to find a somewhat incomplete class module for calling Functions Dynamically.
+needs some work though, and I would have preferred if it included the ASM code. Right now, I simply chucked a new function, DLLFunction() that will add a API function. One up-side is that the functions parameters don't need to be defined (I know, it IS weird...) Although it will only work with API functions that return long's. I haven't found a API function that doesn't, however. (the API uses the return code for success state, it appears.
+
+So, For example, the following BPS (BASeParser Script) will return the activeWindow's hWnd:
+
+DLLFUNCTION("user32.dll","GetActiveWindow");GetActiveWindow();
+
+I lied. That didn't work. Just returned zero. Although GetActiveWindow() did work as a expression afterward.
+
+-BUGFIX: discovered the cause of the above. turns out it was a simple "Type Mismatch" in the IsFormItemConstant Function when the passed parameters are empty (Lbound/UBound on a Empty Variant). Added Error Handling to return False. Fixed.
+
+
+31/Oct/2007 8:04
+
+I think I'll make this my first milestone release. Step one: find an Installer Maker program.
+
+15/Nov/2007 17:34
+
+Did some Internet Searches for Evaluators, to see what the competition has. And the answer is, "Not Much". I did find several libraries, most notably USPExpress from UBISoft. The disadvantage, of course, is that is costs $149. BASeParser XP (At least how I plan for the foreseeable future) is Free. Or it will be, once I start F-ing distributing it. This is always the hard part. I think I'll use good old "Advanced Installer", because I found it to be quite versatile when I tried it before.
+
+25/Nov/2007 20:10
+
+A fairly large bugfix has been implemented. Turns out I only, err, kind of Half Supported implied multiplication. Revised the code during Ripping of the formula to detect when certain items (IT_FUNCTION,IT_VALUE,etc...) occur immediately after each other.
+
+Speaking of which, I'm pondering a new addition in the area of formula ripping, for handling the occurence of multiple operators between expressions. For example, 5+*2
+the question is- what does it get turned into? (5+2)*2? probably best to abandon such an effort for fear of promoting ambiguity.
+
+I'm also someone curious as to the actual speed of the parser- sometimes it just seems slow. I'm trying to excuse it for many reasons:
+
+1. My computer is 350Mhz
+2. There is way to much debugging code- with file logging and so forth (probably the main reason)
+3. so much must occur within the parse and execution for all the different scenarios (IE: Object access)
+
+
+27/Nov/2007 13:45
+
+Discovered a few simple optimizations I can easily make. The problem is with a few of the Case Statements in RipFormula.
+For example, some will go as such:
+
+Case Function()=Value
+	TempVal=Function()
+
+See the Problem! Function() (that isn't  the name, but rather ParseValue,GetOperator, Etc...) is being called TWICE. what makes it worse is that these functions are some of the more expensive low-level parsing functions to execute. the question is how do I optimize it? Simple. use a new Store() function that stores a value in a ByRef Variable And returns that value. That way, the only time the function is called is as an argument to that function, and not once for the test and again to use the result. I guess this is a bit of an idosynchrisy of the Select Case Block, but nonetheless...
+
+Also, Discovered a bug in the parsing of a value. for example, some thing like 2t should not be interpreted as a variable name. Since the Variables.Add method will scream bloody murder. Not sure why this is occuring. I believe it may be a result of my support of Hexadecimal being so haphhazard.
+
+28/Nov/2007 1:11
+
+Gave some older features some regression testing. Strings still work and Objects still work. The test expression? Right here:
+
+CREATEOBJECT("Scripting.FileSystemObject")@GetFile("C:\AutoExec.bat")@SIZE()
+
+which returned zero. Silly me, I thought there was an error, and then I was debugging and got to the point where BASeParser uses TLI to call the function and realized that everything was A-OK. the file was just, well, empty. This is XP, after all.
+
+
+2/Dec/2007 20:12
+
+
+Unexpected delays deploying BASeParser onto my test machine. First the sample app crashes with a Object defined or Application defined error, next I go to test the DLL as it exists on my W2k Machine. And find that it hangs on the call to Create(). having a hunch this may have something to do with the registry, I go back to my dev machine and do a debug run after deleting the keys. Lo and behold, it goes to the error handler because an Array wasn't initialized. And what do I find there? A Debug.Assert. And a Resume Statement!
+
+2/Dec/2007 20:36
+TODO:\\ Fix-up InvokeDynamic Function to prevent intermittent IPF.
+
+4/Dec/2007 2:53
+
+InvokeDynamic Bug discovered and fixed. Turns out that the error was actually NOT intermittent, but rather occured whenever the parameter list to a object member was empty. For example with the Scripting.File object's Size(). I had already re-written InvokeDynamic before I discovered this though. However, the new function implementation is much cleaner, requiring only a single loop. Oh, and it doesn't IPF ( :) ).
+
+18/Dec/2007 8:16
+
+tweaked up the parsing of the Subscript operator ([) to recognize an empty argument list and set the Value property of
+that cFormitem to a uninitialized array. As such, it is now a simple task within a plugin to determine wether a empty subscript was passed and act appropriately- for example, now the expression:
+
+"I like words, even looooooong ones."[][5] 
+
+will return "looooooong", since the core operator/functions handling of strings with array access will split a string into a array of words with empty parentheses. note that the above expression differs from this one:
+
+"I like words, even looooooong ones."[5]
+
+which returns the fifth character in the string, or "k". I've even successfully done this:
+
+"Words are great and good too"[][3][2,2] 
+
+which returns "re" or the string 2 chars long starting at position 2 of the third word.
+
+all in all this parser is really becoming quite powerful, I'm still a bit wary of instability issues that may arise.
+
+6/Jan/2008 18:52
+
+I STILL have yet to actually publish BASeParser on the web. Actually, right now, my access to the net seems to be cut-off at the router. This happens usually when there is a power spike or outage, and I did notice my lights flicker earlier in the day, so I'll just hang tight for a while, just like last time.
+
+In any case, I haven't completely stopped development work on BASeParser, although I seem to be in one of my non-programming phases. It happens with me every few months. I seem to stop programming, preferring, well, almost anything else. For example, I have started playing the Megaman series again on my old DOS/Win 3.11 laptop. 
+
+I did, however, manage to get my plugin, CScriptFunctions, working properly. I actually pretty much re-wrote the implementation. Originally it would load ALL scripts into the same Script Control object. I have changed this. Now a Key exists in the registry for each Script control to be created,(with a name that ideally describes the files therein). The key contains a "language" value, which is used on the Language property of the ScriptControl created for the section. the "Scripts" section contains values for each Script file that should be loaded. 
+
+The actual implementation of the feature within the BASeParser Plugin was easy. The tricky part was the creation of the UI widget that implements the ISettingsPage interface required by the BASeParsert Library's Configuration Page. (I did manage to fix a bug within the settings page involving the use of height instead of Scaleheight. Took almost three hours to trace the problem of why I couldn't see the tabs for the plugins.). Why was it so hard? Well, I really don't like programming the GUI part. Of anything. It seems I always overlook a lot of stuff. for example tab order. speaking of which.... there. Never mind I fixed the tab order, well, at least on the userControl...
+
+Improvements to be made:
+
+As is, the Script Function Plugin is fairly versatile, but, ideally, it would support more functionality. For example, what if the desire is to have several files in different sections with a function of the same name? As it stands now, no error would occur, but the Plugin will only use the first ScriptControl it finds in the collection of script controls for any call to the function. specifically, adoption of the dot notation, as in, SectionName.FunctionName would be useful, and probably quite easy to implement directly in the script control (which is good, I don't want the parser's core routines  associating with such vermin :P.
+ 
+
+16/Jan/2008 17:08
+
+New modification to the CDataFunc external library plugin. this is a plugin that is used to load functions from a database when the plugin loads. The original design loaded all the functions at once into the CParser objects Functions collection. I decided that that would not do. 
+
+6/Feb/2008 4:43
+
+Due to the fact that I released it on the net, I have incremented the version number of the current development project of baseparser. Why this requires mention I don't know.
+
+In Any case, I've been scouring the net for Expression evaluation related stuff.(mainly downloads to other VB made parsers, or even VB.NET. Personally, I have VB.NET installed, but, I don't think it'll become usable until I upgrade to a new computer. I've been stowing away money in my bank account for quite some time, living on tea and sandwiches from work. And I have just realized that this saving is due almost entirely to the weather! But, back to the whole purpose of this devlog. It's SUPPOSED to be about BASeParser XP, not a frikkin' personal journal.
+
+TODO list:
+
+	- Either fix or remove the substring parsing. right now it's enclosed in some conditional compilation, as I have yet to get it working.
+
+	Probably a good idea to create some more GUI components, for example, one for defining functions would be useful in the Graphing control I created.
+
+
+3/26/2008 3:07AM
+
+Note to self: when making backups, ensure to label them as such. I had a complete duplicate of my code tree (D:\VBPROJ") placed on my E:\ drive as E:\VBPROJ, and
+when I went to copy the files to my new computer, I copied from the E:\ drive. (I thought I was working on E:...). Then when I got the project working and started fixing stuff that came up,
+I got a strange sense of Deja-vu- I had fixed the problems ALREADY!. Took me a few days to figure it out. Main giveaway was the BPCoreOpFunc.cls file size being over 10k larger with the one on the old D: drive.
+and that is how I revived it!
+
+04/02/2008 1:44AM
+
+well, I have a week off starting today, so as better get some coding done, I suppose. Anyway, I thought of a novel plugin to write: a plugin that
+allows Scripts to be plugins! This would be fairly simple- just delegate all the calls to the loaded Script Plugins.
+
+
+05/17/2008 8:13 AM
+
+I've finished (untested as of yet, however) the Script Plugin architecture. Now the major hurdle is the SettingsPage Implementor that will be loaded into the Configuration dialog. 
+
+For now I'm going to simply release (in the loosest sense of the word) just the Core library itself, without all the extra fluff I've added. The first distro will just be a ZIP file with the requisite files, leaving actual installation to the end user (hows that for respect?) I generally falter when it comes to setup, despite the fact that it really is easy with Visual Studio 2005.
+
+ Before I do that though, I'm going to make sure the setup program can properly install it without the dreaded "ActiveX component can't create object" error occuring.
+
+05/20/2008 3:52 PM
+
+New feature in the works: a new interface method, BeforeFunctionCall, that will be called on all IEvalEvents implementors, allowing interception of function calls or redirection of the Interface method to another implementor.
+
+
+Finally completed implementing the CSet Class' interface methods for Evaluation. I programmed in all sorts of convolutions to recognize a "SetOf {<set values>}". Then, I realized something- JUST MAKE IT A BLOODY UNARY OPERATOR! It took over 2 hours to code the ICorePlugin Interface methods, and yet in the last ten minutes I extended the functionality and wrote it from scratch with just the IEvalEvents Operators....
+
+
+If I'm ever going to release this library I'm going to need one tome of a doc!
+
+
+05/26/2008 8:13 PM
+
+Now that BASeParser is essentially complete, I need to program in some security features. Although I highly doubt that anybody would target BASeParser for the creation of malware (IE, a implementor that doesn't do anything Parser-wise, but sits in the background and monitors stuff). Not sure how to go about it though...
+
+
+05/27/2008 6:04 PM
+
+very useful feature to implement- a more generalized method of changing the settings of plugins from code. As it stands now, a client would need to know the registry keys, INI files, or whatever else is used to change any of those settings. This would be fine, except that plugins could change their behaviours based on these settings (makes sense) and perhaps cause incompatibilities with the way the client wants the expressions to be parsed. Instead, it should stand to reason that there be a generalized way for client code to automatically change the settings of a plugin, without necessarily requiring in-depth knowledge of where it is stored.
+
+06/05/2008
+
+new feature that will make use of some of the advanced COM classes I have- the sinking of events from any source with a CFunction object.
+
+12/10/2008
+
+Alright; there is NO way i's been 6 months since I updated this devlog... alright so checking the last modified time confirms that it has. Huh. Anyway- I've been making quite
+a few changes to several parts of BASeParser, and neglected to document them.
+
+The first change came as a result of my inability to create a small console application that used it's facilities for simple on the spot parsing; after some testing,
+I managed to get the program to run flawlessly, but only when I had BASeParserXP running (the DLL) in the IDE. Odd!
+
+A few hours of code sleuthing later (involving my very forward thinking use of OutputDebugString() in my CDebug class, as well as DebugView) and the placement of some 
+CDebug.Post methods; the problem was very vexing; when running in the IDE, the Create() method properly executed and added all necessary plugins. However, when I compiled the library, no amount of coazing was able to get it to
+load even the basic BPCoreOpFunc plugin. with the CDebug.Post methods littered about, and some error printing in those portions that shouldn't fail, I managed to trace the problem
+to a exact line in IEvalEventSinks; namely, this one:
+
+ParserSettings.VerifyPlugin GetObjectProgID(ObjAdd)
+
+the strange part was, placing a debug print in VerifyPlugin or GetObjectProgID, they never appeared. The error was occuring trying to call GetObjectProgID; the error was
+"Object doesn't support this property or method". It's as if the getobjectprogID routine didn't accept Object parameters; which it did, in fact it only supported object parameters.
+Another mystery was why everything was howdy-doodee in the IDE; my first thought was of course optimization options; no dice.
+
+I never solved the mystery, but I decided that the VerifyPlugin call was a bit overzealous; obviously an error will be raised if I was to try to add a object that didn't support IEvalEvents so I was a bit premature to presuppose otherwise at that point.
+
+the fix was to comment out the code. I have a feeling something along these lines will crop up again, though. But with my enhanced debugging output it will be even easier to trace the problem into the problematic parts of the code.
+
+12/11/2008
+
+Fixed Multiple statement parsing; now it could even be used as a programming language... a slow one, but a language nonetheless.
+
+Right now performancec is sub-par, I hope that is caused mostly by the rampant CDebug.post method calls; each one writes to the log file and stores quite a bit of data about the call.
+with any luck execution without the debugging facilities enabled will be far faster.
+
+01/19/2009
+
+Made a few tweaks and improvements, and added some better error handling for non-existent Object methods (I had a If reversed).
+Started BCScript Script program interpreter- works well. Command line prog.
+
+
+02/03/2009
+
+Another couple tweaks here and there- added some implementation to the BPCoreOpFunc function Cases- INSTALLPLUGIN,UNINSTALLPLUGIN,LOADPLUGIN, etc.
+I've decided (At last) that this WILL be the first release version, just as soon as I find a place to post it.
+
+02/05/2009
+
+ALRIGHT... finally created what I believe to be a working installer program for it- installs and uninstalls fine. Only installs BASeParser and the BCScript Scripting engine; will probably add some simple little program to demonstrate BASeParser itself, though.
+
+thought of a change to make while I was reading about javabeans somewhere- automatic use and detection of methods with names such as "setX" and "getX"- for cases where that object doesn't have a "X" property for reading/writing. (Obviously, this will be in the InvokeDynamic routine)
+
+
+02/11/2009
+
+New feature- "importing" of constants from external typelibs. This will likely require a new object type, CEnumeration, which will implement IOperable and possibly hook Variable accesses.
+
+** Feature implemented, Minor Version number incremented.
+
+the functionality is quite basic, however...

@@ -1,0 +1,56 @@
+items enclosed in "{}" indicate references I am planning to add.
+BASeParser XP Core:
+
+References:
+
+Typelib Information
+Microsoft Script Control 1.0
+Microsoft XML, v3.0
+Microsoft Scripting Runtime
+Microsoft VBScript Regular Expressions
+
+TLB: (no need to redistribute, but required for code)
+Edanmo's OLE interfaces & functions v1.81
+Edanmo's OLE interfaces for implements v1.51
+
+
+BPControls:
+
+References:
+
+	BASeParser XP (and all it's dependencies)
+	{BASeMetry}
+	DirectX 8 for Visual Basic Type Library
+
+Components:
+	Edanmo's Color Picker & Palette Controls v 1.05
+	Microsoft Windows Common Controls 6.0 (SP6) (planning to replace with VBAccelerators respective controls)
+	VBAccelerator VB6 SGrid Control 2.0
+	VBAccelerator VB6 VS Tab Control
+
+BPCoreFunc
+References:
+BASeParser XP (and it's dependencies)
+Microsoft ActiveX Data Objects 2.7 Library
+Microsoft ADO ext 2.8 for DDL and Security
+Microsoft Script COntrols 1.0
+Typelib Information
+Microsoft Add-In Designer (designer not required at run-time)
+
+TLB:
+IShellFolder Extended Type Library 1.2 (replace with OLELIB reference)
+
+
+
+
+
+
+BPXPGUI
+References:
+
+BASeParserXP
+BASeCamp Extended File Access Objects - PRERELEASE
+Typelib Information
+components:
+VbAccelerator VB6 Multi-Column TreeView Control
+vbAccelerator VB6 VS Tab Control

@@ -1,0 +1,31 @@
+BASeParser XP: Source code overview
+
+
+HI! thanks for downloadign BASeParser XP! this document will try to help you understand what's going on in the BASeParser XP code, as well as the different parts.
+
+WHAT YOU NEED:
+--------------
+
+Although the Core library has few external references (aside from those likely to already exist on your machine), the other components of BASeParser, including the GUI components, use a few ActiveX controls from http:\\www.VBAccelerator.com
+If you wish to modify the source, you'll need these controls. I use are the Visual Studio Tab control. However, if you are a VB programmer (which is kind of a prerequisite for changing my code), you'll find all sorts of goodies here. Unfortunately, I didn't find this site until I made my own home-grown solutions to some of them, such as his CommandBar control (OK, so I called mine MenuCtl, and it simply displayed the menu.- An interesting note is that Steve McMahon and I both used Paul Dilascia's Q & A column on the Internet Explorer Menu in a ReBar control.). Don't expect me to release my source, since- erm- I don't have it. I lost all of my Visual basic code, save a few modules, due to a accidental drive repartition. Well, actually, it was sparked by a sort of a bug in the Disk Management utility. Irregardless, I have rewritten BASeParser and a few of my other components, so I'm back on my feet as far as coding goes.
+
+ENVIRONMENTS 
+-------------
+You'll also need Visual Basic 6.0 (duh), I used the VB6 specific functions quite a lot throughout the parsing code. If your using VB5, you could probably simply add a module with the functions, but since VB5 cannot return string arrays from functions (except in a Variant), you'll still need to change a lot of parsing code that depends on Split(). In retrospect, it probably would have been best to make the code dependent on my own parsing routine that used Split() if available. But, then again, VB6 is 9 years old, and if worst comes to worst you can get the learning edition. Also, it follows that if it doesn't open in VB5, the same holds true for VB4. Why would I want it to work on VB4? Well, mostly for completeness, since then I could claim Windows 3.1. But, there's no way I'll convert it, not only would I need to remove all the VB6 specific stuff, I'd also need to convert all the Early-Bound Interface stuff into Late-Bound Object methods. Not pretty. Of course, you can still reference my built DLL from VB5 and VB4 projects, although I haven't tested, well, either. I'll shut up now, this is all irrelevant nonsense.
+
+
+THE CORE
+--------
+
+Of course, the core engine of BASeParser XP is in the BASeParser XP project. This project contains all the interfaces and classes that implement the evaluation functions, including handling plugins as well as the core plugins added to every CParser object. I have attempted to remove all forms from this library in an attempt to allow for the extra options in the Project Properties dialog box. To do this, I created a new ActiveX control project, BPXPGUI. When you call, for example, the CParser Objects "Configure" method, it instantiates a public class of the ActiveX Control project, and calls it's Show method- the Show method, in turn, shows a instance of FrmConfig to the user. The Core project also contains a few classes that implement IOperable for such things as the Complex number support and matrices.
+
+
+THE UI
+------
+
+	Generally, BASeParser wouldn't have a UI, since it just performs a service for your programs. However, after adding all sorts of configuration registry entries, I decided to create a method by which any application can display the settings for the Parser. I do this via two interfaces  and a interface method. IPluginInfo can be optionally implemented by IEvalEvents implementors, and if the respective interface method returns a valid reference to a IPluginInfo object, that object will be queried for the progID of the ActiveX control that is used to change the settings, this control must implement the ISettingsPage interface in BASeParser XP. Right now, I have a simple interface control for the Core plugin, which doesn't really have any settings. Also, a option will be added for a Tray Icon, with an additional Right-Click Menu of course supplemented by the BASeParser GUI component, and The VBAccelerator CommandBar Control)
+
+External Plugins
+----------------
+
+While those Plugins included in the Core are usually added automatically to each instantiated instance of CParser, external plugins must be configured via the registry.

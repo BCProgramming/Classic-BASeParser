@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<!-- this File will be embedded in the BASeParser Executable as a resource.-->
+<FUNCTIONINFO>
+	<FUNCTION NAME="COBJECT" DESCRIPTION="Creates and returns a new CObject Instance.">
+	</FUNCTION>
+    <FUNCTION NAME="FRAC" DESCRIPTION="Creates a fraction given either a numerator and denominator or a decimal value." HELPRESOURCEID="FRAC.HTML">
+    <PARAMETER NAME="Numerator" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Numerator of the fraction. If this is a decimal value, a acceptable whole     number will be found with a denominator less than or equal to the denominator passed."/>
+    <PARAMETER NAME="Denominator" TYPE="NUMBER" ISOPTIONAL="TRUE" DESCRIPTION="Denominator of the fraction. If the passed Numerator is a decimal value, however,     this will represent the highest allowable denominator for the fraction to find."/>
+
+    </FUNCTION>
+	<FUNCTION NAME="SIN" DESCRIPTION="Returns the Sine of a number." HELPRESOURCEID="SIN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Sine is to be calculated."/>
+	
+	
+	</FUNCTION>
+	<FUNCTION NAME="COS" DESCRIPTION="Returns the Cosine of a number." HELPRESOURCEID="COS.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Cosine is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="TAN" DESCRIPTION="Returns the Tangent of a number." HELPRESOURCEID="TAN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Tangent is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="SEC" DESCRIPTION="Returns the Secant of a number." HELPRESOURCEID="SEC.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Secant is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="ASIN" DESCRIPTION="Returns the ArcSine of a number." HELPRESOURCEID="ASIN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose ArcSine is to be calculated."/>
+	</FUNCTION>
+	
+	<FUNCTION NAME="ACOS" DESCRIPTION="Returns the ArcCosine of a number." HELPRESOURCEID="ACOS.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose ArcCosine is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="ATN" DESCRIPTION="Returns the ArcTangent of a number." HELPRESOURCEID="ATN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose ArcTangent is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="ASEC" DESCRIPTION="Returns the ArcSecant of a number." HELPRESOURCEID="ASEC.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose ArcSecant is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="HSIN" DESCRIPTION="Returns the Hyperbolic Sine of a number." HELPRESOURCEID="HSIN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Hyperbolic Sine is to be calculated."/>
+	</FUNCTION>
+	
+	<FUNCTION NAME="HCOS" DESCRIPTION="Returns the hyperbolic Cosine of a number." HELPRESOURCEID="HCOS.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Hyperbolic Cosine is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="HTAN" DESCRIPTION="Returns the Hyperbolic Tangent of a number." HELPRESOURCEID="HTAN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Hyperbolic Tangent is to be calculated."/>
+	</FUNCTION>
+	
+	<FUNCTION NAME="HASIN" DESCRIPTION="Returns the Hyperbolic ArcSine of a number." HELPRESOURCEID="HSIN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Hyperbolic ArcSine is to be calculated."/>
+	</FUNCTION>
+	
+	<FUNCTION NAME="HACOS" DESCRIPTION="Returns the hyperbolic ArcCosine of a number." HELPRESOURCEID="HCOS.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Hyperbolic ArcCosine is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="HATN" DESCRIPTION="Returns the Hyperbolic ArcTangent of a number." HELPRESOURCEID="HTAN.HTML">
+	<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose Hyperbolic ArcTangent is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="HASEC" DESCRIPTION="Returns the Hyperbolic ArcSecant of a number." HELPRESOURCEID="HASEC.HTML">
+		<PARAMETER NAME="NUMBER" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="The number whose hyperbolic ArcSecant is to be calculated."/>
+	</FUNCTION>
+	
+	
+	 <FUNCTION NAME="SEQ" DESCRIPTION="Creates a array containing a sequence of values using an expression, variable to change within the aforementioned expression, an initial value, a end value, and an optional Step." HELPRESOURCEID="SEQ.HTML">
+	 	<PARAMETER NAME="Expression" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Expression used to create the sequence each iteration."/>
+	 	<PARAMETER NAME="Varname" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Variable name to cycle from Start to end. Generally, this is found within the Expression argument."/>
+	 	<PARAMETER NAME="Start" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Starting value for 'Varname' argument."/>
+	 	<PARAMETER NAME="End" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Ending value for 'Varname' argument."/>
+	 	<PARAMETER NAME="Step" TYPE="Number" ISOPTIONAL="TRUE" DESCRIPTION="number used to increment 'Varname' after each iteration. if not provided, defaults to"/>
+	 	
+	
+	 </FUNCTION>
+	<FUNCTION NAME="SEQEX" DESCRIPTION="Creates a List of values with the given parameters, which include a initial value, and expression to perform, the name of the variable to increment, the expression used to change the variable, and an expression that,  when true, will terminate calculations." HELPRESOURCEID="SEQEX.HTML">
+	<PARAMETER NAME="Expression" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Expression that operates on the given variable name for each iteration."/>
+	<PARAMETER NAME="VarName" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Name of the variable to use."/>
+	<PARAMETER NAME="InitialValue" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Initial value to assign to VarName"/>
+	<PARAMETER NAME="IncrementExpression" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Expression executed each loop and whose result will be assigned to the given variable name."/>
+	<PARAMETER NAME="TerminateExpression" TYPE="Direct" ISOPTIONAL="FALSE" DESCRIPTION="Expression executed each loop. If the return is non-zero (true) the loop is terminated and so are further calculations. The current result will be returned at that point."/>
+	</FUNCTION>
+	
+	<FUNCTION NAME="ABS" DESCRIPTION="Returns the absolute value of a number." HELPRESOURCEID="ABS.HTML">
+		<PARAMETER NAME="Value" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Value whose absolute value is to be returned."/>
+		
+	
+	</FUNCTION>
+	<FUNCTION NAME="ARRAY" DESCRIPTION="Given a list of arguments, returns a Array whose elements correspond to the passed parameters." HELPRESOURCEID="ARRAY.HTML">
+		<PARAMETER NAME="Elements" TYPE="ParamArray" DESCRIPTION="a number of parameters corresponding to elements in the array."/>
+	
+	</FUNCTION>
+	<FUNCTION NAME="ASC" DESCRIPTION="Returns the ASCII code of the first character in the passed string." HELPRESOURCEID="ASC.HTML">
+		<PARAMETER NAME="StrFrom" TYPE="String"/>
+		
+	
+	</FUNCTION>
+	<FUNCTION NAME="CHOOSE" DESCRIPTION="Returns a value from a selection of items depending on the value of the first argument." HELPRESOURCEID="CHOOSE.HTML">
+		<PARAMETER NAME="INDEX" TYPE="NUMBER" DESCRIPTION="Value used to index into the following arguments."/>
+		<PARAMETER NAME="Choosables" TYPE="ParamArray" DESCRIPTION="Array of items indexed into by 'Number' to return the appropriate value."/>
+	</FUNCTION>
+	<FUNCTION NAME="CHR" DESCRIPTION="given the ASCII number, returns that character.">
+	<PARAMETER NAME="AsciiVal"/>
+	</FUNCTION>
+	<FUNCTION NAME="CREATEOBJECT" DESCRIPTION="Creates a Object given it's programmatic Identifier (ProgID)">
+	<PARAMETER NAME="ProgID" TYPE="String" DESCRIPTION="ProgID of the object to create."/>
+	</FUNCTION>
+	<FUNCTION NAME="CVERR" DESCRIPTION="Converts a number to a variant of subtype Error."/>
+	<!--DateAdd(Interval,Number,Date)-->
+	<FUNCTION NAME="DATEADD" DESCRIPTION="Adds a given Number of Intervals to Date.">
+		<PARAMETER NAME="Interval" TYPE="String" DESCRIPTION="Interval to add to Date. (yyyy=Year,q=Quarter,m=Month,y=Day of Year,d=Day,w=weekday,WW=Week,h=Hour,n=Minute,s=Second)"/>
+		<PARAMETER NAME="Amount" TYPE="Number" DESCRIPTION="Number of Intervals to add to Date."/>
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date to add intervals to."/>
+	
+	</FUNCTION>
+	<FUNCTION NAME="DATEDIFF" DESCRIPTION="Returns the difference between two dates in the given unit of time.">
+		<!--DateDiff(Interval,Date1,Date2,[FirstDayOfWeek])-->
+		<PARAMETER NAME="Interval" TYPE="String" DESCRIPTION="Unit of time to return the difference in."/>
+		<PARAMETER NAME="Date1" TYPE="Date" DESCRIPTION="older date to compare to Date2"/>
+		<PARAMETER NAME="Date2" TYPE="Date" DESCRIPTION="More recent date then Date1"/>
+		<PARAMETER NAME="FirstDayOfWeek" TYPE="DayOfWeekConstant" ISOPTIONAL="True" DESCRIPTION="First day of week to use in the calculation."/>
+
+		
+	</FUNCTION>
+	<!--'DatePart(Interval,Date,FirstDayOfWeek)-->
+	<FUNCTION NAME="DATEPART" DESCRIPTION="Returns a specified component of the given date.">
+		<PARAMETER NAME="Interval" TYPE="String" DESCRIPTION="Portion of the date to retrieve."/>
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date to parse."/>
+	
+	
+	
+	</FUNCTION>
+	<FUNCTION NAME="DATESERIAL" DESCRIPTION="Converts a Month,Day, and Year Parameter into a Date Variable.">
+		<!--DateSerial(Year,Month,Day) -->
+		<PARAMETER NAME="Year" TYPE="Number" DESCRIPTION="Year of the Date to create."/>
+		<PARAMETER NAME="Month" TYPE="Number" DESCRIPTION="Month of the Date to create. If Month Exceeds 12, the returned date will be within the following year(s)"/>
+		<PARAMETER NAME="Day" TYPE="Number" DESCRIPTION="Day of the Date to create. If Day exceeds the number of days in the month of the returned date, then the month is incremented. If this increment causes Month to Exceed 12, the date will go into the following year."/>
+	
+	
+	</FUNCTION>
+	
+		
+	<FUNCTION NAME="DATEVALUE">
+	<PARAMETER NAME="Date" TYPE="String" DESCRIPTION="String to convert to a Date."/>
+	
+	
+	</FUNCTION>
+	<FUNCTION NAME="YEAR">
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date whose Year is to be calculated."/>
+		<RETURNS TYPE="Number">Year of passed Date.</RETURNS>
+	</FUNCTION>
+    <FUNCTION NAME="MONTH">
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date whose Month is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="DAY">
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date whose Day is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="MINUTE">
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date whose Minute is to be calculated."/>
+	</FUNCTION>
+	<FUNCTION NAME="SECOND">
+		<PARAMETER NAME="Date" TYPE="Date" DESCRIPTION="Date whose Second is to be calculated."/>
+	</FUNCTION>
+	<!--	DDB(cost,salvage,life,period,[Factor])-->
+	
+	<!--cost Required. Double specifying initial cost of the asset. 
+salvage Required. Double specifying value of the asset at the end of its useful life. 
+life Required. Double specifying length of useful life of the asset. 
+period Required. Double specifying period for which asset depreciation is calculated. 
+factor Optional. Variant specifying rate at which the balance declines. If omitted, 2 (double-declining method) is assumed. -->
+	<FUNCTION NAME="DDB">
+	
+		<PARAMETER NAME="Cost" TYPE="Number" DESCRIPTION="Value specifying initial cost of asset."/>
+		<PARAMETER NAME="Salvage" TYPE="Number" DESCRIPTION="Value specifying value of asset at the end of it's useful life."/>
+		<PARAMETER NAME="life" TYPE="Number" DESCRIPTION="Value specifying length of useful life of asset."/>
+		<PARAMETER NAME="Period" TYPE="Number" DESCRIPTION="Value specifying period for which asset depreciation is calculated."/>
+		<PARAMETER NAME="factor" ISOPTIONAL="True" TYPE="Number" DESCRIPTION="Variant specifying rate at which the balance declines. If omitted, 2 (double-declining method) is assumed."/>
+	</FUNCTION>
+	<FUNCTION NAME="DIR">
+
+	</FUNCTION>
+	<FUNCTION NAME="DOEVENTS">
+
+	</FUNCTION>
+	<FUNCTION NAME="ENVIRON">
+		<PARAMETER NAME="Index" TYPE="Number/String" DESCRIPTION="Name of environment variable or index into the environment table."/>
+	</FUNCTION>
+	<!--<FUNCTION NAME="EOF">
+
+	</FUNCTION>-->
+	<FUNCTION NAME="ERROR" DESCRIPTION="Converts an Error Code into a Descriptive message">
+		<PARAMETER NAME="ErrorCode" ISOPTIONAL="TRUE" TYPE="Number" DESCRIPTION="Error Code of Message to retrieve."/>
+	</FUNCTION>
+	
+	<FUNCTION NAME="EXP" DESCRIPTION="Returns the constant 'e' raised to a power.">
+		<PARAMETER NAME="Exponent" DESCRIPTION="exponent of e"/>
+
+	</FUNCTION>
+	
+	
+	<!--<FUNCTION NAME="EXEC">
+
+	</FUNCTION>-->
+	
+	<!--<FUNCTION NAME="FILTER">
+
+	</FUNCTION>-->
+	<FUNCTION NAME="FORMAT" DESCRIPTION="Formats a given value using the specified format String.">
+		<PARAMETER NAME="Value" DESCRIPTION="Value to Format"/>
+		<PARAMETER NAME="FormatString" DESCRIPTION="Format String to apply to Value." ISOPTIONAL="True"/>
+
+	</FUNCTION>
+	<FUNCTION NAME="FORMATCURRENCY">
+
+	</FUNCTION>
+	<FUNCTION NAME="FORMATDATETIME">
+
+	</FUNCTION>
+	<FUNCTION NAME="FORMATNUMBER">
+
+	</FUNCTION>
+	<FUNCTION NAME="FORMATPERCENT">
+
+	</FUNCTION>
+	<FUNCTION NAME="FV">
+
+	</FUNCTION>
+	<FUNCTION NAME="GETATTR">
+
+	</FUNCTION>
+	<FUNCTION NAME="GETOBJECT">
+
+	</FUNCTION>
+	<FUNCTION NAME="HEX" DESCRIPTION="Returns a string representing the specified value in Hexadecimal.">
+		<PARAMETER NAME="Value" TYPE="Number" DESCRIPTION="Number to convert to Hexadecimal."/>
+	</FUNCTION>
+	<FUNCTION NAME="IIF">
+
+	</FUNCTION>
+	<FUNCTION NAME="INPUTBOX">
+
+	</FUNCTION>
+	<FUNCTION NAME="INSTR">
+
+	</FUNCTION>
+	<FUNCTION NAME="INSTRREV">
+
+	</FUNCTION>
+	<FUNCTION NAME="INT">
+
+	</FUNCTION>
+	<FUNCTION NAME="FIX">
+
+	</FUNCTION>
+	<FUNCTION NAME="IPMT">
+
+	</FUNCTION>
+	<FUNCTION NAME="IRR">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISARRAY">
+
+	</FUNCTION>
+	<FUNCTION NAME="IS">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISDATE">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISEMPTY">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISERROR">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISNULL">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISNUMERIC">
+
+	</FUNCTION>
+	<FUNCTION NAME="ISOBJECT">
+
+	</FUNCTION>
+	<FUNCTION NAME="JOIN">
+
+	</FUNCTION>
+	<FUNCTION NAME="LBOUND">
+
+	</FUNCTION>
+	<FUNCTION NAME="LCASE">
+
+	</FUNCTION>
+	<FUNCTION NAME="LEFT">
+
+	</FUNCTION>
+	<FUNCTION NAME="LEN">
+
+	</FUNCTION>
+	<FUNCTION NAME="LOG">
+
+	</FUNCTION>
+	<FUNCTION NAME="LTRIM">
+
+	</FUNCTION>
+	<FUNCTION NAME="RTRIM">
+
+	</FUNCTION>
+	<FUNCTION NAME="TRIM">
+
+	</FUNCTION>
+	<FUNCTION NAME="MIRR">
+
+	</FUNCTION>
+	<FUNCTION NAME="MONTHNAME">
+
+	</FUNCTION>
+	<FUNCTION NAME="MSGBOX">
+
+	</FUNCTION>
+	<FUNCTION NAME="NPER">
+
+	</FUNCTION>
+	<FUNCTION NAME="NPV">
+
+	</FUNCTION>
+	<FUNCTION NAME="OCT">
+
+	</FUNCTION>
+	<FUNCTION NAME="PARTITION">
+
+	</FUNCTION>
+	<FUNCTION NAME="PMT">
+
+	</FUNCTION>
+	<FUNCTION NAME="PPMT">
+
+	</FUNCTION>
+	<FUNCTION NAME="PV">
+
+	</FUNCTION>
+	<FUNCTION NAME="POS">
+
+	</FUNCTION>
+	<FUNCTION NAME="SUBSTR">
+
+	</FUNCTION>
+	<FUNCTION NAME="QBCOLOR">
+
+	</FUNCTION>
+	<FUNCTION NAME="RATE">
+
+	</FUNCTION>
+	<FUNCTION NAME="REPLACE">
+
+	</FUNCTION>
+	<FUNCTION NAME="RGB">
+
+	</FUNCTION>
+	<FUNCTION NAME="RIGHT">
+
+	</FUNCTION>
+	<FUNCTION NAME="ROUND">
+
+	</FUNCTION>
+	<FUNCTION NAME="SGN">
+
+	</FUNCTION>
+	<FUNCTION NAME="SHELL">
+
+	</FUNCTION>
+	<FUNCTION NAME="SLN">
+
+	</FUNCTION>
+	<FUNCTION NAME="SPACE">
+
+	</FUNCTION>
+	<FUNCTION NAME="SPLIT">
+
+	</FUNCTION>
+	<FUNCTION NAME="SQRT">
+
+	</FUNCTION>
+	<FUNCTION NAME="SQR">
+
+	</FUNCTION>
+	<FUNCTION NAME="STR">
+
+	</FUNCTION>
+	<FUNCTION NAME="STRCOMP">
+
+	</FUNCTION>
+	<FUNCTION NAME="STRCONV">
+
+	</FUNCTION>
+	<FUNCTION NAME="STRING">
+
+	</FUNCTION>
+	<FUNCTION NAME="STRREVERSE">
+
+	</FUNCTION>
+	<FUNCTION NAME="SWITCH">
+
+	</FUNCTION>
+	<FUNCTION NAME="SYD">
+
+	</FUNCTION>
+	<FUNCTION NAME="TIMESERIAL">
+
+	</FUNCTION>
+	<FUNCTION NAME="TIMEVALUE">
+
+	</FUNCTION>
+	<FUNCTION NAME="TYPENAME">
+
+	</FUNCTION>
+	<FUNCTION NAME="UBOUND">
+
+	</FUNCTION>
+	<FUNCTION NAME="UCASE">
+
+	</FUNCTION>
+	<FUNCTION NAME="VAL">
+
+	</FUNCTION>
+	<FUNCTION NAME="VARTYPE">
+
+	</FUNCTION>
+	<FUNCTION NAME="WEEKDAYNAME">
+
+	</FUNCTION>
+	<FUNCTION NAME="WEEKDAY">
+
+	</FUNCTION>
+	<FUNCTION NAME="MINUS">
+
+	</FUNCTION>
+	<FUNCTION NAME="MEAN">
+
+	</FUNCTION>
+	<FUNCTION NAME="AVERAGE">
+
+	</FUNCTION>
+	<FUNCTION NAME="SORT">
+
+	</FUNCTION>
+	<FUNCTION NAME="MIN">
+
+	</FUNCTION>
+	<FUNCTION NAME="MAX">
+
+	</FUNCTION>
+	<FUNCTION NAME="CEIL">
+
+	</FUNCTION>
+	<FUNCTION NAME="FLOOR">
+
+	</FUNCTION>
+	<FUNCTION NAME="SELECT">
+
+	</FUNCTION>
+	
+<!--	CVERR " & _
+"DATEADD DATEDIFF DATEPART DATESERIAL DATEVALUE YEAR MONTH DAY MINUTE SECOND DDB DIR$ DIR DOEVENTS " & _
+"ENVIRON EOF ERROR EXP" & _
+"FILEATTR FILEDATETIME EXEC FILELEN FILTER FORMAT$ FORMATCURRENCY FORMATDATETIME FORMATNUMBER FORMATPERCENT FV FORMAT " & _
+"GETATTR GETOBJECT GETSETTING " & _
+"HEX$ HEX " & _
+"IIF INPUTBOX$ INPUTBOX INSTRREV INSTR INT FIX IPMT IRR ISARRAY ISDATE ISEMPTY ISERROR ISNULL ISNUMERIC ISOBJECT " & _
+"JOIN " & _
+"LBOUND LCASE$ LCASE LEFT$ LEFT LEN LOG LTRIM$ LTRIM RTRIM$ RTRIM TRIM$ TRIM " & _
+"MID$ MID MIRR MONTHNAME MSGBOX " & _
+"NPER NPV OCT$ OCT PARTITION PMT PPMT PV POS SUBSTR " & _
+"QBCOLOR " & _
+"RATE REPLACE$ REPLACE RGB RIGHT$ RIGHT ROUND " & _
+"SGN SHELL SLN SPACE$ SPACE SPLIT SQRT SQR STR$ STR STRCOMP STRCONV STRING$ STRING STRREVERSE SWITCH SYD " & _
+"TIMESERIAL TIMEVALUE TYPENAME UBOUND UCASE UCASE$ VAL VARTYPE WEEKDAYNAME WEEKDAY
+MINUS MEAN AVERAGE SORT MIN MAX
+SEC SIN COS TAN ASEC ASIN ACOS ATN HASEC HSIN HCOS HTAN HASIN HACOS HATAN
+SEQEX SEQ CEIL FLOOR SELECT "
+-->
+	<FUNCTION NAME="FLATTEN" DESCRIPTION="Converts elements of an array that are themselves arrays into elements of the parent array spliced at the location of the array element.">
+	<PARAMETER NAME="ArrayVal" DESCRIPTION="Array to be flattened."/>
+	</FUNCTION>
+	<FUNCTION NAME="LEFT" DESCRIPTION="Returns the leftmost 'n' characters from StrFrom." HELPRESOURCEID="LRM.HTML#LEFT">
+		<PARAMETER NAME="StrFrom" TYPE="String" ISOPTIONAL="FALSE" DESCRIPTION="String from which to extract characters."/>
+		<PARAMETER NAME="Length" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Numbers of Characters to Extract."/>
+	</FUNCTION>
+	<FUNCTION NAME="RIGHT" DESCRIPTION="Returns the Rightmost 'n' characters from StrFrom." HELPRESOURCEID="LRM.HTML#RIGHT">
+		<PARAMETER NAME="StrFrom" TYPE="String" ISOPTIONAL="FALSE" DESCRIPTION="String from which to extract characters."/>
+		<PARAMETER NAME="Length" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Numbers of Characters to Extract."/>
+	</FUNCTION>
+	<FUNCTION NAME="MID" DESCRIPTION="Extracts 'length' characters from 'strfrom' at 'pos'. if length is not specified, the rest of the string will be returned." HELPRESOURCEID="LRM.HTML#MID">
+	<PARAMETER NAME="String" TYPE="String" ISOPTIONAL="FALSE" DESCRIPTION="String from which to extract characters."/>
+	<PARAMETER NAME="Start" TYPE="Number" ISOPTIONAL="FALSE" DESCRIPTION="Location within the string at which to extract characters."/>
+	<PARAMETER NAME="Length" TYPE="Number" ISOPTIONAL="TRUE" DESCRIPTION="Length of the string to extract from the first argument. If this would extend past the end of the string or is missing, the rest of the string is returned."/>
+	
+	
+	
+	
+	</FUNCTION>
+</FUNCTIONINFO>
+
+

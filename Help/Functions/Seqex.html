@@ -1,0 +1,52 @@
+<HTML>
+	<HEAD>
+<!--Change relative paths as appropriate-->
+	<LINK REL="STYLESHEET" HREF="..\CSS\topic.css">
+	<SCRIPT LANGUAGE="javascript" SRC="..\SCRIPTS\footer.js"></SCRIPT>
+		<TITLE>BASeParser Help:SeqEx Function</TITLE>
+	</HEAD>
+<BODY OnLoad="showfooter(document.all('bottomdiv'))">
+<H1>SeqEx Function</H1>
+
+<!--Information goes here-->
+
+<H3>Syntax:</H3>
+<FONT FACE="COURIER NEW">SeqEx(Expression,Varname,InitialValue,IncrementExpression,TerminateExpression,<I>IterationLimit</I>)</FONT>
+
+<H3>Arguments</H3><P>
+<TABLE WIDTH="75%" border="2"><TR><TH>Argument</TH><TH>Description</TH></TR>
+<TR><TD>Expression</TD><TD>Expression to execute. This <A HREF="..\expressions\index.html">expression</A> is executed to acquire each successive value. </TD></TR>
+<TR><TD>Varname</TD><TD>Variable name as it appears in <I>Expression</I>.</TD></TR>
+<TR><TD>InitialValue</TD><TD>Starting value of [i]Varname[/i]</TD></TR>
+<TR><TD>IncrementExpression</TD><TD>Expression executed each iteration. Generally used to Store() a new value into <I>Varname</I></TD></TR>
+<TR><TD>TerminateExpression </TD><TD>The Function will run until This expression is true. it cannot be a constant expression.</TD></TR>
+<TR><TD>Iteration Limit</TD><TD>Maximum number of iterations before the function is automatically stopped. negative numbers indicate to run until terminateexpression is true. Defaults to -1.</TD></TR>
+
+
+</TABLE>
+
+<H3>Remarks</H3><P>
+
+The SeqEx Function is an extended version of the Seq Function that can be used for more complicated or dynamic Sequencing. However, it is far more dangerous- passing certain expressions can cause the function to execute infinitely until memory is exhausted for the creation of the return array.
+
+
+<H3>Example</H3>
+<P>
+The following example creates an array of all the powers of 2 from 2^1 to 2^50:
+
+
+SEQEX(2^X,X,1,STORE(X,X+1),X>50)
+
+The expression, "STORE(X,X+1)" is executed each iteration, and the value of "2^X" is added to the return array until "X>50" is true. The return value is:
+<P CLASS="code">
+
+{2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072,262144,524288,1048576,2097152,4194304,8388608,16777216,33554432,67108864,134217728,268435456,
+536870912,1073741824,2147483648,4294967296,8589934592,17179869184,34359738368,68719476736,137438953472,274877906944,549755813888,1099511627776,2199023255552,
+4398046511104,8796093022208,17592186044416,35184372088832,70368744177664,140737488355328,281474976710656,562949953421312,1.12589990684262E+15}
+</P>
+
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+
+</BODY>
+</HTML>

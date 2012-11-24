@@ -1,0 +1,1647 @@
+BASeCamp CDebug Class Debug Log output.
+log at 02/22/2007 on FASTLORD as mburgwin at 19:03.32
+################################################################################
+System Info for this session:
+Environment variables:
+
+ALLUSERSPROFILE=C:\Documents and Settings\All Users
+APPDATA=C:\Documents and Settings\mburgwin\Application Data
+BLASTER=A220 I10 D1 H7 P330 T6 E620
+CLASSPATH=D:\programs\Java\classes.zip
+CLIENTNAME=Console
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=FASTLORD
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DEVMGR_SHOW_DETAILS=1
+EDPATH=D:\programs\WatcomCPP\EDDAT
+HOMEDRIVE=C:
+HOMEPATH=\Documents and Settings\mburgwin
+INCLUDE=D:\programs\WatcomCPP\H;D:\programs\WatcomCPP\H\NT
+LOGONSERVER=\\FASTLORD
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=D:\programs\ACTIVE~1\bin;C:\windows;C:\windows\system;C:\windows\system32;C:\windows\command;D:\programs\WatcomCPP\BINNT;D:\programs\WatcomCPP\BINW;D:\programs\netcat
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 5 Model 8 Stepping 12, AuthenticAMD
+PROCESSOR_LEVEL=5
+PROCESSOR_REVISION=080c
+ProgramFiles=D:\programs
+PROMPT=$p$g
+QTJava=C:\WINDOWS\SYSTEM\QTJava.zip
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=E:\TEMP
+TMP=E:\TEMP
+TRUSTEDCLASSPATH=D:\programs\java\classes.zip
+USERDOMAIN=FASTLORD
+USERNAME=mburgwin
+USERPROFILE=C:\Documents and Settings\mburgwin
+WATCOM=D:\programs\WatcomCPP
+winbootdir=C:\WINDOWS
+windir=C:\WINDOWS
+
+
+################################################################################
+***************BEGIN LOG*******************
+ENTRY #1----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (4.125,284.399993896484)
+---------------------------------------------
+ENTRY #2----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (4.125,270)
+---------------------------------------------
+ENTRY #3----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (8.25,280.799987792969)
+---------------------------------------------
+ENTRY #4----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (8.25,266.399993896484)
+---------------------------------------------
+ENTRY #5----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (12.375,277.200012207031)
+---------------------------------------------
+ENTRY #6----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (12.375,262.799987792969)
+---------------------------------------------
+ENTRY #7----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (16.5,273.600006103516)
+---------------------------------------------
+ENTRY #8----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (16.5,259.200012207031)
+---------------------------------------------
+ENTRY #9----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (20.625,270)
+---------------------------------------------
+ENTRY #10----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (20.625,255.600006103516)
+---------------------------------------------
+ENTRY #11----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (24.75,266.399993896484)
+---------------------------------------------
+ENTRY #12----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (24.75,252)
+---------------------------------------------
+ENTRY #13----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,288) To (28.875,262.799987792969)
+---------------------------------------------
+ENTRY #14----------------------------------------
+TimeStamp:02/22/2007 7:03.32 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (28.875,248.399993896484)
+---------------------------------------------
+ENTRY #15----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (33,259.200012207031)
+---------------------------------------------
+ENTRY #16----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (33,244.800003051758)
+---------------------------------------------
+ENTRY #17----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (37.125,255.600006103516)
+---------------------------------------------
+ENTRY #18----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (37.125,241.199996948242)
+---------------------------------------------
+ENTRY #19----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (41.25,252)
+---------------------------------------------
+ENTRY #20----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (41.25,237.600006103516)
+---------------------------------------------
+ENTRY #21----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (45.375,248.399993896484)
+---------------------------------------------
+ENTRY #22----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (45.375,234)
+---------------------------------------------
+ENTRY #23----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (49.5,244.800003051758)
+---------------------------------------------
+ENTRY #24----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (49.5,230.399993896484)
+---------------------------------------------
+ENTRY #25----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (53.625,241.199996948242)
+---------------------------------------------
+ENTRY #26----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (53.625,226.800003051758)
+---------------------------------------------
+ENTRY #27----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (57.75,237.600006103516)
+---------------------------------------------
+ENTRY #28----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (57.75,223.199996948242)
+---------------------------------------------
+ENTRY #29----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (61.875,234)
+---------------------------------------------
+ENTRY #30----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (61.875,219.600006103516)
+---------------------------------------------
+ENTRY #31----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (66,230.399993896484)
+---------------------------------------------
+ENTRY #32----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (66,216)
+---------------------------------------------
+ENTRY #33----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (70.125,226.800003051758)
+---------------------------------------------
+ENTRY #34----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (70.125,212.399993896484)
+---------------------------------------------
+ENTRY #35----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,288) To (74.25,223.199996948242)
+---------------------------------------------
+ENTRY #36----------------------------------------
+TimeStamp:02/22/2007 7:03.33 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (74.25,208.800003051758)
+---------------------------------------------
+ENTRY #37----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (78.375,219.600006103516)
+---------------------------------------------
+ENTRY #38----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (78.375,205.199996948242)
+---------------------------------------------
+ENTRY #39----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (82.5,216)
+---------------------------------------------
+ENTRY #40----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (82.5,201.600006103516)
+---------------------------------------------
+ENTRY #41----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (86.625,212.399993896484)
+---------------------------------------------
+ENTRY #42----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (86.625,198)
+---------------------------------------------
+ENTRY #43----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (90.75,208.800003051758)
+---------------------------------------------
+ENTRY #44----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (90.75,194.399993896484)
+---------------------------------------------
+ENTRY #45----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (94.875,205.199996948242)
+---------------------------------------------
+ENTRY #46----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (94.875,190.800003051758)
+---------------------------------------------
+ENTRY #47----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (99,201.600006103516)
+---------------------------------------------
+ENTRY #48----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (99,187.199996948242)
+---------------------------------------------
+ENTRY #49----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (103.125,198)
+---------------------------------------------
+ENTRY #50----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (103.125,183.600006103516)
+---------------------------------------------
+ENTRY #51----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (107.25,194.399993896484)
+---------------------------------------------
+ENTRY #52----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (107.25,180)
+---------------------------------------------
+ENTRY #53----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (111.375,190.800003051758)
+---------------------------------------------
+ENTRY #54----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (111.375,176.399993896484)
+---------------------------------------------
+ENTRY #55----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (115.5,187.199996948242)
+---------------------------------------------
+ENTRY #56----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (115.5,172.800003051758)
+---------------------------------------------
+ENTRY #57----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,288) To (119.625,183.600006103516)
+---------------------------------------------
+ENTRY #58----------------------------------------
+TimeStamp:02/22/2007 7:03.34 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (119.625,169.199996948242)
+---------------------------------------------
+ENTRY #59----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (123.75,180)
+---------------------------------------------
+ENTRY #60----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (123.75,165.600006103516)
+---------------------------------------------
+ENTRY #61----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (127.875,176.399993896484)
+---------------------------------------------
+ENTRY #62----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (127.875,162)
+---------------------------------------------
+ENTRY #63----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (132,172.800003051758)
+---------------------------------------------
+ENTRY #64----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (132,158.399993896484)
+---------------------------------------------
+ENTRY #65----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (136.125,169.199996948242)
+---------------------------------------------
+ENTRY #66----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (136.125,154.800003051758)
+---------------------------------------------
+ENTRY #67----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (140.25,165.600006103516)
+---------------------------------------------
+ENTRY #68----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (140.25,151.199996948242)
+---------------------------------------------
+ENTRY #69----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (144.375,162)
+---------------------------------------------
+ENTRY #70----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (144.375,147.600006103516)
+---------------------------------------------
+ENTRY #71----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (148.5,158.399993896484)
+---------------------------------------------
+ENTRY #72----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (148.5,144)
+---------------------------------------------
+ENTRY #73----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (152.625,154.800003051758)
+---------------------------------------------
+ENTRY #74----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (152.625,140.399993896484)
+---------------------------------------------
+ENTRY #75----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (156.75,151.199996948242)
+---------------------------------------------
+ENTRY #76----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (156.75,136.800003051758)
+---------------------------------------------
+ENTRY #77----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (160.875,147.600006103516)
+---------------------------------------------
+ENTRY #78----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (160.875,133.199996948242)
+---------------------------------------------
+ENTRY #79----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,288) To (165,144)
+---------------------------------------------
+ENTRY #80----------------------------------------
+TimeStamp:02/22/2007 7:03.35 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (165,129.600006103516)
+---------------------------------------------
+ENTRY #81----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (169.125,140.399993896484)
+---------------------------------------------
+ENTRY #82----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (169.125,126)
+---------------------------------------------
+ENTRY #83----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (173.25,136.800003051758)
+---------------------------------------------
+ENTRY #84----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (173.25,122.400001525879)
+---------------------------------------------
+ENTRY #85----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (177.375,133.199996948242)
+---------------------------------------------
+ENTRY #86----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (177.375,118.800003051758)
+---------------------------------------------
+ENTRY #87----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (181.5,129.600006103516)
+---------------------------------------------
+ENTRY #88----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (181.5,115.199996948242)
+---------------------------------------------
+ENTRY #89----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (185.625,126)
+---------------------------------------------
+ENTRY #90----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (185.625,111.599998474121)
+---------------------------------------------
+ENTRY #91----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (189.75,122.400001525879)
+---------------------------------------------
+ENTRY #92----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (189.75,108)
+---------------------------------------------
+ENTRY #93----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (193.875,118.800003051758)
+---------------------------------------------
+ENTRY #94----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (193.875,104.400001525879)
+---------------------------------------------
+ENTRY #95----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (198,115.199996948242)
+---------------------------------------------
+ENTRY #96----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (198,100.800003051758)
+---------------------------------------------
+ENTRY #97----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (202.125,111.599998474121)
+---------------------------------------------
+ENTRY #98----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (202.125,97.1999969482422)
+---------------------------------------------
+ENTRY #99----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (206.25,108)
+---------------------------------------------
+ENTRY #100----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (206.25,93.5999984741211)
+---------------------------------------------
+ENTRY #101----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (210.375,104.400001525879)
+---------------------------------------------
+ENTRY #102----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (210.375,90)
+---------------------------------------------
+ENTRY #103----------------------------------------
+TimeStamp:02/22/2007 7:03.36 PM
+The following message was logged:
+Drew a Line from (0,288) To (214.5,100.800003051758)
+---------------------------------------------
+ENTRY #104----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (214.5,86.4000015258789)
+---------------------------------------------
+ENTRY #105----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (218.625,97.1999969482422)
+---------------------------------------------
+ENTRY #106----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (218.625,82.8000030517578)
+---------------------------------------------
+ENTRY #107----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (222.75,93.5999984741211)
+---------------------------------------------
+ENTRY #108----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (222.75,79.1999969482422)
+---------------------------------------------
+ENTRY #109----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (226.875,90)
+---------------------------------------------
+ENTRY #110----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (226.875,75.5999984741211)
+---------------------------------------------
+ENTRY #111----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (231,86.4000015258789)
+---------------------------------------------
+ENTRY #112----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (231,72)
+---------------------------------------------
+ENTRY #113----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (235.125,82.8000030517578)
+---------------------------------------------
+ENTRY #114----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (235.125,68.4000015258789)
+---------------------------------------------
+ENTRY #115----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (239.25,79.1999969482422)
+---------------------------------------------
+ENTRY #116----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (239.25,64.8000030517578)
+---------------------------------------------
+ENTRY #117----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (243.375,75.5999984741211)
+---------------------------------------------
+ENTRY #118----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (243.375,61.2000007629395)
+---------------------------------------------
+ENTRY #119----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (247.5,72)
+---------------------------------------------
+ENTRY #120----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (247.5,57.5999984741211)
+---------------------------------------------
+ENTRY #121----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (251.625,68.4000015258789)
+---------------------------------------------
+ENTRY #122----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (251.625,54)
+---------------------------------------------
+ENTRY #123----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (255.75,64.8000030517578)
+---------------------------------------------
+ENTRY #124----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (255.75,50.4000015258789)
+---------------------------------------------
+ENTRY #125----------------------------------------
+TimeStamp:02/22/2007 7:03.37 PM
+The following message was logged:
+Drew a Line from (0,288) To (259.875,61.2000007629395)
+---------------------------------------------
+ENTRY #126----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (259.875,46.7999992370605)
+---------------------------------------------
+ENTRY #127----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (264,57.5999984741211)
+---------------------------------------------
+ENTRY #128----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (264,43.2000007629395)
+---------------------------------------------
+ENTRY #129----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (268.125,54)
+---------------------------------------------
+ENTRY #130----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (268.125,39.5999984741211)
+---------------------------------------------
+ENTRY #131----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (272.25,50.4000015258789)
+---------------------------------------------
+ENTRY #132----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (272.25,36)
+---------------------------------------------
+ENTRY #133----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (276.375,46.7999992370605)
+---------------------------------------------
+ENTRY #134----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (276.375,32.4000015258789)
+---------------------------------------------
+ENTRY #135----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (280.5,43.2000007629395)
+---------------------------------------------
+ENTRY #136----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (280.5,28.7999992370605)
+---------------------------------------------
+ENTRY #137----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (284.625,39.5999984741211)
+---------------------------------------------
+ENTRY #138----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (284.625,25.2000007629395)
+---------------------------------------------
+ENTRY #139----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (288.75,36)
+---------------------------------------------
+ENTRY #140----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (288.75,21.6000003814697)
+---------------------------------------------
+ENTRY #141----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (292.875,32.4000015258789)
+---------------------------------------------
+ENTRY #142----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (292.875,18)
+---------------------------------------------
+ENTRY #143----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (297,28.7999992370605)
+---------------------------------------------
+ENTRY #144----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (297,14.3999996185303)
+---------------------------------------------
+ENTRY #145----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (301.125,25.2000007629395)
+---------------------------------------------
+ENTRY #146----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (301.125,10.8000001907349)
+---------------------------------------------
+ENTRY #147----------------------------------------
+TimeStamp:02/22/2007 7:03.38 PM
+The following message was logged:
+Drew a Line from (0,288) To (305.25,21.6000003814697)
+---------------------------------------------
+ENTRY #148----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (305.25,7.19999980926514)
+---------------------------------------------
+ENTRY #149----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,288) To (309.375,18)
+---------------------------------------------
+ENTRY #150----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (309.375,3.59999990463257)
+---------------------------------------------
+ENTRY #151----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,288) To (313.5,14.3999996185303)
+---------------------------------------------
+ENTRY #152----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (313.5,0)
+---------------------------------------------
+ENTRY #153----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,288) To (317.625,10.8000001907349)
+---------------------------------------------
+ENTRY #154----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (317.625,-3.59999990463257)
+---------------------------------------------
+ENTRY #155----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,288) To (321.75,7.19999980926514)
+---------------------------------------------
+ENTRY #156----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (321.75,-7.19999980926514)
+---------------------------------------------
+ENTRY #157----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,288) To (325.875,3.59999990463257)
+---------------------------------------------
+ENTRY #158----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (325.875,-10.8000001907349)
+---------------------------------------------
+ENTRY #159----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,288) To (330,0)
+---------------------------------------------
+ENTRY #160----------------------------------------
+TimeStamp:02/22/2007 7:03.39 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (330,-14.3999996185303)
+---------------------------------------------
+ENTRY #161----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,288) To (4.125,284.399993896484)
+---------------------------------------------
+ENTRY #162----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (4.125,270)
+---------------------------------------------
+ENTRY #163----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,288) To (8.25,280.799987792969)
+---------------------------------------------
+ENTRY #164----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (8.25,266.399993896484)
+---------------------------------------------
+ENTRY #165----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,288) To (12.375,277.200012207031)
+---------------------------------------------
+ENTRY #166----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (12.375,262.799987792969)
+---------------------------------------------
+ENTRY #167----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,288) To (16.5,273.600006103516)
+---------------------------------------------
+ENTRY #168----------------------------------------
+TimeStamp:02/22/2007 7:03.40 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (16.5,259.200012207031)
+---------------------------------------------
+ENTRY #169----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (20.625,270)
+---------------------------------------------
+ENTRY #170----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (20.625,255.600006103516)
+---------------------------------------------
+ENTRY #171----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (24.75,266.399993896484)
+---------------------------------------------
+ENTRY #172----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (24.75,252)
+---------------------------------------------
+ENTRY #173----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (28.875,262.799987792969)
+---------------------------------------------
+ENTRY #174----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (28.875,248.399993896484)
+---------------------------------------------
+ENTRY #175----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (33,259.200012207031)
+---------------------------------------------
+ENTRY #176----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (33,244.800003051758)
+---------------------------------------------
+ENTRY #177----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (37.125,255.600006103516)
+---------------------------------------------
+ENTRY #178----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (37.125,241.199996948242)
+---------------------------------------------
+ENTRY #179----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (41.25,252)
+---------------------------------------------
+ENTRY #180----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (41.25,237.600006103516)
+---------------------------------------------
+ENTRY #181----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (45.375,248.399993896484)
+---------------------------------------------
+ENTRY #182----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (45.375,234)
+---------------------------------------------
+ENTRY #183----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (49.5,244.800003051758)
+---------------------------------------------
+ENTRY #184----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (49.5,230.399993896484)
+---------------------------------------------
+ENTRY #185----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (53.625,241.199996948242)
+---------------------------------------------
+ENTRY #186----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (53.625,226.800003051758)
+---------------------------------------------
+ENTRY #187----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (57.75,237.600006103516)
+---------------------------------------------
+ENTRY #188----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (57.75,223.199996948242)
+---------------------------------------------
+ENTRY #189----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,288) To (61.875,234)
+---------------------------------------------
+ENTRY #190----------------------------------------
+TimeStamp:02/22/2007 7:03.41 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (61.875,219.600006103516)
+---------------------------------------------
+ENTRY #191----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (66,230.399993896484)
+---------------------------------------------
+ENTRY #192----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (66,216)
+---------------------------------------------
+ENTRY #193----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (70.125,226.800003051758)
+---------------------------------------------
+ENTRY #194----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (70.125,212.399993896484)
+---------------------------------------------
+ENTRY #195----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (74.25,223.199996948242)
+---------------------------------------------
+ENTRY #196----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (74.25,208.800003051758)
+---------------------------------------------
+ENTRY #197----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (78.375,219.600006103516)
+---------------------------------------------
+ENTRY #198----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (78.375,205.199996948242)
+---------------------------------------------
+ENTRY #199----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (82.5,216)
+---------------------------------------------
+ENTRY #200----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (82.5,201.600006103516)
+---------------------------------------------
+ENTRY #201----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (86.625,212.399993896484)
+---------------------------------------------
+ENTRY #202----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (86.625,198)
+---------------------------------------------
+ENTRY #203----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (90.75,208.800003051758)
+---------------------------------------------
+ENTRY #204----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (90.75,194.399993896484)
+---------------------------------------------
+ENTRY #205----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (94.875,205.199996948242)
+---------------------------------------------
+ENTRY #206----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (94.875,190.800003051758)
+---------------------------------------------
+ENTRY #207----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (99,201.600006103516)
+---------------------------------------------
+ENTRY #208----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (99,187.199996948242)
+---------------------------------------------
+ENTRY #209----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (103.125,198)
+---------------------------------------------
+ENTRY #210----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (103.125,183.600006103516)
+---------------------------------------------
+ENTRY #211----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (107.25,194.399993896484)
+---------------------------------------------
+ENTRY #212----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (107.25,180)
+---------------------------------------------
+ENTRY #213----------------------------------------
+TimeStamp:02/22/2007 7:03.42 PM
+The following message was logged:
+Drew a Line from (0,288) To (111.375,190.800003051758)
+---------------------------------------------
+ENTRY #214----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (111.375,176.399993896484)
+---------------------------------------------
+ENTRY #215----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (115.5,187.199996948242)
+---------------------------------------------
+ENTRY #216----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (115.5,172.800003051758)
+---------------------------------------------
+ENTRY #217----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (119.625,183.600006103516)
+---------------------------------------------
+ENTRY #218----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (119.625,169.199996948242)
+---------------------------------------------
+ENTRY #219----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (123.75,180)
+---------------------------------------------
+ENTRY #220----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (123.75,165.600006103516)
+---------------------------------------------
+ENTRY #221----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (127.875,176.399993896484)
+---------------------------------------------
+ENTRY #222----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (127.875,162)
+---------------------------------------------
+ENTRY #223----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (132,172.800003051758)
+---------------------------------------------
+ENTRY #224----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (132,158.399993896484)
+---------------------------------------------
+ENTRY #225----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (136.125,169.199996948242)
+---------------------------------------------
+ENTRY #226----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (136.125,154.800003051758)
+---------------------------------------------
+ENTRY #227----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (140.25,165.600006103516)
+---------------------------------------------
+ENTRY #228----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (140.25,151.199996948242)
+---------------------------------------------
+ENTRY #229----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (144.375,162)
+---------------------------------------------
+ENTRY #230----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (144.375,147.600006103516)
+---------------------------------------------
+ENTRY #231----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (148.5,158.399993896484)
+---------------------------------------------
+ENTRY #232----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (148.5,144)
+---------------------------------------------
+ENTRY #233----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (152.625,154.800003051758)
+---------------------------------------------
+ENTRY #234----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (152.625,140.399993896484)
+---------------------------------------------
+ENTRY #235----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,288) To (156.75,151.199996948242)
+---------------------------------------------
+ENTRY #236----------------------------------------
+TimeStamp:02/22/2007 7:03.43 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (156.75,136.800003051758)
+---------------------------------------------
+ENTRY #237----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (160.875,147.600006103516)
+---------------------------------------------
+ENTRY #238----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (160.875,133.199996948242)
+---------------------------------------------
+ENTRY #239----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (165,144)
+---------------------------------------------
+ENTRY #240----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (165,129.600006103516)
+---------------------------------------------
+ENTRY #241----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (169.125,140.399993896484)
+---------------------------------------------
+ENTRY #242----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (169.125,126)
+---------------------------------------------
+ENTRY #243----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (173.25,136.800003051758)
+---------------------------------------------
+ENTRY #244----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (173.25,122.400001525879)
+---------------------------------------------
+ENTRY #245----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (177.375,133.199996948242)
+---------------------------------------------
+ENTRY #246----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (177.375,118.800003051758)
+---------------------------------------------
+ENTRY #247----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (181.5,129.600006103516)
+---------------------------------------------
+ENTRY #248----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (181.5,115.199996948242)
+---------------------------------------------
+ENTRY #249----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (185.625,126)
+---------------------------------------------
+ENTRY #250----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (185.625,111.599998474121)
+---------------------------------------------
+ENTRY #251----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (189.75,122.400001525879)
+---------------------------------------------
+ENTRY #252----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (189.75,108)
+---------------------------------------------
+ENTRY #253----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (193.875,118.800003051758)
+---------------------------------------------
+ENTRY #254----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (193.875,104.400001525879)
+---------------------------------------------
+ENTRY #255----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (198,115.199996948242)
+---------------------------------------------
+ENTRY #256----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (198,100.800003051758)
+---------------------------------------------
+ENTRY #257----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,288) To (202.125,111.599998474121)
+---------------------------------------------
+ENTRY #258----------------------------------------
+TimeStamp:02/22/2007 7:03.44 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (202.125,97.1999969482422)
+---------------------------------------------
+ENTRY #259----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (206.25,108)
+---------------------------------------------
+ENTRY #260----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (206.25,93.5999984741211)
+---------------------------------------------
+ENTRY #261----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (210.375,104.400001525879)
+---------------------------------------------
+ENTRY #262----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (210.375,90)
+---------------------------------------------
+ENTRY #263----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (214.5,100.800003051758)
+---------------------------------------------
+ENTRY #264----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (214.5,86.4000015258789)
+---------------------------------------------
+ENTRY #265----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (218.625,97.1999969482422)
+---------------------------------------------
+ENTRY #266----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (218.625,82.8000030517578)
+---------------------------------------------
+ENTRY #267----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (222.75,93.5999984741211)
+---------------------------------------------
+ENTRY #268----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (222.75,79.1999969482422)
+---------------------------------------------
+ENTRY #269----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (226.875,90)
+---------------------------------------------
+ENTRY #270----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (226.875,75.5999984741211)
+---------------------------------------------
+ENTRY #271----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (231,86.4000015258789)
+---------------------------------------------
+ENTRY #272----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (231,72)
+---------------------------------------------
+ENTRY #273----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (235.125,82.8000030517578)
+---------------------------------------------
+ENTRY #274----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (235.125,68.4000015258789)
+---------------------------------------------
+ENTRY #275----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (239.25,79.1999969482422)
+---------------------------------------------
+ENTRY #276----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (239.25,64.8000030517578)
+---------------------------------------------
+ENTRY #277----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (243.375,75.5999984741211)
+---------------------------------------------
+ENTRY #278----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (243.375,61.2000007629395)
+---------------------------------------------
+ENTRY #279----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,288) To (247.5,72)
+---------------------------------------------
+ENTRY #280----------------------------------------
+TimeStamp:02/22/2007 7:03.45 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (247.5,57.5999984741211)
+---------------------------------------------
+ENTRY #281----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (251.625,68.4000015258789)
+---------------------------------------------
+ENTRY #282----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (251.625,54)
+---------------------------------------------
+ENTRY #283----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (255.75,64.8000030517578)
+---------------------------------------------
+ENTRY #284----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (255.75,50.4000015258789)
+---------------------------------------------
+ENTRY #285----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (259.875,61.2000007629395)
+---------------------------------------------
+ENTRY #286----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (259.875,46.7999992370605)
+---------------------------------------------
+ENTRY #287----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (264,57.5999984741211)
+---------------------------------------------
+ENTRY #288----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (264,43.2000007629395)
+---------------------------------------------
+ENTRY #289----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (268.125,54)
+---------------------------------------------
+ENTRY #290----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (268.125,39.5999984741211)
+---------------------------------------------
+ENTRY #291----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (272.25,50.4000015258789)
+---------------------------------------------
+ENTRY #292----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (272.25,36)
+---------------------------------------------
+ENTRY #293----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (276.375,46.7999992370605)
+---------------------------------------------
+ENTRY #294----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (276.375,32.4000015258789)
+---------------------------------------------
+ENTRY #295----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (280.5,43.2000007629395)
+---------------------------------------------
+ENTRY #296----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (280.5,28.7999992370605)
+---------------------------------------------
+ENTRY #297----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (284.625,39.5999984741211)
+---------------------------------------------
+ENTRY #298----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (284.625,25.2000007629395)
+---------------------------------------------
+ENTRY #299----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (288.75,36)
+---------------------------------------------
+ENTRY #300----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (288.75,21.6000003814697)
+---------------------------------------------
+ENTRY #301----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,288) To (292.875,32.4000015258789)
+---------------------------------------------
+ENTRY #302----------------------------------------
+TimeStamp:02/22/2007 7:03.46 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (292.875,18)
+---------------------------------------------
+ENTRY #303----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (297,28.7999992370605)
+---------------------------------------------
+ENTRY #304----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (297,14.3999996185303)
+---------------------------------------------
+ENTRY #305----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (301.125,25.2000007629395)
+---------------------------------------------
+ENTRY #306----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (301.125,10.8000001907349)
+---------------------------------------------
+ENTRY #307----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (305.25,21.6000003814697)
+---------------------------------------------
+ENTRY #308----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (305.25,7.19999980926514)
+---------------------------------------------
+ENTRY #309----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (309.375,18)
+---------------------------------------------
+ENTRY #310----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (309.375,3.59999990463257)
+---------------------------------------------
+ENTRY #311----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (313.5,14.3999996185303)
+---------------------------------------------
+ENTRY #312----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (313.5,0)
+---------------------------------------------
+ENTRY #313----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (317.625,10.8000001907349)
+---------------------------------------------
+ENTRY #314----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (317.625,-3.59999990463257)
+---------------------------------------------
+ENTRY #315----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (321.75,7.19999980926514)
+---------------------------------------------
+ENTRY #316----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (321.75,-7.19999980926514)
+---------------------------------------------
+ENTRY #317----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (325.875,3.59999990463257)
+---------------------------------------------
+ENTRY #318----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (325.875,-10.8000001907349)
+---------------------------------------------
+ENTRY #319----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,288) To (330,0)
+---------------------------------------------
+ENTRY #320----------------------------------------
+TimeStamp:02/22/2007 7:03.47 PM
+The following message was logged:
+Drew a Line from (0,273.600006103516) To (330,-14.3999996185303)
+---------------------------------------------

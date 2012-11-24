@@ -1,0 +1,5 @@
+BASeCamp CDebug Class Profiler Output.
+log at 02/22/2007 on FASTLORD as mburgwin at 19:03.32
+
+Profile data is in CSV format. Import into Excel! :P
+Procedure Name,Times Called,Total Time (Sec),Average Time(Sec)

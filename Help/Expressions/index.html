@@ -1,0 +1,35 @@
+<HTML>
+	<HEAD>
+<!--Change relative paths as appropriate-->
+	<LINK REL="STYLESHEET" HREF="CSS\topic.css">
+	<SCRIPT LANGUAGE="javascript" SRC="SCRIPTS\footer.js"></SCRIPT>
+		<TITLE>BASeParser Help:Expressions</TITLE>
+	</HEAD>
+<BODY OnLoad="showfooter(document.all('bottomdiv'))">
+<H1>Expressions</H1><P>
+
+BASeParser, being a Expression parsing library, naturally deals in expressions. But, what exactly constitutes an expression?  An Expression is a group of <i>token</i>s. a <i>token</i>, in turn, can be one of several types. An Operator, a literal, a variable, or a function call. <P>
+
+<UL TYPE="DISC"><LI><H3>Operator</H3><P>
+
+An Operator, surprisingly enough, performs some operation. For example, the + operator performs Addition. There are three kinds of operators- Binary, Unary, and Unary Postfix. Examples of these include +, unary minus, and the factorial operator (!).
+
+
+<LI><H3>Literals</H3><P>
+
+	A literal value is any value expressed directly. for example, numbers inserted in any expression are literals. As are date values,strings, lists denoted with "{}", etc.
+
+
+<LI>Variables</LI>
+
+	A variable is a value that will be substituted in the expression with that variables value. For example, you could create a variable "X" and then change it's value. Then executing the expression Sin(X) would always return the Sine of whatever value is stored in X. Variables are used heavily with functions such as <A HREF=..\Functions\seq.html">seq</A> and <A HREF=..\Functions\seqex.html">seqex</A>.
+
+
+<LI>Functions</LI>
+
+   a Function is a particular operation performed on one or several values. For example, the <A HREF=..\FUNCTIONS\trig.html#Sin>Sin</A> function returns the Sine of a number. Many functions accept multiple <I>Arguments</I>.
+
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+</BODY>
+</HTML>

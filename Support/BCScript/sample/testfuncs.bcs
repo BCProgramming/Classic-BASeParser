@@ -1,0 +1,2 @@
+STORE(X,50);
+BCSH@WriteLn(LISTPLUGINS());

@@ -1,0 +1,45 @@
+<html>
+	<head>
+<!--Change relative paths as appropriate-->
+	<link rel="STYLESHEET" HREF="..\CSS\topic.css">
+	<script LANGUAGE="javascript" SRC="..\SCRIPTS\footer.js"></SCRIPT>
+		<title>BASeParser Help:ABS</title>
+	</head>
+<body OnLoad="showfooter(document.all('bottomdiv'))">
+<h1>ABS Function</h1>
+<p>Returns the absolute value of a number.</p>
+<!--Information goes here-->
+<h3>Syntax:</h3>
+<p class="code">
+ABS(<I>value</I>)
+</p>
+Or:
+<p class="code">
+|<I>Value</I>|
+</p>
+<h3>Arguments</h3><p>
+<table WIDTH="75%" border="2"><tr><th>Argument</th><th>Description</th></tr>
+<tr><td>Value</td><td>A numeric value to get the absolute value of.</td></tr>
+
+</table>
+</p>
+<h3>Remarks</h3><p>
+
+The Abs function returns the absolute value of a number, which is the positive magnitude of its difference from 0. 
+
+The "Pipe" character, |, can be used to delimit a value. The ABS function is called on the expression contained within.
+
+</p>
+<h3>example:</h3>
+The following script uses the abs function:
+<p class="code">
+STORE(X,"null");
+While(Not IsNumeric(X),(X:=INPUTBOX("Enter a Number:"));If(Not (IsNumeric(X)),Msgbox(Str(X) + " is not a number. Enter a number."),0))
+msgbox("Absolute Value of " + Str(X) + " Is " + Str(Abs(X)))
+
+</p>
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+
+</BODY>
+</HTML>

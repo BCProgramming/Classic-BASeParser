@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="4.2" version="4.2" modules="freeware" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install &lt;product name&gt;." ValueLocId="*"/>
+    <ROW Property="BannerBitmap" Value="default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" Value="default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="BASeCamp" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{D95D37DC-6EDE-401B-8BE6-07ED3B500273} "/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="BASeParser XP" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{20971D5D-78AA-4D68-AA65-4FC9CA526949}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR" IsPseudoRoot="1"/>
+    <ROW Directory="CommonFilesFolder" Directory_Parent="TARGETDIR" DefaultDir="Common~1|CommonFilesFolder" IsPseudoRoot="1"/>
+    <ROW Directory="New_Folder_1_DIR" Directory_Parent="APPDIR" DefaultDir="bpCore~1|bpCoreFunc"/>
+    <ROW Directory="New_Folder_2_DIR" Directory_Parent="CommonFilesFolder" DefaultDir="VBAcce~1|VB Accelerator"/>
+    <ROW Directory="New_Folder_3_DIR" Directory_Parent="APPDIR" DefaultDir="BCEval"/>
+    <ROW Directory="New_Folder_4_DIR" Directory_Parent="APPDIR" DefaultDir="BPCont~1|BPControls"/>
+    <ROW Directory="New_Folder_DIR" Directory_Parent="APPDIR" DefaultDir="BPXPGUI"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="SampleApp_DIR" Directory_Parent="APPDIR" DefaultDir="Sample~1|SampleApp"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="BASeParser.dll" ComponentId="{F696F9E4-A020-49F0-8447-8EE4A439F3D7}" Directory_="APPDIR" Attributes="0" KeyPath="BASeParser.dll" FullKeyPath="APPDIR\BASeParser.dll"/>
+    <ROW Component="BCEval.Bas" ComponentId="{E7E86C0F-9969-4817-8088-72CBA90BCEB3}" Directory_="New_Folder_3_DIR" Attributes="0" KeyPath="BCEval.Bas" FullKeyPath="APPDIR\BCEval"/>
+    <ROW Component="BCEval.exe" ComponentId="{67D9D29D-9A06-4313-83EF-952F7E0DB566}" Directory_="New_Folder_3_DIR" Attributes="0" KeyPath="BCEval.exe" FullKeyPath="APPDIR\BCEval\BCEval.exe"/>
+    <ROW Component="BPXPGUI.ocx" ComponentId="{FD5F8645-6CF8-45DD-B301-D1112FDCA9FF}" Directory_="New_Folder_DIR" Attributes="0" KeyPath="BPXPGUI.ocx" FullKeyPath="APPDIR\BPXPGUI\BPXPGUI.ocx"/>
+    <ROW Component="DataFunc.dll" ComponentId="{37008D98-FF5E-4440-8702-3F26285F1FC3}" Directory_="New_Folder_1_DIR" Attributes="0" KeyPath="DataFunc.dll" FullKeyPath="APPDIR\bpCoreFunc\DataFunc.dll"/>
+    <ROW Component="FrmData.frm" ComponentId="{25EF9D2D-C4DA-4B25-9633-8E0F4AF4C9B4}" Directory_="SampleApp_DIR" Attributes="0" KeyPath="FrmData.frm" FullKeyPath="APPDIR\SampleApp"/>
+    <ROW Component="GraphControl.ocx" ComponentId="{D2DBB4DA-47B1-4A56-9BAD-4BA828895137}" Directory_="New_Folder_4_DIR" Attributes="0" KeyPath="GraphControl.ocx" FullKeyPath="APPDIR\BPControls\GraphControl.ocx"/>
+    <ROW Component="Readme.txt" ComponentId="{1B866B34-6193-4662-94CE-15FA52069205}" Directory_="APPDIR" Attributes="0" KeyPath="Readme.txt" FullKeyPath="APPDIR"/>
+    <ROW Component="SSubTmr6.dll" ComponentId="{897A32E8-E394-4B5E-9CD6-82F7708E3410}" Directory_="New_Folder_2_DIR" Attributes="0" KeyPath="SSubTmr6.dll" FullKeyPath="CommonFilesFolder\VB Accelerator\SSubTmr6.dll"/>
+    <ROW Component="sample.exe" ComponentId="{BE46524C-A026-40CC-9080-EEADF749C797}" Directory_="SampleApp_DIR" Attributes="0" KeyPath="sample.exe" FullKeyPath="APPDIR\SampleApp\sample.exe"/>
+    <ROW Component="vbalCmdBar6.ocx" ComponentId="{1DDDDFCD-65DC-438D-BF07-6B71B69420C1}" Directory_="New_Folder_2_DIR" Attributes="0" KeyPath="vbalCmdBar6.ocx" FullKeyPath="CommonFilesFolder\VB Accelerator\vbalCmdBar6.ocx"/>
+    <ROW Component="vbalDTab6.ocx" ComponentId="{E67352B6-B541-4408-96AD-FD53D9945CAC}" Directory_="New_Folder_2_DIR" Attributes="0" KeyPath="vbalDTab6.ocx" FullKeyPath="CommonFilesFolder\VB Accelerator\vbalDTab6.ocx"/>
+    <ROW Component="vbalExpBar6.ocx" ComponentId="{870C9951-0CF8-4CF3-B269-224178264B6A}" Directory_="New_Folder_2_DIR" Attributes="0" KeyPath="vbalExpBar6.ocx" FullKeyPath="CommonFilesFolder\VB Accelerator\vbalExpBar6.ocx"/>
+    <ROW Component="vbalSGrid6.ocx" ComponentId="{6BCDAB26-5792-45FE-B305-A9BD83D8BA69}" Directory_="New_Folder_2_DIR" Attributes="0" KeyPath="vbalSGrid6.ocx" FullKeyPath="CommonFilesFolder\VB Accelerator\vbalSGrid6.ocx"/>
+    <ROW Component="vbalTreeView6.ocx" ComponentId="{522D8A71-C576-4334-B1A9-DACD2024F3FB}" Directory_="New_Folder_2_DIR" Attributes="0" KeyPath="vbalTreeView6.ocx" FullKeyPath="CommonFilesFolder\VB Accelerator\vbalTreeView6.ocx"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="FrmData.frm sample.exe Readme.txt BPXPGUI.ocx DataFunc.dll SSubTmr6.dll vbalCmdBar6.ocx vbalDTab6.ocx vbalExpBar6.ocx vbalSGrid6.ocx vbalTreeView6.ocx BASeParser.dll BCEval.exe BCEval.Bas GraphControl.ocx"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="BASeParser.dll" Component_="BASeParser.dll" FileName="BASePa~1.dll|BASeParser.dll" Attributes="0" SourcePath="BASeParser.dll" SelfReg="true" Sequence="25"/>
+    <ROW File="BCEval.Bas" Component_="BCEval.Bas" FileName="BCEval.Bas" Attributes="0" SourcePath="Eval\BCEval.Bas" SelfReg="false" Sequence="27"/>
+    <ROW File="BCEval.exe" Component_="BCEval.exe" FileName="BCEval.exe" Attributes="0" SourcePath="Eval\BCEval.exe" SelfReg="false" Sequence="26"/>
+    <ROW File="BPXPGUI.ocx" Component_="BPXPGUI.ocx" FileName="BPXPGUI.ocx" Attributes="0" SourcePath="BPXPGUI\BPXPGUI.ocx" SelfReg="true" Sequence="17"/>
+    <ROW File="DataFunc.dll" Component_="DataFunc.dll" FileName="DataFunc.dll" Attributes="0" SourcePath="Plugins\DataFunc.dll" SelfReg="true" Sequence="18"/>
+    <ROW File="FrmData.frm" Component_="FrmData.frm" FileName="FrmData.frm" Attributes="0" SourcePath="Installer\SampleApp\FrmData.frm" SelfReg="false" Sequence="1"/>
+    <ROW File="FrmGUIEvaluator.frm" Component_="FrmData.frm" FileName="FrmGUI~1.frm|FrmGUIEvaluator.frm" Attributes="0" SourcePath="Installer\SampleApp\FrmGUIEvaluator.frm" SelfReg="false" Sequence="2"/>
+    <ROW File="FrmGUIEvaluator.frx" Component_="FrmData.frm" FileName="FrmGUI~1.frx|FrmGUIEvaluator.frx" Attributes="0" SourcePath="Installer\SampleApp\FrmGUIEvaluator.frx" SelfReg="false" Sequence="3"/>
+    <ROW File="GraphControl.ocx" Component_="GraphControl.ocx" FileName="GraphC~1.ocx|GraphControl.ocx" Attributes="0" SourcePath="GraphCtl\GraphControl.ocx" SelfReg="true" Sequence="28"/>
+    <ROW File="MSSCCPRJ.SCC" Component_="FrmData.frm" FileName="MSSCCPRJ.SCC" Attributes="0" SourcePath="Installer\SampleApp\MSSCCPRJ.SCC" SelfReg="false" Sequence="5"/>
+    <ROW File="MdlSample.bas" Component_="FrmData.frm" FileName="MdlSam~1.bas|MdlSample.bas" Attributes="0" SourcePath="Installer\SampleApp\MdlSample.bas" SelfReg="false" Sequence="4"/>
+    <ROW File="Readme.txt" Component_="Readme.txt" FileName="Readme.txt" Attributes="0" SourcePath="Readme.txt" SelfReg="false" Sequence="16"/>
+    <ROW File="SSubTmr6.dll" Component_="SSubTmr6.dll" FileName="SSubTmr6.dll" Attributes="0" SourcePath="..\..\..\ActiveX\Collected\SSubTmr6.dll" SelfReg="false" Sequence="19"/>
+    <ROW File="Sample.res" Component_="FrmData.frm" FileName="Sample.res" Attributes="0" SourcePath="Installer\SampleApp\Sample.res" SelfReg="false" Sequence="10"/>
+    <ROW File="sample.exe" Component_="sample.exe" FileName="sample.exe" Attributes="0" SourcePath="Installer\SampleApp\sample.exe" SelfReg="false" Sequence="6"/>
+    <ROW File="sample.frm" Component_="FrmData.frm" FileName="sample.frm" Attributes="0" SourcePath="Installer\SampleApp\sample.frm" SelfReg="false" Sequence="7"/>
+    <ROW File="sample.frx" Component_="FrmData.frm" FileName="sample.frx" Attributes="0" SourcePath="Installer\SampleApp\sample.frx" SelfReg="false" Sequence="8"/>
+    <ROW File="sample.log" Component_="FrmData.frm" FileName="sample.log" Attributes="0" SourcePath="Installer\SampleApp\sample.log" SelfReg="false" Sequence="9"/>
+    <ROW File="sample.vbg" Component_="FrmData.frm" FileName="sample.vbg" Attributes="0" SourcePath="Installer\SampleApp\sample.vbg" SelfReg="false" Sequence="11"/>
+    <ROW File="sample.vbp" Component_="FrmData.frm" FileName="sample.vbp" Attributes="0" SourcePath="Installer\SampleApp\sample.vbp" SelfReg="false" Sequence="12"/>
+    <ROW File="sample.vbw" Component_="FrmData.frm" FileName="sample.vbw" Attributes="0" SourcePath="Installer\SampleApp\sample.vbw" SelfReg="false" Sequence="13"/>
+    <ROW File="sample2.frm" Component_="FrmData.frm" FileName="sample2.frm" Attributes="0" SourcePath="Installer\SampleApp\sample2.frm" SelfReg="false" Sequence="14"/>
+    <ROW File="sample2.frx" Component_="FrmData.frm" FileName="sample2.frx" Attributes="0" SourcePath="Installer\SampleApp\sample2.frx" SelfReg="false" Sequence="15"/>
+    <ROW File="vbalCmdBar6.ocx" Component_="vbalCmdBar6.ocx" FileName="vbalCm~1.ocx|vbalCmdBar6.ocx" Attributes="0" SourcePath="..\..\..\ActiveX\Collected\vbalCmdBar6.ocx" SelfReg="true" Sequence="20"/>
+    <ROW File="vbalDTab6.ocx" Component_="vbalDTab6.ocx" FileName="vbalDT~1.ocx|vbalDTab6.ocx" Attributes="0" SourcePath="..\..\..\ActiveX\Collected\vbalDTab6.ocx" SelfReg="true" Sequence="21"/>
+    <ROW File="vbalExpBar6.ocx" Component_="vbalExpBar6.ocx" FileName="vbalEx~1.ocx|vbalExpBar6.ocx" Attributes="0" SourcePath="..\..\..\ActiveX\Collected\vbalExpBar6.ocx" SelfReg="true" Sequence="22"/>
+    <ROW File="vbalSGrid6.ocx" Component_="vbalSGrid6.ocx" FileName="vbalSG~1.ocx|vbalSGrid6.ocx" Attributes="0" SourcePath="..\..\..\ActiveX\Collected\vbalSGrid6.ocx" SelfReg="true" Sequence="23"/>
+    <ROW File="vbalTreeView6.ocx" Component_="vbalTreeView6.ocx" FileName="vbalTr~1.ocx|vbalTreeView6.ocx" Attributes="0" SourcePath="..\..\..\ActiveX\Collected\vbalTreeView6.ocx" SelfReg="true" Sequence="24"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;ui.ail&gt;"/>
+    <ROW Path="&lt;ui_en.ail&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;FolderDlg.aip&gt;"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;StaticUIStrings.aip&gt;"/>
+    <ROW Fragment="UI.aip" Path="&lt;UI.aip&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="default_banner.bmp" SourcePath="&lt;default-banner.bmp&gt;"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;default-dialog.bmp&gt;"/>
+    <ROW Name="launcher.dll" SourcePath="&lt;launcher.dll&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="1" Source="launcher.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="1" Source="launcher.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="FirstMediaSize" value="0"/>
+    <ATTRIBUTE name="FirstMediaSizeUnit" value="0"/>
+    <ATTRIBUTE name="InstallationType" value="0"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="MediaSizeUnit" value="0"/>
+    <ATTRIBUTE name="Package" value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="sample.exe" Directory_="SHORTCUTDIR" Name="sample.exe" Component_="sample.exe" Target="[#sample.exe]" Description="sample.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="SampleApp_DIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMax="ProductVersion" Attributes="1025"/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" Attributes="2"/>
+  </COMPONENT>
+</DOCUMENT>

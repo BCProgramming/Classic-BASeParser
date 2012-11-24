@@ -1,0 +1,7 @@
+VBGROUP 5.0
+Project=BASeParser.vbp
+Project=GraphCtl\GraphControl.vbp
+Project=BPXPGUI\BPXPGUI.vbp
+StartupProject=BCEvaluator\GUIevaluator.vbp
+Project=Plugins\DataFunc\DataFunc.vbp
+Project=bceval\BCEval.vbp

@@ -1,0 +1,34 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "ExtenderCollection"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+
+
+Public Event ObjectEvent(FromExtender As BCControlExtender, ObjectEvt As Object, pEventInfo As EventInfo)
+
+Private mCol As Collection
+
+Public Sub Add(AddMe As BCControlExtender)
+    mCol.Add AddMe
+    Set AddMe.Owner = Me
+End Sub
+
+
+Public Sub DelegateEvent(FromObject As BCControlExtender, ObjectEvt As Object, pEventInfo As EventInfo)
+    RaiseEvent ObjectEvent(FromObject, ObjectEvt, pEventInfo)
+End Sub
+
+Private Sub Class_Initialize()
+    Set mCol = New Collection
+End Sub

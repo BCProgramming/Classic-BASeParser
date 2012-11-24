@@ -1,0 +1,20 @@
+
+.fullwidth{
+	.width : "100%";
+
+
+
+}
+.code{
+	font-family : Consolas;
+	color : #000000;
+	background : #CCCCCC;
+	display: block;
+	border-style: inset;
+
+}
+TD
+{
+	float:top;
+}
+

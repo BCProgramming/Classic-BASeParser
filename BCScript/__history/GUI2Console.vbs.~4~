@@ -1,0 +1,17 @@
+
+    Option Explicit
+
+    Dim strLINK, strEXE, WSHShell
+
+    ' Be sure to set up strLINK to match your VB6 installation.
+    strLINK = """D:\Programs\Microsoft Visual Studio\VB98\LINK.EXE"""
+
+    strEXE = """" & WScript.Arguments(0) & """"
+
+    Set WSHShell = CreateObject("WScript.Shell")
+    Wscript.echo strLINK & " /EDIT /SUBSYSTEM:CONSOLE " & strEXE & "Wshshell=" & (WSHShell is nothing)
+    WSHShell.Run strLINK & " /EDIT /SUBSYSTEM:CONSOLE " & strEXE 
+
+    Set WSHShell = Nothing
+    WScript.Echo "Complete!"
+

@@ -1,0 +1,2 @@
+STORE(guess,BCSH@ReadLn("Enter your Guess:"));
+BCSH@WriteLn(guess);

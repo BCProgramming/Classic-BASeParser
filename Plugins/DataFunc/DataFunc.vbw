@@ -1,0 +1,10 @@
+CDataFunc = 0, 0, 0, 0, C
+ModMain = 0, 0, 967, 372, C
+CScriptFunctions = 0, 0, 0, 0, C
+FuncDelegate = 138, 138, 991, 482, C
+GlobalObjects = 115, 115, 968, 461, C
+cStringBuilder = 0, 0, 0, 0, C
+cRegistry = 92, 92, 945, 438, C
+CScriptPlugins = 0, 0, 0, 0, C
+FrmRuntimeDialog = 69, 69, 922, 415, C, 69, 69, 922, 413, C
+CBPGUIKit = 92, 92, 945, 438, C

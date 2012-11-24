@@ -1,0 +1,6 @@
+exp(z) = (z^n)/(n!)
+
+
+log(x+iy) = 1/2(ln(x^2+y^2)+iargument(x+iy)
+
+Sin(z)=((e^iz-e^-iz)/2i)

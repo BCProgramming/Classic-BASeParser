@@ -1,0 +1,35 @@
+BASeParser XP Distribution
+--------------------------
+
+
+After much deliberation, I have finally decided to simply use a ZIP file and some helper batch files for distribution of my new flagship library, BASeParser XP.
+Each new release will add-on to previous releases, perhaps creating new files here and there.
+
+
+
+INSTALLATION
+------------
+
+BASeParser XP, as of this current release, requires a manual setup. Copy the BASeParser.dll file somewhere on your hard drive, ideally a folder in the program files directory, but anywhere will work just fine. Also copy the included regall.bat, and run it from the location of the BASeParser DLL.
+
+It might not work at this point. When attempting to create an object that resides in the library, a "activeX component cannot create object" error may occur. To resolve this error, ensure you have the following libraries installed on the machine:
+
+
+
+
+-------------------------------------------------------------------------
+TypeLib Information..........................TLBINF32.DLL
+Microsoft Script Control 1.0.................msscript.ocx
+Microsoft XML, v3.0..........................msxml3.dll
+Microsoft Scripting Runtime..................scrrun.dll
+Microsoft VBScript Regular Expressions 5.5...vbscript.dll
+
+
+For your convenience, I have included these files within the distribution archive. Just copy them to the system32 folder and register them as required.
+
+
+
+
+How to Use(Visual Basic 6):
+
+Once you've added a reference to BASeParser XP from the References dialog of Visual Basic, you can begin using the Parser.

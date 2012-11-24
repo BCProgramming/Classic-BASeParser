@@ -1,0 +1,190 @@
+<HTML>
+	<HEAD>
+<!--Change relative paths as appropriate-->
+	<LINK REL="STYLESHEET" HREF="..\CSS\topic.css">
+	<SCRIPT LANGUAGE="javascript" SRC="..\SCRIPTS\footer.js"></SCRIPT>
+		<TITLE>BASeParser Help:Operators</TITLE>
+	</HEAD>
+<BODY OnLoad="showfooter(document.all('bottomdiv'))">
+	<DIV ID="HEADER"></DIV>
+<H1>OPERATORS</H1>
+<P>
+An Operator, Surprisingly enough, performs some operation on data and values. For example, the + Operator performs addition. BASeParser currently supports three kinds of operators. Binary, Unary Postfix and Unary Prefix.
+<UL TYPE="DISC">
+<LI><H3>Binary</H3><P>
+	Binary Operators work on the value immediately preceding and following it's position in the expression. These are referred to as Operands. The operator will perform some operation on these two values, returning some (hopefully relevant) result. For example, the "+" binary operator performs an addition operation on the two operands and returns the result.
+<LI><H3>Unary Prefix</H3><P>
+	Unary Prefix operators operate on the operand to the right of, or following, it's position in the expression. the unary minus (-) operator can be used this way, as in the expression "-2" or "-(4+5)".
+<LI><H3>Unary Postfix</H3><P>
+	Much less common then the Unary prefix kind, these types of unary operators work on the item immediately preceding them in the expression. for example, the factorial operator (!) works this way allowing you to create expressions as "4!" (resulting in 24) and "5!", resulting in 120
+
+Order of operations follow the basic BEDMAS rules. parentheses can and should be used to force a particular order of operations within expressions.<P>
+Because BASeParser is intended as a general-purpose expression evaluator, it allows for a broad range of choices for operators, as shown here. Take note that all these operators are used in between the two operands that you wish to use them on. 
+This makes sense, it's the way we would use them anyway. As well, if either operand evaluates to <A HREF="..\variables\Null.html">Null</A> the result will be Null, unless otherwise noted.
+<CENTER><TABLE BORDER="2"><TR><TD COLSPAN="2">Binary Operators</TD></TR>
+<TR><TD> + (Addition)</TD>
+<TD>
+If the operands can be converted to a number, they are and the sum is returned. If both operands are strings that cannot be converted to a number, they are concatenated together.
+
+
+</TD></TR>
+<TR><TD>- (Subtraction)</TD><TD>
+	returns the difference between two numbers.
+
+</TD></TR>
+<TR><TD> * (Multiplication)</TD><TD>
+Multiplies two numbers.
+</TD></TR>
+<TR><TD> / (Division)</TD><TD>
+Divides two numbers.</TD></TR>
+<TR><TD> \,DIV (Integer Division) </TD><TD>
+Divides two numbers, returning only the integral portion of the result-it is NOT rounded, so
+5/3 is 1. This can be used to derive the modulus via: (A-((A \ B)*B)) = A Mod B</TD></TR>
+<TR><TD> ^,** (exponentiation)</TD><TD>
+	Takes a number to a power. Fractional and negative values are allowed, as long as you aren't asking for the impossible. (for example, "-5^0.5") will not magically give you the square root of -5.
+
+
+</TD></TR>
+<TR><TD>==,=,!=,&lt;,&gt;, &lt;=, =&lt;, &gt;=, <BR>
+	(Comparision)</TD><TD>
+The comparision operators, surprisingly enough, compare two operands. if the test succeeds, the return value will be equal to the constant, <A HREF="..\variables\True.html">True</A>. Otherwise, it will be the value <A HREF="..\variables\False.html">False</A>. although technically the =< and => are not valid, they are automatically handled, to prevent complaints by dyslexic individuals.
+
+
+</TD></TR>
+<TR><TD> AND,&& (Logical AND)</TD><TD>
+Performs a Logical AND on the two values. For Boolean values, this will return <A HREF="..\variables\True.html">True</A> if and only if both operands evaluate to <A HREF="..\variables\True.html">True</A>. Otherwise, the return value will be <A HREF="..\variables\False.html">False</A>.<P>
+
+For Numeric Expressions, This operator will return the bit-wise AND of the two expressions.<P>
+
+For String Expressions, This operator Concatenates the two values. However, if both of the values can be coerced to a number, they will be treated as such.
+
+
+</TD></TR>
+<TR><TD> OR,|| (logical disjunction)</TD><TD>
+Performs a Logical disjunction on the two values. For Boolean values, this will return <A HREF="..\variables\True.html">True</A> either operand evaluates to <A HREF="..\variables\True.html">True</A>. Otherwise, the return value will be <A HREF="..\variables\False.html">False</A>.<P>
+
+For Numeric Expressions, This operator will return the bit-wise OR of the two expressions.<P>
+
+For String Expressions, This operator is undefined.
+</TD></TR>
+<TR><TD>XOR (logical exclusion)</TD><TD>
+Performs a Logical exclusion on the two values. For Boolean values, this will return <A HREF="..\variables\True.html">True</A> if and only if <i>One</I> operand evaluates to <A HREF="..\variables\True.html">True</A>. Otherwise, the return value will be <A HREF="..\variables\False.html">False</A>.<P>
+
+For Numeric Expressions, This operator will return the bit-wise Exclusion of the two expressions.<P>
+
+For String Expressions, This operator is undefined.</TD></TR>
+<TR><TD>EQV (Logical equivalence)</TD><TD>
+Performs a Logical exclusion on the two values. For Boolean values, this will return <A HREF="..\variables\True.html">True</A> if and only if the operands are both true, or both operands are false. Otherwise, the return value will be <A HREF="..\variables\False.html">False</A>.<P>
+
+For Numeric Expressions, This operator will return the bit-wise Equivalence of the two expressions.<P>
+
+For String Expressions, This operator is undefined.
+
+<!--Before you say ANYTHING, I KNOW that the TD tags don't require closing.-->
+</TD></TR>
+<TR><TD>IMP (Logical Implication)</TD><TD>
+Performs a Logical Implication on the two values. For Boolean values, refer to the following table:<P>
+<TABLE BORDER=2>
+<TR><TD>If expression1 is </TD><TD>And expression2 is </TD><TD>The result is </TD></TR>
+<TR><TD>True </TD><TD>True </TD><TD>True </TD></TR>
+<TR><TD>True </TD><TD>False </TD><TD>False </TD></TR>
+<TR><TD>True </TD><TD>Null</TD><TD> Null</TD></TR> 
+<TR><TD>False </TD><TD>True </TD><TD>True </TD><TR>
+<TR><TD>False </TD><TD>False </TD><TD>True</TD></TR> 
+<TR><TD>False </TD><TD>Null </TD><TD>True </TD></TR>
+<TR><TD>Null </TD><TD>True </TD><TD>True </TD></TR>
+<TR><TD>Null </TD><TD>False </TD><TD>Null</TD></TR> 
+<TR><TD>Null </TD><TD>Null </TD><TD>Null</TD></TR> 
+</TABLE>
+
+For Numeric Expressions, This operator will return the bit-wise Equivalence of the two expressions.<P>
+
+For String Expressions, This operator is undefined.
+</td></TR>
+
+<TR><TD>LIKE (String comparision) and $$ (regular expressions)</TD>
+
+
+<TD>
+	the LIKE and $$ operators are quite similiar in practice, but different in function. the <A HREF="Like.html">Like</A> operator simply delegates the passed operands to the 
+	Visual Basic Operator of the same name. the <A HREF="$$.html">$$</A> operator, however, uses a VBScript Regular Expression Object to perform what seems (at first glance) like the same job. However, all is
+	not what it seems. <A HREF="Like.html">Like</A> returns a boolean value indicating wether the first operand fits the mask given in the second operand. The <A HREF="$$.html">$$</A> operator, on the other hand, returns an Object from the
+	Regular Expression library, a MatchCollection. In order to retrieve relevant data, it may be necessary to use the <A HREF="at.html">@</A> operator to access methods of the MatchCollection as appropriate.
+	
+
+
+</TD></TR>
+<TR><TD>IS (Object comparision)</TD><TD></TD></TR>
+<TR><TD>IN (Set checking)</TD><TD></TD></TR>
+
+<TR><TD VALIGN="TOP">:=,+=,-=,*=,/=,\=,^= (Assignment Operators)</TD><TD>
+	<P>They said it couldn't be done. Wait- that was me. irrregardless, I managed to add support for assignment. These all have the form:<P>
+
+	<CODE>Variable := Value</CODE>
+<P>
+If you use an operation/assignment, then you get something pretty much like this. In this example, + could be any of the other forms, -, *, etc. as well:<P>
+
+<CODE>	Variable:=(Variable + Value)</CODE>
+<P>
+The parentheses aren't required- but you can never be to sure. All assignment operators return the new value of the variable, so:<P>
+
+(X:=Y:=5)
+<P> will assign 5 to Y, and X to the returned value of (Y:=5). In addition, you can mix'em up with the other assignent operators:<P>
+<CODE>X+=Y*=4</CODE>
+
+
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<!--Information goes here-->
+<P>
+<H2>Unary Operations</H2><P>
+
+In addition to the standard Binary operators, BASeParser supports two kinds of <I>Unary</I> operators. A Unary operator is similiar to a binary operator, however, it only acts on one value. A prime example is negation. if you precede a value by a minus sign, that value will become- minus. There are, as I said, two kinds of Unary operators. Then most common type is the kind that appears before the item it is to work on. This encompasses almost every unary operator that BASeParser's Core plugin can handle. The other kind is similiar, but it appears after the value it works on, for example, the factorial (!) operator.
+<P>
+<H2>Mixing Them up</H2><P>
+
+When Mixing together different types of unary operators, One must map special attention to operator precedence. Take, for example, this ambiguous expression:<P>
+
+<CODE>-5!</CODE><P>
+
+What should the result be? Should the factorial of 5 be extracted (120) and negated? or should an attempt be made (that would fail) to find the factorial of -5? well, thanks to precedence rules, this would raise an error. the "-" unary operator has a higher precedence then the "!" unary operator, so this would raise an error. However, this can easily be overcome by telling the parser how to do it, using parentheses:<P>
+
+<CODE>-(5!)</CODE><P>
+
+This will properly return -120. 
+
+
+<TABLE BORDER="2">
+<TD VALIGN="TOP">- (Unary Negation)</TD><TD>
+
+Unary Negation is the most common occurence of unary operator. It performs the simple task of negating, or multiplying by -1, the operand immediately following it.
+
+</TD></TR><TR>
+
+<TD VALIGN="TOP">SizeOf</TD><TD>
+
+The SizeOf Unary operator 
+
+
+
+
+</TABLE>
+
+<P>
+<H2>Operations on foreign types</H2><P>
+
+	When BASeParser's Core plugin is given foreign types (a foreign type is, anything that isn't a string or number, such as, for example, Class instances,arrays, 
+	or Complex Numbers.), it handles them elegantly. First, Some operations can only be performed on these "foreign" types. For example, the "In" operators determines 
+	if it's first operand is in the array of the second operand. If the plugin encounters such a operator without the required array argument, however, it will simply 
+	convert whatever it finds that should be an array into an array, and continues it's work. for example, A in B, where B is not an array, is essentially testing equality 
+	(since B will be implicitly converted to a number). Other operations, such as "PICK", "CHOOSE", etc, operate on the same principle. The Standard operators can, in most 
+	cases, be used on foreign types. For Example, the CComplex class used to represent Complex numbers supports the +,-,*, and / operators, on both two complex numbers as 
+	well as on a complex number and a real number.
+
+
+<DIV ID="bottomdiv" class="fullwidth">Copyright information</DIV>
+
+</BODY>
+</HTML>

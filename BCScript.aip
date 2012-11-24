@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="7.0.1" version="7.1.3" modules="freeware" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="BP32.exe" Type="8"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="BASeCamp" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{FBA1C9B9-51B0-4825-A825-0B8FE0A03BE5} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="BCScript" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.3.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{8938C932-8245-4C3C-BAC8-B34F85315C37}"/>
+    <ROW Property="WIMinVersion" MultiBuildValue="DefaultBuild:2.0" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="Sample_Scripts_DIR" Directory_Parent="APPDIR" DefaultDir="Sample"/>
+    <ROW Directory="SystemFolder" Directory_Parent="TARGETDIR" DefaultDir="System~1|SystemFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="BASeParser.dll" ComponentId="{00473623-FE81-4E6D-BA55-0E31A9CB7FF6}" Directory_="APPDIR" Attributes="0" KeyPath="BASeParser.dll"/>
+    <ROW Component="BCCParser.dll" ComponentId="{C72897AF-4499-4F78-96EB-7ACCD45F22D6}" Directory_="APPDIR" Attributes="0" KeyPath="BCCParser.dll"/>
+    <ROW Component="BCDynaCall.dll" ComponentId="{B8EDAB3E-2826-4182-B4A0-C7DB0C72213A}" Directory_="APPDIR" Attributes="0" KeyPath="BCDynaCall.dll"/>
+    <ROW Component="BCFile.dll" ComponentId="{62E1C87D-CE16-4E53-826E-5FF31E2E6004}" Directory_="APPDIR" Attributes="0" KeyPath="BCFile.dll"/>
+    <ROW Component="BCScript.exe" ComponentId="{046BEC51-52AB-4F8C-B06F-C38803192F00}" Directory_="APPDIR" Attributes="0" KeyPath="BCScript.exe"/>
+    <ROW Component="GUIevaluator.exe" ComponentId="{A8A1D330-5458-4B22-8F19-54BCFB5119D0}" Directory_="APPDIR" Attributes="0" KeyPath="GUIevaluator.exe"/>
+    <ROW Component="MSCOMCTL.OCX" ComponentId="{854A2A42-C845-456B-8655-8AB24D697C75}" Directory_="SystemFolder" Attributes="0" KeyPath="MSCOMCTL.OCX"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{BCC551CC-4C44-43CE-A973-FD4B19AEAFA8}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SSubTmr6.dll" ComponentId="{E3892230-FC89-4B19-97E0-E370477B96ED}" Directory_="SystemFolder" Attributes="0" KeyPath="SSubTmr6.dll"/>
+    <ROW Component="TLBINF32.DLL" ComponentId="{3903DE23-6FF5-4B53-AF84-121571BBBD65}" Directory_="SystemFolder" Attributes="0" KeyPath="TLBINF32.DLL"/>
+    <ROW Component="msscript.ocx" ComponentId="{171BB2F9-7304-4EB4-8034-89218C960A24}" Directory_="SystemFolder" Attributes="0" KeyPath="msscript.ocx"/>
+    <ROW Component="msxml3.dll" ComponentId="{966F4D8E-77E8-4E81-96B4-7D42E6586589}" Directory_="SystemFolder" Attributes="0" KeyPath="msxml3.dll"/>
+    <ROW Component="scrrun.dll" ComponentId="{7F303DCF-403D-4B7D-A7C4-C944E2AFBC12}" Directory_="SystemFolder" Attributes="0" KeyPath="scrrun.dll"/>
+    <ROW Component="testfuncs.bcs" ComponentId="{40F37113-19FA-4F28-9EB9-B47992C0E2F0}" Directory_="Sample_Scripts_DIR" Attributes="0" KeyPath="testfuncs.bcs" Type="0"/>
+    <ROW Component="vbscript.dll" ComponentId="{11FD3681-193B-48E1-8C6E-D216377FBC3E}" Directory_="SystemFolder" Attributes="0" KeyPath="vbscript.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Attributes="0" Components="BASeParser.dll BCCParser.dll BCDynaCall.dll BCFile.dll BCScript.exe GUIevaluator.exe MSCOMCTL.OCX msscript.ocx msxml3.dll scrrun.dll SSubTmr6.dll TLBINF32.DLL vbscript.dll SHORTCUTDIR testfuncs.bcs"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="BASeParser.dll" Component_="BASeParser.dll" FileName="BASePa~1.dll|BASeParser.dll" Attributes="0" SourcePath="Support\BCScript\BASeParser.dll" SelfReg="true" Sequence="1"/>
+    <ROW File="BCCParser.dll" Component_="BCCParser.dll" FileName="BCCPar~1.dll|BCCParser.dll" Attributes="0" SourcePath="Support\BCScript\BCCParser.dll" SelfReg="true" Sequence="2"/>
+    <ROW File="BCDynaCall.dll" Component_="BCDynaCall.dll" FileName="BCDyna~1.dll|BCDynaCall.dll" Attributes="0" SourcePath="Support\BCScript\BCDynaCall.dll" SelfReg="true" Sequence="3"/>
+    <ROW File="BCFile.dll" Component_="BCFile.dll" FileName="BCFile.dll" Attributes="0" SourcePath="Support\BCScript\BCFile.dll" SelfReg="true" Sequence="4"/>
+    <ROW File="BCScript.exe" Component_="BCScript.exe" FileName="BCScript.exe" Attributes="0" SourcePath="Support\BCScript\BCScript.exe" SelfReg="false" Sequence="5"/>
+    <ROW File="GUIevaluator.exe" Component_="GUIevaluator.exe" FileName="GUIeva~1.exe|GUIevaluator.exe" Attributes="0" SourcePath="Support\BCScript\GUIevaluator.exe" SelfReg="false" Sequence="6"/>
+    <ROW File="GuessThatNum.BCS" Component_="testfuncs.bcs" FileName="GuessT~1.BCS|GuessThatNum.BCS" Attributes="0" SourcePath="Support\BCScript\sample\GuessThatNum.BCS" SelfReg="false" Sequence="17"/>
+    <ROW File="MSCOMCTL.OCX" Component_="MSCOMCTL.OCX" FileName="MSCOMCTL.OCX" Attributes="0" SourcePath="Support\BCScript\SYSTEM\MSCOMCTL.OCX" SelfReg="true" Sequence="7"/>
+    <ROW File="SSubTmr6.dll" Component_="SSubTmr6.dll" FileName="SSubTmr6.dll" Attributes="0" SourcePath="Support\BCScript\SYSTEM\SSubTmr6.dll" SelfReg="true" Sequence="11"/>
+    <ROW File="TLBINF32.DLL" Component_="TLBINF32.DLL" FileName="TLBINF32.DLL" Attributes="0" SourcePath="Support\BCScript\SYSTEM\TLBINF32.DLL" SelfReg="true" Sequence="12"/>
+    <ROW File="guess.bcs" Component_="testfuncs.bcs" FileName="guess.bcs" Attributes="0" SourcePath="Support\BCScript\sample\guess.bcs" SelfReg="false" Sequence="16"/>
+    <ROW File="helloWorld.bcs" Component_="testfuncs.bcs" FileName="helloW~1.bcs|helloWorld.bcs" Attributes="0" SourcePath="Support\BCScript\sample\helloWorld.bcs" SelfReg="false" Sequence="18"/>
+    <ROW File="msscript.ocx" Component_="msscript.ocx" FileName="msscript.ocx" Attributes="0" SourcePath="Support\BCScript\SYSTEM\msscript.ocx" SelfReg="true" Sequence="8"/>
+    <ROW File="msxml3.dll" Component_="msxml3.dll" FileName="msxml3.dll" Attributes="0" SourcePath="Support\BCScript\SYSTEM\msxml3.dll" SelfReg="true" Sequence="9"/>
+    <ROW File="readlnExample.bcs" Component_="testfuncs.bcs" FileName="readln~1.bcs|readlnExample.bcs" Attributes="0" SourcePath="Support\BCScript\sample\readlnExample.bcs" SelfReg="false" Sequence="19"/>
+    <ROW File="scrrun.dll" Component_="scrrun.dll" FileName="scrrun.dll" Attributes="0" SourcePath="Support\BCScript\SYSTEM\scrrun.dll" SelfReg="true" Sequence="10"/>
+    <ROW File="testarray.bcs" Component_="testfuncs.bcs" FileName="testar~1.bcs|testarray.bcs" Attributes="0" SourcePath="Support\BCScript\sample\testarray.bcs" SelfReg="false" Sequence="20"/>
+    <ROW File="testfuncs.bcs" Component_="testfuncs.bcs" FileName="testfu~1.bcs|testfuncs.bcs" Attributes="0" SourcePath="Support\BCScript\sample\testfuncs.bcs" SelfReg="false" Sequence="14"/>
+    <ROW File="testscript.bcs" Component_="testfuncs.bcs" FileName="testsc~1.bcs|testscript.bcs" Attributes="0" SourcePath="Support\BCScript\sample\testscript.bcs" SelfReg="false" Sequence="15"/>
+    <ROW File="vbscript.dll" Component_="vbscript.dll" FileName="vbscript.dll" Attributes="0" SourcePath="Support\BCScript\SYSTEM\vbscript.dll" SelfReg="true" Sequence="13"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_FRAGS&gt;FolderDlg.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_FRAGS&gt;UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="default_banner.bmp" SourcePath="&lt;AI_RES&gt;default-banner.bmp"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;AI_RES&gt;default-dialog.bmp"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="BP32.exe" SourcePath="BP32.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="VersionMsi &gt;= WIMinVersion" Description="[ProductName] cannot be installed on systems with Windows Installer version smaller than [WIMinVersion]" DescriptionLocId="AI.LaunchCondition.WI" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="GUIevaluator.exe" Directory_="SHORTCUTDIR" Name="GUIeva~1.exe|GUIevaluator.exe" Component_="GUIevaluator.exe" Target="[#GUIevaluator.exe]" Description="GUIevaluator.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

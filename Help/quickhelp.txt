@@ -1,0 +1,51 @@
+BASeParser XP Core Functions Operators
+
+
+The Core Plugin of BASeParser XP, BPCoreOpFunc, implements a large number of Operators and functions.
+
+
+*Note*
+
+Some Objects that implement IOperable, CComplex, for example, might add their own handling to certain operators and functions.
+Additionally, if the operand does not support arrays, the core plugin will automatically call itself recursively for each item in the array and subsequently return a array consisting of the results.
+A example:
+
+{1,2}-{4,5}
+
+would return:
+
+{{-3,-4},{-2,-3}}
+
+which you can think of as:
+
+{{1-4,1-5},{2-4,2-5}}
+
+
+This is a very useful feature that can make what used to require a loop a single line. Additionally it supports any operator that is implemented by the Core plugin. note that not all plugins may include this ability, however.
+
+
+
+OPERATORS:
+
+
++
+
+Adds two Values together. Fairly self explanatory. If either operand is a string variable, the other will be coerced to a string value. for example:
+
+38+"hi" would return "38hi"
+
+-
+
+Subtracts the second operand from the first operand. Also can be used as a Unary minus to indicate negative numbers.
+
+*
+
+Multiplication. Multiplies the two values, returning the result. C
+
+/
+
+Division. Divides the first operand by the second operand.
+
+\ and DIV
+
+integer division. returns the whole portion after division. 

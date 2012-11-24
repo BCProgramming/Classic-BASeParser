@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--It's been ages since I used my XML to commandbar library....-->
+<menuset name="popupmenu">
+<menu name="popup">
+	<menu name="POPUP::TEST" OPERATION="CLICKED"></menu>
+  <menu name="POPUP::TEST2" OPERATION="CLICKED2"></menu>
+
+</menu>
+</menuset>

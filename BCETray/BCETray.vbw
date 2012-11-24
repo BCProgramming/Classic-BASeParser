@@ -1,0 +1,4 @@
+FrmBCETray = 44, 48, 996, 458, , 0, 0, 952, 410, C
+ModCmdBarXML = 66, 72, 1018, 482, C
+modSysTray = 66, 72, 1018, 482, 
+cSysTray = 154, 168, 1106, 578, Z

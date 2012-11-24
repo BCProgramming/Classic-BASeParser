@@ -1,0 +1,7 @@
+BCSH@WriteLn("=============")
+BCSH@WriteLn("Guess that Number")
+BCSH@WriteLn("==============")
+STORE(X,BCSH@ReadLn("Enter a number 1 to 10:"))
+STORE(Y,INT(RANDOM(1,10)))
+IIF(X=Y,MsgBox("You Won!"),MsgBox("Epic Fail, you lost."));
+BCSH@WriteLn("==============")
