@@ -1,0 +1,10 @@
+Speed Benchmarks
+The "Optimize" subdirectory beneath the main Parser code folder is where I keep my "Speed Milestones"
+Every once in a while, I'll run a standard speed profile against the library. If any of the test expressions screws up, then the test is invalidated- (it doesn't matter how fast your code is if it doesn't work) and will not be added. The first
+test, 02-09-2007, was tomorrow(well, for me, right now, as I type this..). I'm sure I'll eventually add more procedures that Push and Pop themselves from the CDebug Stack, (thus automatically adding support for profiling- isn't my CDebug class GREAT!).
+
+Anyway, inside each one is:
+
+the Log file generated from that run (.LOG)
+the CSV profiler output from the debug class (.CSV)
+an Excel Spreadsheet that created a chart with the CSV file (.XLS)

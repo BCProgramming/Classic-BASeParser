@@ -1,0 +1,6 @@
+VBGROUP 5.0
+Project=..\BASeParser.vbp
+StartupProject=sample.vbp
+Project=..\GraphCtl\GraphControl.vbp
+Project=..\Plugins\DataFunc\DataFunc.vbp
+Project=..\BPXPGUI\BPXPGUI.vbp
