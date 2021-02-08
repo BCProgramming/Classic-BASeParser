@@ -166,7 +166,7 @@ If Not Flinit Then
     "ARRAY ASC ORD ATN CHOOSE CHR$ CHR CREATEOBJECT CVERR DATEADD DATEDIFF DATEPART DATESERIAL "
     Ret = Ret & "DATEVALUE YEAR MONTH DAY MINUTE SECOND DDB DIR$ DIR ENVIRON ERROR EXP FILEDATETIME EXEC " & _
     "FILELEN FILTER FORMAT$ FORMATCURRENCY FORMATDATETIME FORMATNUMBER FORMATPERCENT FV FORMAT LISTMEMBERS "
-    Ret = Ret & "GETATTR GETOBJECT HEX$ HEX IIF INPUTBOX$ INPUTBOX INSTRREV INSTR INT FIX IPMT IRR ISARRAY " & "ISDATE ISEMPTY ISERROR ISNULL ISNUMERIC ISOBJECT JOIN LBOUND LCASE$ LCASE LEFT$ LEFT LEN LOG " & _
+    Ret = Ret & "GETATTR GETOBJECT BIN$ BIN HEX$ HEX IIF INPUTBOX$ INPUTBOX INSTRREV INSTR INT FIX IPMT IRR ISARRAY " & "ISDATE ISEMPTY ISERROR ISNULL ISNUMERIC ISOBJECT JOIN LBOUND LCASE$ LCASE LEFT$ LEFT LEN LOG " & _
     "LTRIM$ LTRIM RTRIM$ RTRIM TRIM$ TRIM MID$ MID MIRR MONTHNAME MSGBOX NPER NPV OCT$ OCT PARTITION " & _
     "PMT PPMT PV POS SUBSTR QBCOLOR RATE REPLACE$ REPLACE RGB RIGHT$ RIGHT ROUND " & _
     "SGN SHELL SLN SPACE$ SPACE SPLIT SQRT SQR STR$ STR STRCOMP STRCONV STRING$ STRING STRREVERSE SWITCH " & "SYD TIMESERIAL TIMEVALUE TYPENAME UBOUND" & " UCASE UCASE$ VAL VARTYPE"
@@ -221,7 +221,7 @@ End Function
 
 Private Sub ICorePlugin_HandleItem(withparser As CParser, ItemHandle As CFormItem, retval As Variant)
 'TODO: add more robustness for the assignment operators to work with arrays.
-Dim byrefret As Variant, newvalue As Variant
+Dim byrefret As Variant, NewValue As Variant
 Debug.Print "handling op:" & ItemHandle.op
 Dim NewVar As CVariable
 If ItemHandle.ItemType = IT_ABSPIPE Then
@@ -417,7 +417,7 @@ If Position = 1 Then
 
     
     
-    Exit Function
+    'Exit Function
 End If
 
 For Loopprefix = 1 To UBound(Prefixes)
@@ -524,10 +524,10 @@ v = "<Variable Placeholder>"
          '"LISTVARS", "ALLVARS"
 End Sub
 
-Private Function IEvalEvents_AssignSubScript(withparser As CParser, OnValue As Variant, subscripts As Variant, AssignThis As Variant) As Boolean
+Private Function IEvalEvents_AssignSubScript(withparser As CParser, OnValue As Variant, SubScripts As Variant, AssignThis As Variant) As Boolean
 '
 If IsArray(OnValue) Then
-    Call Assign(OnValue(subscripts(0).Execute), AssignThis)
+    Call Assign(OnValue(SubScripts(0).Execute), AssignThis)
     IEvalEvents_AssignSubScript = True
 End If
 
@@ -553,7 +553,7 @@ Private Function IEvalEvents_GetPluginUIData() As IPluginUIData
     Set IEvalEvents_GetPluginUIData = Me
 End Function
 
-Private Function IEvalEvents_HandleSubScript(withparser As CParser, OnValue As Variant, subscripts As Variant, retval As Variant) As Boolean
+Private Function IEvalEvents_HandleSubScript(withparser As CParser, OnValue As Variant, SubScripts As Variant, retval As Variant) As Boolean
 'handle strings.
 'Subscripts is a Array of CParser objects.
 Dim strcast As String, I As Long
@@ -568,7 +568,7 @@ Select Case VarType(OnValue)
                     strcast = OnValue
                     'ok, grab that digit.
                     On Error Resume Next
-                    If UBound(subscripts) = 0 Then
+                    If UBound(SubScripts) = 0 Then
                         If Err <> 0 Then
                             'If an error occured, we have no subscripts at all.
                             'return the string array as an array of characters.
@@ -587,7 +587,7 @@ Select Case VarType(OnValue)
                         Else
                             On Error GoTo 0
                             Dim returnValue As Variant, strcoerced As String
-                            subscripts(0).ExecuteByRef returnValue
+                            SubScripts(0).ExecuteByRef returnValue
                             If IsArray(returnValue) Then
                                 If IsArray(returnValue(0)) Then returnValue(0) = Flatten(returnValue(0))(0)
                                 If IsArray(returnValue(1)) Then returnValue(1) = Flatten(returnValue(1))(1)
@@ -597,8 +597,8 @@ Select Case VarType(OnValue)
                                 strcast = Mid$(strcast, strcoerced, 1)
                             End If
                         End If
-                    ElseIf UBound(subscripts) > 0 Then
-                        strcast = Mid$(strcast, subscripts(0).Execute, subscripts(1).Execute)
+                    ElseIf UBound(SubScripts) > 0 Then
+                        strcast = Mid$(strcast, SubScripts(0).Execute, SubScripts(1).Execute)
                     
                     End If
                     'Strings only support a single "Subscript"
@@ -607,7 +607,7 @@ Select Case VarType(OnValue)
     Case vbInteger  '4[2]=0
         'copies either byte One or two from the integer, and returns it.
         'remember, this is in big endian.
-        Select Case subscripts(0).Execute
+        Select Case SubScripts(0).Execute
             Case 0
                 'return an error describing that 1 should be used.
                 'ParserError(WithParser, 9, "Subscripts used with Integer value are base 1- 1 or 2 to return the corresponding byte.", "BPCoreOpFunc::HandleSubScript").Throw
@@ -669,32 +669,7 @@ ElseIf VarType(ObjInvoke) = vbString Then
     On Error GoTo 0
     Call withparser.EvalListener.Self.HandleFunction(withparser, currItem.op, Evalled(), Result)
     IEvalEvents_OnInvokeObject = True
-ElseIf VarType(ObjInvoke) = vbDate Then
-    Evalled = ParserArrToResultArr(currItem.Value, rCount)
-    Select Case LCase$(currItem.op)
-        Case "year"
-        Result = Year(ObjInvoke)
-        Case "month"
-        Result = Month(ObjInvoke)
-        Case "day"
-        Result = Day(ObjInvoke)
-        Case "hour"
-        Result = Hour(ObjInvoke)
-        Case "minute"
-        Result = Minute(ObjInvoke)
-        Case "second"
-        Result = Second(ObjInvoke)
-        Case "add"
-        If rCount = 1 Then
-            Result = DateAdd("d", Evalled(LBound(Evalled)), ObjInvoke)
-            
-        End If
-            
-        
-    
-    End Select
-    IEvalEvents_OnInvokeObject = Not IsEmpty(Result)
-
+                
 End If
     'IEvalEvents_OnInvokeObject = True
 
@@ -1856,7 +1831,7 @@ Private Sub IEvalEvents_HandleFunction(withparser As CParser, ByVal funcName As 
             'DumpExpression: dumps the token list created for a specified expression as a String.
             Set parsetemp = withparser.Clone
             parsetemp.ParseInfix FuncParams(0)
-            Ret = parsetemp.FirstItem.GetString(withparser)
+            Ret = parsetemp.Firstitem.GetString(withparser)
             Case "WITH"
             If paramcount < 2 Then GoTo NotOptional
              Set parsetemp = withparser.Clone
@@ -2558,6 +2533,9 @@ Private Sub IEvalEvents_HandleFunction(withparser As CParser, ByVal funcName As 
                     ElseIf paramcount = 3 Then
                         Ret = GetSetting(P(0), P(1), P(2), P(3))
                     End If
+                Case "BIN", "BIN$"
+                    If paramcount = 0 Then GoTo NotOptional
+                    Ret = Bin$(P(0))
                 Case "HEX", "HEX$"
                     If paramcount = 0 Then GoTo NotOptional
                     Ret = Hex$(P(0))
@@ -3192,7 +3170,7 @@ Private Property Get IEvalEvents_Name() As String
 IEvalEvents_Name = "BPCoreOpFunc"
 End Property
 
-Private Sub IEvalEvents_PreExecute(withparser As CParser, FirstItem As CFormItem)
+Private Sub IEvalEvents_PreExecute(withparser As CParser, Firstitem As CFormItem)
 '
 End Sub
 

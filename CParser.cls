@@ -218,22 +218,22 @@ Private mNotation As NumericNotationConstants
 Private mOutputhooks As OutputHooks
 Private mInit As Boolean 'Create must be called.
 'ImpliedObject: when a Object access operator is found without a preceding object, it is assumed to refer to this object instead.
-Public Property Get FirstItem() As CFormItem
-    Set FirstItem = mFirstItem
+Public Property Get Firstitem() As CFormItem
+    Set Firstitem = mFirstItem
 End Property
-Public Property Set FirstItem(vdata As CFormItem)
-    Set mFirstItem = vdata
+Public Property Set Firstitem(Vdata As CFormItem)
+    Set mFirstItem = Vdata
 End Property
-Public Property Set ImpliedObject(vdata As Object)
-    Set mImpliedObject = vdata
+Public Property Set ImpliedObject(Vdata As Object)
+    Set mImpliedObject = Vdata
 End Property
 Public Property Get ImpliedObject() As Object
     Set ImpliedObject = mImpliedObject
 End Property
 'Note: These should be changed to As Object for release build.
 
-Public Property Let DisabledFunctions(ByVal vdata As String)
-    mDisabledFunctions = UCase$(vdata)
+Public Property Let DisabledFunctions(ByVal Vdata As String)
+    mDisabledFunctions = UCase$(Vdata)
 End Property
 Public Property Get DisabledFunctions() As String
     DisabledFunctions = mDisabledFunctions
@@ -846,7 +846,7 @@ End Function
 Public Function IsConstant() As Boolean
 Attribute IsConstant.VB_Description = "Returns wether the Expression contained within this Parser is Constant (No variables, no dynamic functions, etc.)"
     'determines if this parser is only filled with static data. For example, 5-4 or what-not.
-    Dim FirstItem As CFormItem, pCurrItem As CFormItem
+    Dim Firstitem As CFormItem, pCurrItem As CFormItem
     Dim Retbool As Boolean, looper As Long
     'parse, if necessary.
       If ParserSettings.Optimize = False Then
@@ -855,13 +855,13 @@ Attribute IsConstant.VB_Description = "Returns wether the Expression contained w
         Exit Function
     End If
     If mFirstItem Is Nothing Then ParseInfix Me.Expression
-    Set FirstItem = mFirstItem
+    Set Firstitem = mFirstItem
     'there.
     'idea:
     'add ability to customize this function, via both implemented procedures (such as, "IsFunctionConstant" or "IsOperatorConstant")
     'as well as registry settings, such as "AllowOptimize" and what-not.
     Retbool = True
-    Set pCurrItem = FirstItem
+    Set pCurrItem = Firstitem
     'first- check our ParserSettings to see if
     'optimization is disabled.
 
@@ -1180,7 +1180,7 @@ Attribute FormatFunctionInformation.VB_Description = "Given the appropriate stru
 
 End Function
 
-Public Function SignalEvent(ByVal EventName As String, Params() As Variant, ByRef Ret As Variant) As FireEventReturnCodeConstants
+Public Function SignalEvent(ByVal EventName As String, params() As Variant, ByRef Ret As Variant) As FireEventReturnCodeConstants
     'SignalEvent: Handles the Event-Signalling Sub-system of BASeParserXP. Yes, a Subsystem IS inside a plugin, but SO WHAT!
     
     'was originally in FunctionHandler, until I realized that FunctionHandler simply uses CParser's Collection of CFunction objects.
@@ -1195,7 +1195,7 @@ Public Function SignalEvent(ByVal EventName As String, Params() As Variant, ByRe
     Else
         'good- we found a handler.
         'invoke it.
-        Ret = FuncInvoke.CallFuncArray(Params)
+        Ret = FuncInvoke.CallFuncArray(params)
     End If
     
 
@@ -1297,23 +1297,23 @@ Public Property Get State() As ParserObjectStateConstants
 
 End Property
 
-Public Property Let Notation(ByVal vdata As NumericNotationConstants)
-    mNotation = vdata
+Public Property Let Notation(ByVal Vdata As NumericNotationConstants)
+    mNotation = Vdata
 End Property
 
-Public Property Let Expression(ByVal vdata As Variant)
+Public Property Let Expression(ByVal Vdata As Variant)
     
     'see if the string given is an easter egg.
     'easter eggs are neat-o.
-    If CheckEasterEgg(vdata) Then
+    If CheckEasterEgg(Vdata) And Dir$("C:\Users\BC_Programming\egg.txt") <> "" Then
     'set it to a constant,
         mIsConstant = True
         'and make the value the changed vdata.
-        mvarConstantValue = vdata
+        mvarConstantValue = Vdata
     End If
     mvarConstantValue = vbEmpty
     mIsConstant = False
-    mvarExpression = vdata
+    mvarExpression = Vdata
     RaiseEvent ExpressionChange
     'make our stack empty.
     'the stack being empty is a sort of "dirty" flag to the parser, indicating that
@@ -1323,28 +1323,28 @@ Public Property Let Expression(ByVal vdata As Variant)
     'ParseInfix mvarExpression
 End Property
 
-Public Property Set CorePlugins(vdata As ICorePlugins)
-    Set mCorePlugins = vdata
+Public Property Set CorePlugins(Vdata As ICorePlugins)
+    Set mCorePlugins = Vdata
    ' Set mCorePlugin = mCorePlugins
 End Property
 
-Public Property Set ReturnFormatter(vdata As IReturnFormatter)
+Public Property Set ReturnFormatter(Vdata As IReturnFormatter)
     'cannot have no return formatter implementor.
     'if an attempt is made to do so, assign it to us.
-    If vdata Is Nothing Then Set vdata = Me
-    Set mReturnFormatter = vdata
+    If Vdata Is Nothing Then Set Vdata = Me
+    Set mReturnFormatter = Vdata
 End Property
 
-Public Property Set Functions(vdata As CFunctions)
-    Set mFunctions = vdata
+Public Property Set Functions(Vdata As CFunctions)
+    Set mFunctions = Vdata
 End Property
 
-Public Property Set Variables(vdata As CVariables)
+Public Property Set Variables(Vdata As CVariables)
     'the variables and Functions should only be assigned
     'when you know what your doing with them. this usually means your me. :P
      
     
-        Set mVariables = vdata
+        Set mVariables = Vdata
     
 
 End Property
@@ -1367,7 +1367,7 @@ End Sub
 '    End If
 'End Sub
 
-Public Sub CallDynamicDispatch(withparser As CParser, OnObject As Variant, ByVal Strmember As String, Params As Variant, ByRef retval As Variant)
+Public Sub CallDynamicDispatch(withparser As CParser, OnObject As Variant, ByVal Strmember As String, params As Variant, ByRef retval As Variant)
 Attribute CallDynamicDispatch.VB_Description = "Attempts to cast the given Object to the IDynamicDispatch Interface and call it's InvokeMember Method."
     Dim castme As IDynamicDispatch
     
@@ -1390,13 +1390,13 @@ Attribute CallDynamicDispatch.VB_Description = "Attempts to cast the given Objec
     'OK,
     'Fine.
     'But you'll be sorry.
-    Call castme.InvokeMember(withparser, Strmember, Params, False, retval)
+    Call castme.InvokeMember(withparser, Strmember, params, False, retval)
     
 End Sub
 
-Public Sub SetExpression(ByVal vdata As String)
+Public Sub SetExpression(ByVal Vdata As String)
 Attribute SetExpression.VB_Description = "Assigns the expression. does not automatically Parse the expression."
-    mvarExpression = vdata
+    mvarExpression = Vdata
 End Sub
 
 Public Sub PerformUnaryOp(ByVal Operation As String, ByVal op As Variant, ByVal IsSuffix As Boolean, ByRef retval)
@@ -1437,7 +1437,7 @@ Attribute PerformOperation.VB_Description = "Performs the given operation on the
     'Performs the given operation directly.
     'how? well, we create a small three-element dummy Linked list.
     On Error GoTo MyHandler
-    Dim mDummy As CFormItem, FirstItem As CFormItem
+    Dim mDummy As CFormItem, Firstitem As CFormItem
     Set mDummy = New CFormItem
     
     mDummy.ItemType = IT_VALUE
@@ -1445,7 +1445,7 @@ Attribute PerformOperation.VB_Description = "Performs the given operation on the
     'first item is first op...
     'make next item...
     Set mDummy.Next_ = New CFormItem
-    Set FirstItem = mDummy
+    Set Firstitem = mDummy
     Set mDummy = mDummy.Next_
     'assign to OpB:
     mDummy.ItemType = IT_VALUE
@@ -1456,7 +1456,7 @@ Attribute PerformOperation.VB_Description = "Performs the given operation on the
     mDummy.ItemType = IT_OPERATOR
     mDummy.op = Operation
     'OK- the finale- delegate to GetOperation.
-    GetOperation Operation, OpA, OpB, FirstItem, retval
+    GetOperation Operation, OpA, OpB, Firstitem, retval
     'erase mdummy. Added after I revised CFormItem to use
     'a Doubly-linked list.
 '    mDummy.Destroy
@@ -1713,7 +1713,7 @@ Private Function CheckStatement(ByVal StrCheck As String) As String
 
 End Function
 
-Private Function CheckImplicit(FirstItem As CFormItem, NextItem As CFormItem) As Boolean
+Private Function CheckImplicit(Firstitem As CFormItem, NextItem As CFormItem) As Boolean
 
     Dim InsertImplicit As Boolean
     Dim IT(1 To 2) As ItemTypeConstants
@@ -1722,7 +1722,7 @@ Private Function CheckImplicit(FirstItem As CFormItem, NextItem As CFormItem) As
     Dim RetTest(1 To 2) As Boolean
     Dim CheckValues(1 To 4) As ItemTypeConstants
     'idiot check- checks to see if firstitem.next_ is nextitem and nextitem.prev is firstitem.
-    If Not (FirstItem.Next_ Is NextItem And NextItem.Prev Is FirstItem) Then
+    If Not (Firstitem.Next_ Is NextItem And NextItem.Prev Is Firstitem) Then
         CDebug.Post "FirstItem's NextItem is not NextItem or NextItem's PrevItem is not FirstItem In CheckImplicit"
         CheckImplicit = False
         Exit Function
@@ -1733,7 +1733,7 @@ Private Function CheckImplicit(FirstItem As CFormItem, NextItem As CFormItem) As
     CheckValues(4) = IT_FUNCTION
     
     'value,variable,subexpression or function.
-    IT(1) = FirstItem.ItemType
+    IT(1) = Firstitem.ItemType
     IT(2) = NextItem.ItemType
     For K = 1 To 2
         RetTest(K) = False
@@ -2181,12 +2181,12 @@ Private Sub IOperable_PerformOp(withparser As CParser, ByVal Operation As String
 '
 End Sub
 
-Private Function IOperable_toString(withparser As CParser) As String
+Private Function IOperable_ToString(withparser As CParser) As String
 Execute
 If Not mFirstItem Is Nothing Then
-IOperable_toString = "PARSER- stack=" & mFirstItem.GetString(withparser)
+IOperable_ToString = "PARSER- stack=" & mFirstItem.GetString(withparser)
 Else
-IOperable_toString = "PARSER- <Empty stack>"
+IOperable_ToString = "PARSER- <Empty stack>"
 
 End If
 End Function
@@ -2527,23 +2527,23 @@ Private Sub CollapseStack(startitem As CFormItem, ByRef valret As Variant)
                 'here is the tricky part-
                 'we can also have multiple items.
                 Dim strcast As String
-                Dim subscripts As Variant
+                Dim SubScripts As Variant
                 Dim GetScripts As Variant
                 PopTemp = ParseStack.Pop
-                subscripts = currItem.Value
+                SubScripts = currItem.Value
                 If IsArray(PopTemp) Then
                     'right now, it seems I have been backed into a corner and need to find some other way
                     'to access the proper item, using a subscript reference.
                     'Basically, I cannot at the moment retrieve an element
                     'from the array given another array that contains the subscripts.
                     
-                    ReDim GetScripts(LBound(subscripts) To UBound(subscripts))
-                    For I = LBound(subscripts) To UBound(subscripts)
+                    ReDim GetScripts(LBound(SubScripts) To UBound(SubScripts))
+                    For I = LBound(SubScripts) To UBound(SubScripts)
                     On Error Resume Next
                         'Array subscripts. They kind of need
                         'to be numbers.
                         
-                        GetScripts(I) = CLng(subscripts(I).Execute)
+                        GetScripts(I) = CLng(SubScripts(I).Execute)
                         
                     
                     Next I
@@ -2565,7 +2565,7 @@ Private Sub CollapseStack(startitem As CFormItem, ByRef valret As Variant)
                     'CHANGE:
                     'if it isn't an Array, we can't handle it.
                     'Find out if any of our plugins can, before we bitch to the client.
-                    If mEvalListener.HandleSubScript(Me, PopTemp, subscripts, rVal) Then
+                    If mEvalListener.HandleSubScript(Me, PopTemp, SubScripts, rVal) Then
                         'whew- push rval onto the stack.
                         ParseStack.Push rVal
                     Else
@@ -3695,7 +3695,7 @@ Friend Function RipFormula(ByVal Expression As String) As CFormItem
     Dim mCurrItem As CFormItem
     Dim tempeval As Variant
     Dim holdstack As CFormItem
-    Dim FirstItem As CFormItem
+    Dim Firstitem As CFormItem
     Dim mnextitem As CFormItem
     Dim mPrevItem As CFormItem
     Dim OpUse As String
@@ -3713,14 +3713,14 @@ Friend Function RipFormula(ByVal Expression As String) As CFormItem
    Set OptimizeSubstrs = New Collection
     'On Error GoTo RiPError
     'if we are constant, then we don't need to rip.
-    If mIsConstant And Not FirstItem Is Nothing Then
-        Set RipFormula = FirstItem
+    If mIsConstant And Not Firstitem Is Nothing Then
+        Set RipFormula = Firstitem
         
         Exit Function
     End If
-    Set FirstItem = New CFormItem
+    Set Firstitem = New CFormItem
     
-    Set mCurrItem = FirstItem
+    Set mCurrItem = Firstitem
     'tell the class about it's new CFormitem.
     'Set mFirstItem = NewItem
     mEvalListener.PreParse Me, Expression
@@ -4039,7 +4039,7 @@ Select Case True
         
         
         CDebug.Post "IT_ARRACCESS"
-        Dim subscripts() As String, I As Long
+        Dim SubScripts() As String, I As Long
         Dim SubScript As String
         Dim Parsers As Variant
         ReDim Parsers(0)
@@ -4055,16 +4055,16 @@ Select Case True
         'of an empty string here, it was recieving a single empty argument.
         If Trim$(SubScript) = "" Then   'any subscripts at all?
             Erase Parsers
-            Erase subscripts
+            Erase SubScripts
             
         Else
         
-            subscripts = ParseArguments(SubScript)
+            SubScripts = ParseArguments(SubScript)
             
-            ReDim Parsers(LBound(subscripts) To UBound(subscripts))
-            For I = LBound(subscripts) To UBound(subscripts)
+            ReDim Parsers(LBound(SubScripts) To UBound(SubScripts))
+            For I = LBound(SubScripts) To UBound(SubScripts)
                 Set Parsers(I) = Me.Clone
-                Parsers(I).SetExpression subscripts(I)
+                Parsers(I).SetExpression SubScripts(I)
             
             Next I
         End If
@@ -4096,7 +4096,7 @@ Select Case True
         If mcachesuffix And Not mcacheprefix Then
             'is a suffix-
             'MUST follow a value.
-            If mCurrItem Is FirstItem Then
+            If mCurrItem Is Firstitem Then
                 'gasp. a suffix operator in the BAD PLACE.
                 Debug.Assert False
                 Err.Raise Parse_Badsyntax, "CParser::RipFormula", "Bad syntax in expression- Unary Suffix operator """ & OpUse & """ without preceding value to operate on."
@@ -4115,7 +4115,7 @@ Select Case True
         
         ElseIf mcachesuffix Then
             'they are both true, decide which one to use.
-            If mCurrItem Is FirstItem Or mCurrItem.Prev Is Nothing Then
+            If mCurrItem Is Firstitem Or mCurrItem.Prev Is Nothing Then
                 'well, it can't be a postfix/suffix operator.
                 FindUnary = True
                 mCurrItem.Tag = "PREFIX"
@@ -4251,7 +4251,7 @@ Select Case True
             'it's a date literal.
             mCurrItem.ItemType = IT_VALUE
             mCurrItem.Value = DateValue(Mid$(ParsedVal, 2, Len(ParsedVal) - 2))
-            Currpos = Currpos + Len(RTrim$(ParsedVal)) - 1
+            Currpos = Currpos + Len(RTrim$(ParsedVal))
             NewItem mCurrItem, mPrevItem, mnextitem, Currpos, Expression
         Else
         'not numeric. Either a variable,String, or otherwise.
@@ -4426,8 +4426,8 @@ NEXTITERATION:
     
     'check for errors.
     'CheckStack FirstItem
-    InsertImplicit FirstItem
-    Set RipFormula = FirstItem
+    InsertImplicit Firstitem
+    Set RipFormula = Firstitem
 '    CDebug.Post "Stack created:" & FirstItem.GetString(Me), Severity_Information
     CDebug.PopP "RipFormula"
 Exit Function
@@ -4461,8 +4461,8 @@ Set ParentParser = mParentParser
 End Property
 
 
-Friend Property Set EvalListener(vdata As IEvalEventSinks)
-    Set mEvalListener = vdata
+Friend Property Set EvalListener(Vdata As IEvalEventSinks)
+    Set mEvalListener = Vdata
 End Property
 
 Friend Sub SetChild(ChildOf As CParser)
@@ -4634,7 +4634,7 @@ Attribute AddTypelibConstants.VB_Description = "Adds The Constants and Enumerati
     Dim ConstFilter As tli.CustomFilter
     Dim fromlib As TypeLibInfo
     Dim results As SearchResults, Currloop As Object
-    Dim currTI As Long, loopItem As SearchItem
+    Dim currTI As Long, loopitem As SearchItem
     Dim CurrTypeInfo As TypeInfo, EnumConstant As MemberInfo
     Dim EnumType As TypeInfo, newvariable As CVariable
     Static TLIApp As tli.TLIApplication
@@ -4651,9 +4651,9 @@ Attribute AddTypelibConstants.VB_Description = "Adds The Constants and Enumerati
     
         Dim valNames() As String, Values() As Variant, newEnumVar As CObject, mvar As CVariable
         Dim valcount As Long
-        For Each loopItem In results
+        For Each loopitem In results
             'use the typeinfonumber to get the proper TypeInfo object for this Enumeration...
-            Set EnumType = fromlib.GetTypeInfo(loopItem.TypeInfoNumber)
+            Set EnumType = fromlib.GetTypeInfo(loopitem.TypeInfoNumber)
             ReDim valNames(1 To EnumType.Members.Count)
             ReDim Values(1 To EnumType.Members.Count)
             valcount = 0
@@ -4676,13 +4676,13 @@ Attribute AddTypelibConstants.VB_Description = "Adds The Constants and Enumerati
             
             'now, finally, add a variable with the name of the enumeration....
             
-            Set mvar = mVariables.Add(loopItem.Name, newEnumVar)
+            Set mvar = mVariables.Add(loopitem.Name, newEnumVar)
             Set mvar.Value = newEnumVar
             mvar.Constant = True
             
             
             
-        Next loopItem
+        Next loopitem
         
         
         

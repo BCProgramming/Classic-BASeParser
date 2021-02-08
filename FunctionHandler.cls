@@ -38,18 +38,18 @@ Attribute mextendercol.VB_VarHelpID = -1
 
 
 
-Private Function IEvalEvents_AssignSubScript(Withparser As CParser, OnValue As Variant, SubScripts As Variant, AssignThis As Variant) As Boolean
+Private Function IEvalEvents_AssignSubScript(withparser As CParser, OnValue As Variant, SubScripts As Variant, AssignThis As Variant) As Boolean
 '
 End Function
 Private Sub IEvalEvents_AfterResolveVariable(ParserUse As CParser, ByVal VarName As String, VarValue As Variant)
 '
 End Sub
 
-Private Function IEvalEvents_BeforeFunctionCall(Withparser As CParser, FuncCalling As String, WithHandler As IEvalEvents, Argarray As Variant, ForceResult As Variant) As Boolean
+Private Function IEvalEvents_BeforeFunctionCall(withparser As CParser, FuncCalling As String, WithHandler As IEvalEvents, Argarray As Variant, ForceResult As Variant) As Boolean
 '
 End Function
 
-Private Function IEvalEvents_CanHandleFunction(Withparser As CParser, ByVal funcName As String, NoParsedArgs() As Boolean) As Boolean
+Private Function IEvalEvents_CanHandleFunction(withparser As CParser, ByVal funcName As String, NoParsedArgs() As Boolean) As Boolean
 
 'this Plugin illustrates how function handling can be
 'determined dynamically, from some external source- in this case,
@@ -92,7 +92,7 @@ If InStr(1, OurFuncs, funcName, vbTextCompare) <> 0 Then
 
 End If
 On Error GoTo FUNCNOTTHERE
-    Set TestFunc = Withparser.Functions.Item(funcName)
+    Set TestFunc = withparser.Functions.Item(funcName)
     'No error, cool. The function exists, so we can handle it.
      IEvalEvents_CanHandleFunction = True
      Exit Function
@@ -103,7 +103,7 @@ FUNCNOTTHERE:
 
 End Function
 
-Private Function IEvalEvents_GetOperatorFlags(Withparser As CParser, ByVal OpCheck As String, Unary As IEvalUnaryOpFlags) As OperatorFlags
+Private Function IEvalEvents_GetOperatorFlags(withparser As CParser, ByVal OpCheck As String, Unary As IEvalUnaryOpFlags) As OperatorFlags
 '
 End Function
 
@@ -111,11 +111,11 @@ Private Function IEvalEvents_GetPluginUIData() As IPluginUIData
     Set IEvalEvents_GetPluginUIData = Me
 End Function
 
-Private Function IEvalEvents_HandleSubScript(Withparser As CParser, OnValue As Variant, SubScripts As Variant, retval As Variant) As Boolean
+Private Function IEvalEvents_HandleSubScript(withparser As CParser, OnValue As Variant, SubScripts As Variant, retval As Variant) As Boolean
 '
 End Function
 
-Private Function IEvalEvents_OnInvokeObject(Withparser As CParser, ObjInvoke As Variant, currItem As CFormItem, Result As Variant) As Boolean
+Private Function IEvalEvents_OnInvokeObject(withparser As CParser, ObjInvoke As Variant, currItem As CFormItem, Result As Variant) As Boolean
 'nothing- Yet.
 End Function
 
@@ -124,7 +124,7 @@ Private Function IEvalEvents_BeforeResolveVariable(ParserUse As CParser, ByVal V
 End Function
 
 
-Private Function IEvalEvents_CanHandleOperator(Withparser As CParser, ByVal OpCheck As String, ByRef Unary As IEvalUnaryOpFlags) As Boolean
+Private Function IEvalEvents_CanHandleOperator(withparser As CParser, ByVal OpCheck As String, ByRef Unary As IEvalUnaryOpFlags) As Boolean
 '
 'false.- Well, unless I make some kind of freaky function syntax,
 'or decide to have functions with operator names.
@@ -143,14 +143,14 @@ Private Sub IEvalEvents_ExecuteComplete(ParserDone As CParser)
 End Sub
 
 
-Private Function IEvalEvents_GetFunctionFlags(Withparser As CParser, ByVal FuncString As String) As FunctionFlags
+Private Function IEvalEvents_GetFunctionFlags(withparser As CParser, ByVal FuncString As String) As FunctionFlags
 IEvalEvents_GetFunctionFlags = 0
 End Function
 
-Private Function IEvalEvents_GetHandledFunctionString(Withparser As CParser) As String
+Private Function IEvalEvents_GetHandledFunctionString(withparser As CParser) As String
 '
 Dim StrBuild As String, loopobject As CFunction
-For Each loopobject In Withparser.Functions
+For Each loopobject In withparser.Functions
     StrBuild = StrBuild & " " & loopobject.Name
 Next
 StrBuild = StrBuild & " "
@@ -159,7 +159,7 @@ IEvalEvents_GetHandledFunctionString = OurFuncs & StrBuild
 
 End Function
 
-Private Function IEvalEvents_GetHandledOperatorsString(Withparser As CParser) As String
+Private Function IEvalEvents_GetHandledOperatorsString(withparser As CParser) As String
 '
 End Function
 
@@ -167,11 +167,11 @@ Private Function IEvalEvents_GetInfoObject() As IOpFuncInfo
 '
 End Function
 
-Private Sub IEvalEvents_GetOperation(Withparser As CParser, ByVal OpUse As String, ByVal OpA As Variant, ByVal OpB As Variant, currItem As CFormItem, retval As Variant)
+Private Sub IEvalEvents_GetOperation(withparser As CParser, ByVal OpUse As String, ByVal OpA As Variant, ByVal OpB As Variant, currItem As CFormItem, retval As Variant)
 '
 End Sub
 
-Private Sub IEvalEvents_GetUnaryOperation(Withparser As CParser, ByVal OpUse As String, ByVal OpA As Variant, currItem As CFormItem, retval As Variant)
+Private Sub IEvalEvents_GetUnaryOperation(withparser As CParser, ByVal OpUse As String, ByVal OpA As Variant, currItem As CFormItem, retval As Variant)
 '
 End Sub
 Private Sub DoSinkEvent(ObjSink As Object, ByVal EventName As String, useFunction As CFunction)
@@ -232,7 +232,7 @@ End With
 
 End Sub
 
-Private Sub IEvalEvents_HandleFunction(Withparser As CParser, ByVal funcName As String, FuncParams() As Variant, ReturnVal As Variant)
+Private Sub IEvalEvents_HandleFunction(withparser As CParser, ByVal funcName As String, FuncParams() As Variant, ReturnVal As Variant)
 '
 'actually handle the function.
 Dim paramcount As Long
@@ -273,12 +273,12 @@ If InStr(1, OurFuncs, funcName, vbTextCompare) <> 0 Then
                     Set FuncGet = New CFunction
                     On Error GoTo 0
                     FuncGet.InitAPIFunction FuncParams(0), FuncParams(1), FuncParams(2), FuncParams(3), FuncParams(4)
-                    Withparser.Functions.AddDirect FuncGet
+                    withparser.Functions.AddDirect FuncGet
               
               
               Else
                 
-                Set FuncGet = Withparser.Functions.Add(FuncParams(1), CStr(FuncParams(0)))
+                Set FuncGet = withparser.Functions.Add(FuncParams(1), CStr(FuncParams(0)))
                 
                 Set ReturnVal = FuncGet
                 
@@ -287,7 +287,7 @@ If InStr(1, OurFuncs, funcName, vbTextCompare) <> 0 Then
         
         Case "REMFUNCTION"
             'remove a function by name
-            Withparser.Functions.Remove FuncParams(0)
+            withparser.Functions.Remove FuncParams(0)
             
     'REMFUNCTION("FUNCNAME")
     End Select
@@ -295,18 +295,18 @@ If InStr(1, OurFuncs, funcName, vbTextCompare) <> 0 Then
 End If
 
 
-Set FuncGet = Withparser.Functions.Item(funcName)
+Set FuncGet = withparser.Functions.Item(funcName)
 Call FuncGet.CallFuncByRef(ReturnVal, FuncParams)
 'wooh. that was easy.
 
 End Sub
 
-Private Function IEvalEvents_Init(Withparser As CParser) As IPluginInitCode
+Private Function IEvalEvents_Init(withparser As CParser) As IPluginInitCode
 '
-    Set mParser = Withparser
+    Set mParser = withparser
     CDebug.Post "FunctionHandler Class Init()"
     Set mextendercol = New ExtenderCollection
-    InitFunctions Withparser, Withparser.configset
+    InitFunctions withparser, withparser.configset
 End Function
 
 Private Property Get IEvalEvents_Name() As String
@@ -318,7 +318,7 @@ Private Sub IEvalEvents_ParseComplete(ParserDone As CParser)
 '
 End Sub
 
-Private Sub IEvalEvents_PreExecute(Withparser As CParser, FirstItem As CFormItem)
+Private Sub IEvalEvents_PreExecute(withparser As CParser, Firstitem As CFormItem)
 '
 End Sub
 
@@ -334,15 +334,15 @@ Private Property Get IEvalEvents_Self() As Object
 Set IEvalEvents_Self = Me
 End Property
 
-Private Property Let IEvalEvents_Settings(Withparser As CParser, ByVal PropName As String, ByVal RHS As Variant)
+Private Property Let IEvalEvents_Settings(withparser As CParser, ByVal PropName As String, ByVal RHS As Variant)
 '
 End Property
 
-Private Property Get IEvalEvents_Settings(Withparser As CParser, ByVal PropName As String) As Variant
+Private Property Get IEvalEvents_Settings(withparser As CParser, ByVal PropName As String) As Variant
 '
 End Property
 
-Private Function IEvalEvents_Term(Withparser As CParser) As IPluginTermCode
+Private Function IEvalEvents_Term(withparser As CParser) As IPluginTermCode
 '
 End Function
 
@@ -577,7 +577,7 @@ Private Sub mextendercol_ObjectEvent(FromExtender As BCControlExtender, ObjectEv
                                 If pEventInfo.ParameterCount = 0 Then
                                     funccall.CallFunc
                                 Else
-                                    paramsuse = ParametersToVariant
+                                    paramsuse = ParametersToVariant(pEventInfo.EventParameters)
                                     funccall.CallFuncArray paramsuse
                                 End If
                             
@@ -591,7 +591,9 @@ Private Sub mextendercol_ObjectEvent(FromExtender As BCControlExtender, ObjectEv
                 Next
             End If
     
-    
+        End With
+    Next
+        
     
     
     

@@ -49,7 +49,7 @@ Dim retString As String
         CompletestdError = ""
         completestdOut = ""
         Set UseCon = New clsConsole
-        If UseCon.RunCommand(FrmAbout.hwnd, ItemHandle.op) = 0 Then
+        If UseCon.RunCommand(0, ItemHandle.op) = 0 Then
             Do Until mCompleted
                 DoEvents
                 
